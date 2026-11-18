@@ -1,0 +1,3068 @@
+{
+  "meta": {
+    "eulerCount": 1019,
+    "eulerNamesFetchedAt": "2026-11-18T23:38:56.904Z"
+  },
+  "problems": {
+    "aoc/2024/01": {
+      "name": "Historian Hysteria"
+    },
+    "euler/001": {
+      "name": "Multiples of 3 or 5"
+    },
+    "euler/002": {
+      "name": "Even Fibonacci Numbers"
+    },
+    "euler/003": {
+      "name": "Largest Prime Factor"
+    },
+    "euler/004": {
+      "name": "Largest Palindrome Product"
+    },
+    "euler/005": {
+      "name": "Smallest Multiple"
+    },
+    "euler/006": {
+      "name": "Sum Square Difference"
+    },
+    "euler/007": {
+      "name": "10 001st Prime"
+    },
+    "euler/008": {
+      "name": "Largest Product in a Series"
+    },
+    "euler/009": {
+      "name": "Special Pythagorean Triplet"
+    },
+    "euler/010": {
+      "name": "Summation of Primes"
+    },
+    "euler/011": {
+      "name": "Largest Product in a Grid"
+    },
+    "euler/012": {
+      "name": "Highly Divisible Triangular Number"
+    },
+    "euler/013": {
+      "name": "Large Sum"
+    },
+    "euler/014": {
+      "name": "Longest Collatz Sequence"
+    },
+    "euler/015": {
+      "name": "Lattice Paths"
+    },
+    "euler/016": {
+      "name": "Power Digit Sum"
+    },
+    "euler/017": {
+      "name": "Number Letter Counts"
+    },
+    "euler/018": {
+      "name": "Maximum Path Sum I"
+    },
+    "euler/019": {
+      "name": "Counting Sundays"
+    },
+    "euler/020": {
+      "name": "Factorial Digit Sum"
+    },
+    "euler/021": {
+      "name": "Amicable Numbers"
+    },
+    "euler/022": {
+      "name": "Names Scores"
+    },
+    "euler/023": {
+      "name": "Non-Abundant Sums"
+    },
+    "euler/024": {
+      "name": "Lexicographic Permutations"
+    },
+    "euler/025": {
+      "name": "$1000$-digit Fibonacci Number"
+    },
+    "euler/026": {
+      "name": "Reciprocal Cycles"
+    },
+    "euler/027": {
+      "name": "Quadratic Primes"
+    },
+    "euler/028": {
+      "name": "Number Spiral Diagonals"
+    },
+    "euler/029": {
+      "name": "Distinct Powers"
+    },
+    "euler/030": {
+      "name": "Digit Fifth Powers"
+    },
+    "euler/031": {
+      "name": "Coin Sums"
+    },
+    "euler/032": {
+      "name": "Pandigital Products"
+    },
+    "euler/033": {
+      "name": "Digit Cancelling Fractions"
+    },
+    "euler/034": {
+      "name": "Digit Factorials"
+    },
+    "euler/035": {
+      "name": "Circular Primes"
+    },
+    "euler/036": {
+      "name": "Double-base Palindromes"
+    },
+    "euler/037": {
+      "name": "Truncatable Primes"
+    },
+    "euler/038": {
+      "name": "Pandigital Multiples"
+    },
+    "euler/039": {
+      "name": "Integer Right Triangles"
+    },
+    "euler/040": {
+      "name": "Champernowne's Constant"
+    },
+    "euler/041": {
+      "name": "Pandigital Prime"
+    },
+    "euler/042": {
+      "name": "Coded Triangle Numbers"
+    },
+    "euler/043": {
+      "name": "Sub-string Divisibility"
+    },
+    "euler/044": {
+      "name": "Pentagon Numbers"
+    },
+    "euler/045": {
+      "name": "Triangular, Pentagonal, and Hexagonal"
+    },
+    "euler/046": {
+      "name": "Goldbach's Other Conjecture"
+    },
+    "euler/047": {
+      "name": "Distinct Primes Factors"
+    },
+    "euler/048": {
+      "name": "Self Powers"
+    },
+    "euler/049": {
+      "name": "Prime Permutations"
+    },
+    "euler/050": {
+      "name": "Consecutive Prime Sum"
+    },
+    "euler/051": {
+      "name": "Prime Digit Replacements"
+    },
+    "euler/052": {
+      "name": "Permuted Multiples"
+    },
+    "euler/053": {
+      "name": "Combinatoric Selections"
+    },
+    "euler/054": {
+      "name": "Poker Hands"
+    },
+    "euler/055": {
+      "name": "Lychrel Numbers"
+    },
+    "euler/056": {
+      "name": "Powerful Digit Sum"
+    },
+    "euler/057": {
+      "name": "Square Root Convergents"
+    },
+    "euler/058": {
+      "name": "Spiral Primes"
+    },
+    "euler/059": {
+      "name": "XOR Decryption"
+    },
+    "euler/060": {
+      "name": "Prime Pair Sets"
+    },
+    "euler/061": {
+      "name": "Cyclical Figurate Numbers"
+    },
+    "euler/062": {
+      "name": "Cubic Permutations"
+    },
+    "euler/063": {
+      "name": "Powerful Digit Counts"
+    },
+    "euler/064": {
+      "name": "Odd Period Square Roots"
+    },
+    "euler/065": {
+      "name": "Convergents of $e$"
+    },
+    "euler/066": {
+      "name": "Diophantine Equation"
+    },
+    "euler/067": {
+      "name": "Maximum Path Sum II"
+    },
+    "euler/068": {
+      "name": "Magic 5-gon Ring"
+    },
+    "euler/069": {
+      "name": "Totient Maximum"
+    },
+    "euler/070": {
+      "name": "Totient Permutation"
+    },
+    "euler/071": {
+      "name": "Ordered Fractions"
+    },
+    "euler/072": {
+      "name": "Counting Fractions"
+    },
+    "euler/073": {
+      "name": "Counting Fractions in a Range"
+    },
+    "euler/074": {
+      "name": "Digit Factorial Chains"
+    },
+    "euler/075": {
+      "name": "Singular Integer Right Triangles"
+    },
+    "euler/076": {
+      "name": "Counting Summations"
+    },
+    "euler/077": {
+      "name": "Prime Summations"
+    },
+    "euler/078": {
+      "name": "Coin Partitions"
+    },
+    "euler/079": {
+      "name": "Passcode Derivation"
+    },
+    "euler/080": {
+      "name": "Square Root Digital Expansion"
+    },
+    "euler/081": {
+      "name": "Path Sum: Two Ways"
+    },
+    "euler/082": {
+      "name": "Path Sum: Three Ways"
+    },
+    "euler/083": {
+      "name": "Path Sum: Four Ways"
+    },
+    "euler/084": {
+      "name": "Monopoly Odds"
+    },
+    "euler/085": {
+      "name": "Counting Rectangles"
+    },
+    "euler/086": {
+      "name": "Cuboid Route"
+    },
+    "euler/087": {
+      "name": "Prime Power Triples"
+    },
+    "euler/088": {
+      "name": "Product-sum Numbers"
+    },
+    "euler/089": {
+      "name": "Roman Numerals"
+    },
+    "euler/090": {
+      "name": "Cube Digit Pairs"
+    },
+    "euler/091": {
+      "name": "Right Triangles with Integer Coordinates"
+    },
+    "euler/092": {
+      "name": "Square Digit Chains"
+    },
+    "euler/093": {
+      "name": "Arithmetic Expressions"
+    },
+    "euler/094": {
+      "name": "Almost Equilateral Triangles"
+    },
+    "euler/095": {
+      "name": "Amicable Chains"
+    },
+    "euler/096": {
+      "name": "Su Doku"
+    },
+    "euler/097": {
+      "name": "Large Non-Mersenne Prime"
+    },
+    "euler/098": {
+      "name": "Anagramic Squares"
+    },
+    "euler/099": {
+      "name": "Largest Exponential"
+    },
+    "euler/100": {
+      "name": "Arranged Probability"
+    },
+    "euler/101": {
+      "name": "Optimum Polynomial"
+    },
+    "euler/102": {
+      "name": "Triangle Containment"
+    },
+    "euler/103": {
+      "name": "Special Subset Sums: Optimum"
+    },
+    "euler/104": {
+      "name": "Pandigital Fibonacci Ends"
+    },
+    "euler/105": {
+      "name": "Special Subset Sums: Testing"
+    },
+    "euler/106": {
+      "name": "Special Subset Sums: Meta-testing"
+    },
+    "euler/107": {
+      "name": "Minimal Network"
+    },
+    "euler/108": {
+      "name": "Diophantine Reciprocals I"
+    },
+    "euler/109": {
+      "name": "Darts"
+    },
+    "euler/110": {
+      "name": "Diophantine Reciprocals II"
+    },
+    "euler/111": {
+      "name": "Primes with Runs"
+    },
+    "euler/112": {
+      "name": "Bouncy Numbers"
+    },
+    "euler/113": {
+      "name": "Non-bouncy Numbers"
+    },
+    "euler/114": {
+      "name": "Counting Block Combinations I"
+    },
+    "euler/115": {
+      "name": "Counting Block Combinations II"
+    },
+    "euler/116": {
+      "name": "Red, Green or Blue Tiles"
+    },
+    "euler/117": {
+      "name": "Red, Green, and Blue Tiles"
+    },
+    "euler/118": {
+      "name": "Pandigital Prime Sets"
+    },
+    "euler/119": {
+      "name": "Digit Power Sum"
+    },
+    "euler/120": {
+      "name": "Square Remainders"
+    },
+    "euler/121": {
+      "name": "Disc Game Prize Fund"
+    },
+    "euler/122": {
+      "name": "Efficient Exponentiation"
+    },
+    "euler/123": {
+      "name": "Prime Square Remainders"
+    },
+    "euler/124": {
+      "name": "Ordered Radicals"
+    },
+    "euler/125": {
+      "name": "Palindromic Sums"
+    },
+    "euler/126": {
+      "name": "Cuboid Layers"
+    },
+    "euler/127": {
+      "name": "abc-hits"
+    },
+    "euler/128": {
+      "name": "Hexagonal Tile Differences"
+    },
+    "euler/129": {
+      "name": "Repunit Divisibility"
+    },
+    "euler/130": {
+      "name": "Composites with Prime Repunit Property"
+    },
+    "euler/131": {
+      "name": "Prime Cube Partnership"
+    },
+    "euler/132": {
+      "name": "Large Repunit Factors"
+    },
+    "euler/133": {
+      "name": "Repunit Nonfactors"
+    },
+    "euler/134": {
+      "name": "Prime Pair Connection"
+    },
+    "euler/135": {
+      "name": "Same Differences"
+    },
+    "euler/136": {
+      "name": "Singleton Difference"
+    },
+    "euler/137": {
+      "name": "Fibonacci Golden Nuggets"
+    },
+    "euler/138": {
+      "name": "Special Isosceles Triangles"
+    },
+    "euler/139": {
+      "name": "Pythagorean Tiles"
+    },
+    "euler/140": {
+      "name": "Modified Fibonacci Golden Nuggets"
+    },
+    "euler/141": {
+      "name": "Square Progressive Numbers"
+    },
+    "euler/142": {
+      "name": "Perfect Square Collection"
+    },
+    "euler/143": {
+      "name": "Torricelli Triangles"
+    },
+    "euler/144": {
+      "name": "Laser Beam Reflections "
+    },
+    "euler/145": {
+      "name": "Reversible Numbers"
+    },
+    "euler/146": {
+      "name": "Investigating a Prime Pattern "
+    },
+    "euler/147": {
+      "name": "Rectangles in Cross-hatched Grids"
+    },
+    "euler/148": {
+      "name": "Exploring Pascal's Triangle"
+    },
+    "euler/149": {
+      "name": "Maximum-sum Subsequence"
+    },
+    "euler/150": {
+      "name": "Sub-triangle Sums"
+    },
+    "euler/151": {
+      "name": "A Preference for A5"
+    },
+    "euler/152": {
+      "name": "Sums of Square Reciprocals"
+    },
+    "euler/153": {
+      "name": "Investigating Gaussian Integers"
+    },
+    "euler/154": {
+      "name": "Exploring Pascal's Pyramid"
+    },
+    "euler/155": {
+      "name": "Counting Capacitor Circuits"
+    },
+    "euler/156": {
+      "name": "Counting Digits"
+    },
+    "euler/157": {
+      "name": "Base-10 Diophantine Reciprocal"
+    },
+    "euler/158": {
+      "name": "Lexicographical Neighbours"
+    },
+    "euler/159": {
+      "name": "Digital Root Sums of Factorisations"
+    },
+    "euler/160": {
+      "name": "Factorial Trailing Digits"
+    },
+    "euler/161": {
+      "name": "Triominoes"
+    },
+    "euler/162": {
+      "name": "Hexadecimal Numbers"
+    },
+    "euler/163": {
+      "name": "Cross-hatched Triangles"
+    },
+    "euler/164": {
+      "name": "Three Consecutive Digital Sum Limit"
+    },
+    "euler/165": {
+      "name": "Intersections"
+    },
+    "euler/166": {
+      "name": "Criss Cross"
+    },
+    "euler/167": {
+      "name": "Investigating Ulam Sequences"
+    },
+    "euler/168": {
+      "name": "Number Rotations"
+    },
+    "euler/169": {
+      "name": "Sums of Powers of Two"
+    },
+    "euler/170": {
+      "name": "Pandigital Concatenating Products"
+    },
+    "euler/171": {
+      "name": "Square Sum of the Digital Squares"
+    },
+    "euler/172": {
+      "name": "Few Repeated Digits"
+    },
+    "euler/173": {
+      "name": "Hollow Square Laminae I"
+    },
+    "euler/174": {
+      "name": "Hollow Square Laminae II"
+    },
+    "euler/175": {
+      "name": "Fractions and Sum of Powers of Two"
+    },
+    "euler/176": {
+      "name": "Common Cathetus Right-angled Triangles"
+    },
+    "euler/177": {
+      "name": "Integer Angled Quadrilaterals"
+    },
+    "euler/178": {
+      "name": "Step Numbers"
+    },
+    "euler/179": {
+      "name": "Consecutive Positive Divisors"
+    },
+    "euler/180": {
+      "name": "Golden Triplets"
+    },
+    "euler/181": {
+      "name": "Grouping Two Different Coloured Objects"
+    },
+    "euler/182": {
+      "name": "RSA Encryption"
+    },
+    "euler/183": {
+      "name": "Maximum Product of Parts"
+    },
+    "euler/184": {
+      "name": "Triangles Containing the Origin"
+    },
+    "euler/185": {
+      "name": "Number Mind"
+    },
+    "euler/186": {
+      "name": "Connectedness of a Network"
+    },
+    "euler/187": {
+      "name": "Semiprimes"
+    },
+    "euler/188": {
+      "name": "Hyperexponentiation"
+    },
+    "euler/189": {
+      "name": "Tri-colouring a Triangular Grid"
+    },
+    "euler/190": {
+      "name": "Maximising a Weighted Product"
+    },
+    "euler/191": {
+      "name": "Prize Strings"
+    },
+    "euler/192": {
+      "name": "Best Approximations"
+    },
+    "euler/193": {
+      "name": "Squarefree Numbers"
+    },
+    "euler/194": {
+      "name": "Coloured Configurations"
+    },
+    "euler/195": {
+      "name": "$60$-degree Triangle Inscribed Circles"
+    },
+    "euler/196": {
+      "name": "Prime Triplets"
+    },
+    "euler/197": {
+      "name": "A Recursively Defined Sequence"
+    },
+    "euler/198": {
+      "name": "Ambiguous Numbers"
+    },
+    "euler/199": {
+      "name": "Iterative Circle Packing"
+    },
+    "euler/200": {
+      "name": "Prime-proof Squbes"
+    },
+    "euler/201": {
+      "name": "Subsets with a Unique Sum"
+    },
+    "euler/202": {
+      "name": "Laserbeam"
+    },
+    "euler/203": {
+      "name": "Squarefree Binomial Coefficients"
+    },
+    "euler/204": {
+      "name": "Generalised Hamming Numbers"
+    },
+    "euler/205": {
+      "name": "Dice Game"
+    },
+    "euler/206": {
+      "name": "Concealed Square"
+    },
+    "euler/207": {
+      "name": "Integer Partition Equations"
+    },
+    "euler/208": {
+      "name": "Robot Walks"
+    },
+    "euler/209": {
+      "name": "Circular Logic"
+    },
+    "euler/210": {
+      "name": "Obtuse Angled Triangles"
+    },
+    "euler/211": {
+      "name": "Divisor Square Sum"
+    },
+    "euler/212": {
+      "name": "Combined Volume of Cuboids"
+    },
+    "euler/213": {
+      "name": "Flea Circus"
+    },
+    "euler/214": {
+      "name": "Totient Chains"
+    },
+    "euler/215": {
+      "name": "Crack-free Walls"
+    },
+    "euler/216": {
+      "name": "The Primality of $2n^2 - 1$"
+    },
+    "euler/217": {
+      "name": "Balanced Numbers"
+    },
+    "euler/218": {
+      "name": "Perfect Right-angled Triangles"
+    },
+    "euler/219": {
+      "name": "Skew-cost Coding"
+    },
+    "euler/220": {
+      "name": "Heighway Dragon"
+    },
+    "euler/221": {
+      "name": "Alexandrian Integers"
+    },
+    "euler/222": {
+      "name": "Sphere Packing"
+    },
+    "euler/223": {
+      "name": "Almost Right-angled Triangles I"
+    },
+    "euler/224": {
+      "name": "Almost Right-angled Triangles II"
+    },
+    "euler/225": {
+      "name": "Tribonacci Non-divisors"
+    },
+    "euler/226": {
+      "name": "A Scoop of Blancmange"
+    },
+    "euler/227": {
+      "name": "The Chase"
+    },
+    "euler/228": {
+      "name": "Minkowski Sums"
+    },
+    "euler/229": {
+      "name": "Four Representations Using Squares"
+    },
+    "euler/230": {
+      "name": "Fibonacci Words"
+    },
+    "euler/231": {
+      "name": "Prime Factorisation of Binomial Coefficients"
+    },
+    "euler/232": {
+      "name": "The Race"
+    },
+    "euler/233": {
+      "name": "Lattice Points on a Circle"
+    },
+    "euler/234": {
+      "name": "Semidivisible Numbers"
+    },
+    "euler/235": {
+      "name": "An Arithmetic Geometric Sequence"
+    },
+    "euler/236": {
+      "name": "Luxury Hampers"
+    },
+    "euler/237": {
+      "name": "Tours on a $4 \\times N$ Playing Board"
+    },
+    "euler/238": {
+      "name": "Infinite String Tour"
+    },
+    "euler/239": {
+      "name": "Twenty-two Foolish Primes"
+    },
+    "euler/240": {
+      "name": "Top Dice"
+    },
+    "euler/241": {
+      "name": "Perfection Quotients"
+    },
+    "euler/242": {
+      "name": "Odd Triplets"
+    },
+    "euler/243": {
+      "name": "Resilience"
+    },
+    "euler/244": {
+      "name": "Sliders"
+    },
+    "euler/245": {
+      "name": "Coresilience"
+    },
+    "euler/246": {
+      "name": "Tangents to an Ellipse"
+    },
+    "euler/247": {
+      "name": "Squares Under a Hyperbola"
+    },
+    "euler/248": {
+      "name": "Euler's Totient Function Equals 13!"
+    },
+    "euler/249": {
+      "name": "Prime Subset Sums"
+    },
+    "euler/250": {
+      "name": "$250250$"
+    },
+    "euler/251": {
+      "name": "Cardano Triplets"
+    },
+    "euler/252": {
+      "name": "Convex Holes"
+    },
+    "euler/253": {
+      "name": "Tidying Up A"
+    },
+    "euler/254": {
+      "name": "Sums of Digit Factorials"
+    },
+    "euler/255": {
+      "name": "Rounded Square Roots"
+    },
+    "euler/256": {
+      "name": "Tatami-Free Rooms"
+    },
+    "euler/257": {
+      "name": "Angular Bisectors"
+    },
+    "euler/258": {
+      "name": "A Lagged Fibonacci Sequence"
+    },
+    "euler/259": {
+      "name": "Reachable Numbers"
+    },
+    "euler/260": {
+      "name": "Stone Game"
+    },
+    "euler/261": {
+      "name": "Pivotal Square Sums"
+    },
+    "euler/262": {
+      "name": "Mountain Range"
+    },
+    "euler/263": {
+      "name": "An Engineers' Dream Come True"
+    },
+    "euler/264": {
+      "name": "Triangle Centres"
+    },
+    "euler/265": {
+      "name": "Binary Circles"
+    },
+    "euler/266": {
+      "name": "Pseudo Square Root"
+    },
+    "euler/267": {
+      "name": "Billionaire"
+    },
+    "euler/268": {
+      "name": "At Least Four Distinct Prime Factors Less Than 100"
+    },
+    "euler/269": {
+      "name": "Polynomials with at Least One Integer Root"
+    },
+    "euler/270": {
+      "name": "Cutting Squares"
+    },
+    "euler/271": {
+      "name": "Modular Cubes, Part 1"
+    },
+    "euler/272": {
+      "name": "Modular Cubes, Part 2"
+    },
+    "euler/273": {
+      "name": "Sum of Squares"
+    },
+    "euler/274": {
+      "name": "Divisibility Multipliers"
+    },
+    "euler/275": {
+      "name": "Balanced Sculptures"
+    },
+    "euler/276": {
+      "name": "Primitive Triangles"
+    },
+    "euler/277": {
+      "name": "A Modified Collatz Sequence"
+    },
+    "euler/278": {
+      "name": "Linear Combinations of Semiprimes"
+    },
+    "euler/279": {
+      "name": "Triangles with Integral Sides and an Integral Angle "
+    },
+    "euler/280": {
+      "name": "Ant and Seeds"
+    },
+    "euler/281": {
+      "name": "Pizza Toppings"
+    },
+    "euler/282": {
+      "name": "The Ackermann Function"
+    },
+    "euler/283": {
+      "name": "Integer Sided Triangles with Integral Area/perimeter Ratio"
+    },
+    "euler/284": {
+      "name": "Steady Squares"
+    },
+    "euler/285": {
+      "name": "Pythagorean Odds"
+    },
+    "euler/286": {
+      "name": "Scoring Probabilities"
+    },
+    "euler/287": {
+      "name": "Quadtree Encoding (a Simple Compression Algorithm)"
+    },
+    "euler/288": {
+      "name": "An Enormous Factorial"
+    },
+    "euler/289": {
+      "name": "Eulerian Cycles"
+    },
+    "euler/290": {
+      "name": "Digital Signature"
+    },
+    "euler/291": {
+      "name": "Panaitopol Primes"
+    },
+    "euler/292": {
+      "name": "Pythagorean Polygons"
+    },
+    "euler/293": {
+      "name": "Pseudo-Fortunate Numbers"
+    },
+    "euler/294": {
+      "name": "Sum of Digits - Experience #23"
+    },
+    "euler/295": {
+      "name": "Lenticular Holes"
+    },
+    "euler/296": {
+      "name": "Angular Bisector and Tangent"
+    },
+    "euler/297": {
+      "name": "Zeckendorf Representation"
+    },
+    "euler/298": {
+      "name": "Selective Amnesia"
+    },
+    "euler/299": {
+      "name": "Three Similar Triangles"
+    },
+    "euler/300": {
+      "name": "Protein Folding"
+    },
+    "euler/301": {
+      "name": "Nim"
+    },
+    "euler/302": {
+      "name": "Strong Achilles Numbers"
+    },
+    "euler/303": {
+      "name": "Multiples with Small Digits"
+    },
+    "euler/304": {
+      "name": "Primonacci"
+    },
+    "euler/305": {
+      "name": "Reflexive Position"
+    },
+    "euler/306": {
+      "name": "Paper-strip Game"
+    },
+    "euler/307": {
+      "name": "Chip Defects"
+    },
+    "euler/308": {
+      "name": "An Amazing Prime-generating Automaton"
+    },
+    "euler/309": {
+      "name": "Integer Ladders"
+    },
+    "euler/310": {
+      "name": "Nim Square"
+    },
+    "euler/311": {
+      "name": "Biclinic Integral Quadrilaterals"
+    },
+    "euler/312": {
+      "name": "Cyclic Paths on Sierpi\u0144ski Graphs"
+    },
+    "euler/313": {
+      "name": "Sliding Game"
+    },
+    "euler/314": {
+      "name": "The Mouse on the Moon"
+    },
+    "euler/315": {
+      "name": "Digital Root Clocks"
+    },
+    "euler/316": {
+      "name": "Numbers in Decimal Expansions"
+    },
+    "euler/317": {
+      "name": "Firecracker"
+    },
+    "euler/318": {
+      "name": "2011 Nines"
+    },
+    "euler/319": {
+      "name": "Bounded Sequences"
+    },
+    "euler/320": {
+      "name": "Factorials Divisible by a Huge Integer"
+    },
+    "euler/321": {
+      "name": "Swapping Counters"
+    },
+    "euler/322": {
+      "name": "Binomial Coefficients Divisible by 10"
+    },
+    "euler/323": {
+      "name": "Bitwise-OR Operations on Random Integers"
+    },
+    "euler/324": {
+      "name": "Building a Tower"
+    },
+    "euler/325": {
+      "name": "Stone Game II"
+    },
+    "euler/326": {
+      "name": "Modulo Summations"
+    },
+    "euler/327": {
+      "name": "Rooms of Doom"
+    },
+    "euler/328": {
+      "name": "Lowest-cost Search"
+    },
+    "euler/329": {
+      "name": "Prime Frog"
+    },
+    "euler/330": {
+      "name": "Euler's Number"
+    },
+    "euler/331": {
+      "name": "Cross Flips"
+    },
+    "euler/332": {
+      "name": "Spherical Triangles"
+    },
+    "euler/333": {
+      "name": "Special Partitions"
+    },
+    "euler/334": {
+      "name": "Spilling the Beans"
+    },
+    "euler/335": {
+      "name": "Gathering the Beans"
+    },
+    "euler/336": {
+      "name": "Maximix Arrangements"
+    },
+    "euler/337": {
+      "name": "Totient Stairstep Sequences"
+    },
+    "euler/338": {
+      "name": "Cutting Rectangular Grid Paper"
+    },
+    "euler/339": {
+      "name": "Peredur Fab Efrawg"
+    },
+    "euler/340": {
+      "name": "Crazy Function"
+    },
+    "euler/341": {
+      "name": "Golomb's Self-describing Sequence"
+    },
+    "euler/342": {
+      "name": "The Totient of a Square Is a Cube"
+    },
+    "euler/343": {
+      "name": "Fractional Sequences"
+    },
+    "euler/344": {
+      "name": "Silver Dollar Game"
+    },
+    "euler/345": {
+      "name": "Matrix Sum"
+    },
+    "euler/346": {
+      "name": "Strong Repunits"
+    },
+    "euler/347": {
+      "name": "Largest Integer Divisible by Two Primes"
+    },
+    "euler/348": {
+      "name": "Sum of a Square and a Cube"
+    },
+    "euler/349": {
+      "name": "Langton's Ant"
+    },
+    "euler/350": {
+      "name": "Constraining the Least Greatest and the Greatest Least"
+    },
+    "euler/351": {
+      "name": "Hexagonal Orchards"
+    },
+    "euler/352": {
+      "name": "Blood Tests"
+    },
+    "euler/353": {
+      "name": "Risky Moon"
+    },
+    "euler/354": {
+      "name": "Distances in a Bee's Honeycomb "
+    },
+    "euler/355": {
+      "name": "Maximal Coprime Subset"
+    },
+    "euler/356": {
+      "name": "Largest Roots of Cubic Polynomials"
+    },
+    "euler/357": {
+      "name": "Prime Generating Integers"
+    },
+    "euler/358": {
+      "name": "Cyclic Numbers"
+    },
+    "euler/359": {
+      "name": "Hilbert's New Hotel"
+    },
+    "euler/360": {
+      "name": "Scary Sphere"
+    },
+    "euler/361": {
+      "name": "Subsequence of Thue-Morse Sequence"
+    },
+    "euler/362": {
+      "name": "Squarefree Factors"
+    },
+    "euler/363": {
+      "name": "B\u00e9zier Curves"
+    },
+    "euler/364": {
+      "name": "Comfortable Distance"
+    },
+    "euler/365": {
+      "name": "A Huge Binomial Coefficient"
+    },
+    "euler/366": {
+      "name": "Stone Game III"
+    },
+    "euler/367": {
+      "name": "Bozo Sort"
+    },
+    "euler/368": {
+      "name": "A Kempner-like Series"
+    },
+    "euler/369": {
+      "name": "Badugi"
+    },
+    "euler/370": {
+      "name": "Geometric Triangles"
+    },
+    "euler/371": {
+      "name": "Licence Plates"
+    },
+    "euler/372": {
+      "name": "Pencils of Rays"
+    },
+    "euler/373": {
+      "name": "Circumscribed Circles"
+    },
+    "euler/374": {
+      "name": "Maximum Integer Partition Product"
+    },
+    "euler/375": {
+      "name": "Minimum of Subsequences"
+    },
+    "euler/376": {
+      "name": "Nontransitive Sets of Dice"
+    },
+    "euler/377": {
+      "name": "Sum of Digits - Experience #13"
+    },
+    "euler/378": {
+      "name": "Triangle Triples"
+    },
+    "euler/379": {
+      "name": "Least Common Multiple Count"
+    },
+    "euler/380": {
+      "name": "Amazing Mazes!"
+    },
+    "euler/381": {
+      "name": "$(\\text{prime}-k)$ Factorial"
+    },
+    "euler/382": {
+      "name": "Generating Polygons"
+    },
+    "euler/383": {
+      "name": "Divisibility Comparison Between Factorials"
+    },
+    "euler/384": {
+      "name": "Rudin-Shapiro Sequence"
+    },
+    "euler/385": {
+      "name": "Ellipses Inside Triangles"
+    },
+    "euler/386": {
+      "name": "Maximum Length of an Antichain"
+    },
+    "euler/387": {
+      "name": "Harshad Numbers"
+    },
+    "euler/388": {
+      "name": "Distinct Lines"
+    },
+    "euler/389": {
+      "name": "Platonic Dice"
+    },
+    "euler/390": {
+      "name": "Triangles with Non Rational Sides and Integral Area"
+    },
+    "euler/391": {
+      "name": "Hopping Game"
+    },
+    "euler/392": {
+      "name": "Enmeshed Unit Circle"
+    },
+    "euler/393": {
+      "name": "Migrating Ants"
+    },
+    "euler/394": {
+      "name": "Eating Pie"
+    },
+    "euler/395": {
+      "name": "Pythagorean Tree"
+    },
+    "euler/396": {
+      "name": "Weak Goodstein Sequence"
+    },
+    "euler/397": {
+      "name": "Triangle on Parabola"
+    },
+    "euler/398": {
+      "name": "Cutting Rope"
+    },
+    "euler/399": {
+      "name": "Squarefree Fibonacci Numbers"
+    },
+    "euler/400": {
+      "name": "Fibonacci Tree Game"
+    },
+    "euler/401": {
+      "name": "Sum of Squares of Divisors"
+    },
+    "euler/402": {
+      "name": "Integer-valued Polynomials"
+    },
+    "euler/403": {
+      "name": "Lattice Points Enclosed by Parabola and Line"
+    },
+    "euler/404": {
+      "name": "Crisscross Ellipses"
+    },
+    "euler/405": {
+      "name": "A Rectangular Tiling"
+    },
+    "euler/406": {
+      "name": "Guessing Game"
+    },
+    "euler/407": {
+      "name": "Idempotents"
+    },
+    "euler/408": {
+      "name": "Admissible Paths Through a Grid"
+    },
+    "euler/409": {
+      "name": "Nim Extreme"
+    },
+    "euler/410": {
+      "name": "Circle and Tangent Line"
+    },
+    "euler/411": {
+      "name": "Uphill Paths"
+    },
+    "euler/412": {
+      "name": "Gnomon Numbering"
+    },
+    "euler/413": {
+      "name": "One-child Numbers"
+    },
+    "euler/414": {
+      "name": "Kaprekar Constant"
+    },
+    "euler/415": {
+      "name": "Titanic Sets"
+    },
+    "euler/416": {
+      "name": "A Frog's Trip"
+    },
+    "euler/417": {
+      "name": "Reciprocal Cycles II"
+    },
+    "euler/418": {
+      "name": "Factorisation Triples"
+    },
+    "euler/419": {
+      "name": "Look and Say Sequence"
+    },
+    "euler/420": {
+      "name": "$2 \\times 2$ Positive Integer Matrix"
+    },
+    "euler/421": {
+      "name": "Prime Factors of $n^{15}+1$"
+    },
+    "euler/422": {
+      "name": "Sequence of Points on a Hyperbola"
+    },
+    "euler/423": {
+      "name": "Consecutive Die Throws"
+    },
+    "euler/424": {
+      "name": "Kakuro"
+    },
+    "euler/425": {
+      "name": "Prime Connection"
+    },
+    "euler/426": {
+      "name": "Box-Ball System"
+    },
+    "euler/427": {
+      "name": "$n$-sequences"
+    },
+    "euler/428": {
+      "name": "Necklace of Circles"
+    },
+    "euler/429": {
+      "name": "Sum of Squares of Unitary Divisors"
+    },
+    "euler/430": {
+      "name": "Range Flips"
+    },
+    "euler/431": {
+      "name": "Square Space Silo"
+    },
+    "euler/432": {
+      "name": "Totient Sum"
+    },
+    "euler/433": {
+      "name": "Steps in Euclid's Algorithm"
+    },
+    "euler/434": {
+      "name": "Rigid Graphs"
+    },
+    "euler/435": {
+      "name": "Polynomials of Fibonacci Numbers"
+    },
+    "euler/436": {
+      "name": "Unfair Wager"
+    },
+    "euler/437": {
+      "name": "Fibonacci Primitive Roots"
+    },
+    "euler/438": {
+      "name": "Integer Part of Polynomial Equation's Solutions"
+    },
+    "euler/439": {
+      "name": "Sum of Sum of Divisors"
+    },
+    "euler/440": {
+      "name": "GCD and Tiling"
+    },
+    "euler/441": {
+      "name": "The Inverse Summation of Coprime Couples"
+    },
+    "euler/442": {
+      "name": "Eleven-free Integers"
+    },
+    "euler/443": {
+      "name": "GCD Sequence"
+    },
+    "euler/444": {
+      "name": "The Roundtable Lottery"
+    },
+    "euler/445": {
+      "name": "Retractions A"
+    },
+    "euler/446": {
+      "name": "Retractions B"
+    },
+    "euler/447": {
+      "name": "Retractions C"
+    },
+    "euler/448": {
+      "name": "Average Least Common Multiple"
+    },
+    "euler/449": {
+      "name": "Chocolate Covered Candy"
+    },
+    "euler/450": {
+      "name": "Hypocycloid and Lattice Points"
+    },
+    "euler/451": {
+      "name": "Modular Inverses"
+    },
+    "euler/452": {
+      "name": "Long Products"
+    },
+    "euler/453": {
+      "name": "Lattice Quadrilaterals"
+    },
+    "euler/454": {
+      "name": "Diophantine Reciprocals III"
+    },
+    "euler/455": {
+      "name": "Powers with Trailing Digits"
+    },
+    "euler/456": {
+      "name": "Triangles Containing the Origin II"
+    },
+    "euler/457": {
+      "name": "A Polynomial Modulo the Square of a Prime"
+    },
+    "euler/458": {
+      "name": "Permutations of Project"
+    },
+    "euler/459": {
+      "name": "Flipping Game"
+    },
+    "euler/460": {
+      "name": "An Ant on the Move"
+    },
+    "euler/461": {
+      "name": "Almost Pi"
+    },
+    "euler/462": {
+      "name": "Permutation of 3-smooth Numbers"
+    },
+    "euler/463": {
+      "name": "A Weird Recurrence Relation"
+    },
+    "euler/464": {
+      "name": "M\u00f6bius Function and Intervals"
+    },
+    "euler/465": {
+      "name": "Polar Polygons"
+    },
+    "euler/466": {
+      "name": "Distinct Terms in a Multiplication Table"
+    },
+    "euler/467": {
+      "name": "Superinteger"
+    },
+    "euler/468": {
+      "name": "Smooth Divisors of Binomial Coefficients"
+    },
+    "euler/469": {
+      "name": "Empty Chairs"
+    },
+    "euler/470": {
+      "name": "Super Ramvok"
+    },
+    "euler/471": {
+      "name": "Triangle Inscribed in Ellipse"
+    },
+    "euler/472": {
+      "name": "Comfortable Distance II"
+    },
+    "euler/473": {
+      "name": "Phigital Number Base"
+    },
+    "euler/474": {
+      "name": "Last Digits of Divisors"
+    },
+    "euler/475": {
+      "name": "Music Festival"
+    },
+    "euler/476": {
+      "name": "Circle Packing II"
+    },
+    "euler/477": {
+      "name": "Number Sequence Game"
+    },
+    "euler/478": {
+      "name": "Mixtures"
+    },
+    "euler/479": {
+      "name": "Roots on the Rise"
+    },
+    "euler/480": {
+      "name": "The Last Question"
+    },
+    "euler/481": {
+      "name": "Chef Showdown"
+    },
+    "euler/482": {
+      "name": "The Incenter of a Triangle"
+    },
+    "euler/483": {
+      "name": "Repeated Permutation"
+    },
+    "euler/484": {
+      "name": "Arithmetic Derivative"
+    },
+    "euler/485": {
+      "name": "Maximum Number of Divisors"
+    },
+    "euler/486": {
+      "name": "Palindrome-containing Strings"
+    },
+    "euler/487": {
+      "name": "Sums of Power Sums"
+    },
+    "euler/488": {
+      "name": "Unbalanced Nim"
+    },
+    "euler/489": {
+      "name": "Common Factors Between Two Sequences"
+    },
+    "euler/490": {
+      "name": "Jumping Frog"
+    },
+    "euler/491": {
+      "name": "Double Pandigital Number Divisible by $11$"
+    },
+    "euler/492": {
+      "name": "Exploding Sequence"
+    },
+    "euler/493": {
+      "name": "Under the Rainbow"
+    },
+    "euler/494": {
+      "name": "Collatz Prefix Families"
+    },
+    "euler/495": {
+      "name": "Writing $n$ as the Product of $k$ Distinct Positive Integers"
+    },
+    "euler/496": {
+      "name": "Incenter and Circumcenter of Triangle"
+    },
+    "euler/497": {
+      "name": "Drunken Tower of Hanoi"
+    },
+    "euler/498": {
+      "name": "Remainder of Polynomial Division"
+    },
+    "euler/499": {
+      "name": "St. Petersburg Lottery"
+    },
+    "euler/500": {
+      "name": "Problem 500!!!"
+    },
+    "euler/501": {
+      "name": "Eight Divisors"
+    },
+    "euler/502": {
+      "name": "Counting Castles"
+    },
+    "euler/503": {
+      "name": "Compromise or Persist"
+    },
+    "euler/504": {
+      "name": "Square on the Inside"
+    },
+    "euler/505": {
+      "name": "Bidirectional Recurrence"
+    },
+    "euler/506": {
+      "name": "Clock Sequence"
+    },
+    "euler/507": {
+      "name": "Shortest Lattice Vector"
+    },
+    "euler/508": {
+      "name": "Integers in Base $i-1$"
+    },
+    "euler/509": {
+      "name": "Divisor Nim"
+    },
+    "euler/510": {
+      "name": "Tangent Circles"
+    },
+    "euler/511": {
+      "name": "Sequences with Nice Divisibility Properties"
+    },
+    "euler/512": {
+      "name": "Sums of Totients of Powers"
+    },
+    "euler/513": {
+      "name": "Integral Median"
+    },
+    "euler/514": {
+      "name": "Geoboard Shapes"
+    },
+    "euler/515": {
+      "name": "Dissonant Numbers"
+    },
+    "euler/516": {
+      "name": "$5$-smooth Totients"
+    },
+    "euler/517": {
+      "name": "A Real Recursion"
+    },
+    "euler/518": {
+      "name": "Prime Triples and Geometric Sequences"
+    },
+    "euler/519": {
+      "name": "Tricoloured Coin Fountains"
+    },
+    "euler/520": {
+      "name": "Simbers"
+    },
+    "euler/521": {
+      "name": "Smallest Prime Factor"
+    },
+    "euler/522": {
+      "name": "Hilbert's Blackout"
+    },
+    "euler/523": {
+      "name": "First Sort I"
+    },
+    "euler/524": {
+      "name": "First Sort II"
+    },
+    "euler/525": {
+      "name": "Rolling Ellipse"
+    },
+    "euler/526": {
+      "name": "Largest Prime Factors of Consecutive Numbers"
+    },
+    "euler/527": {
+      "name": "Randomized Binary Search"
+    },
+    "euler/528": {
+      "name": "Constrained Sums"
+    },
+    "euler/529": {
+      "name": "$10$-substrings"
+    },
+    "euler/530": {
+      "name": "GCD of Divisors"
+    },
+    "euler/531": {
+      "name": "Chinese Leftovers"
+    },
+    "euler/532": {
+      "name": "Nanobots on Geodesics"
+    },
+    "euler/533": {
+      "name": "Minimum Values of the Carmichael Function"
+    },
+    "euler/534": {
+      "name": "Weak Queens"
+    },
+    "euler/535": {
+      "name": "Fractal Sequence"
+    },
+    "euler/536": {
+      "name": "Modulo Power Identity "
+    },
+    "euler/537": {
+      "name": "Counting Tuples"
+    },
+    "euler/538": {
+      "name": "Maximum Quadrilaterals"
+    },
+    "euler/539": {
+      "name": "Odd Elimination"
+    },
+    "euler/540": {
+      "name": "Counting Primitive Pythagorean Triples"
+    },
+    "euler/541": {
+      "name": "Divisibility of Harmonic Number Denominators"
+    },
+    "euler/542": {
+      "name": "Geometric Progression with Maximum Sum"
+    },
+    "euler/543": {
+      "name": "Prime-Sum Numbers"
+    },
+    "euler/544": {
+      "name": "Chromatic Conundrum"
+    },
+    "euler/545": {
+      "name": "Faulhaber's Formulas"
+    },
+    "euler/546": {
+      "name": "The Floor's Revenge"
+    },
+    "euler/547": {
+      "name": "Distance of Random Points Within Hollow Square Laminae"
+    },
+    "euler/548": {
+      "name": "Gozinta Chains"
+    },
+    "euler/549": {
+      "name": "Divisibility of Factorials"
+    },
+    "euler/550": {
+      "name": "Divisor Game"
+    },
+    "euler/551": {
+      "name": "Sum of Digits Sequence"
+    },
+    "euler/552": {
+      "name": "Chinese Leftovers II"
+    },
+    "euler/553": {
+      "name": "Power Sets of Power Sets"
+    },
+    "euler/554": {
+      "name": "Centaurs on a Chess Board"
+    },
+    "euler/555": {
+      "name": "McCarthy 91 Function"
+    },
+    "euler/556": {
+      "name": "Squarefree Gaussian Integers"
+    },
+    "euler/557": {
+      "name": "Cutting Triangles"
+    },
+    "euler/558": {
+      "name": "Irrational Base"
+    },
+    "euler/559": {
+      "name": "Permuted Matrices"
+    },
+    "euler/560": {
+      "name": "Coprime Nim"
+    },
+    "euler/561": {
+      "name": "Divisor Pairs"
+    },
+    "euler/562": {
+      "name": "Maximal Perimeter"
+    },
+    "euler/563": {
+      "name": "Robot Welders"
+    },
+    "euler/564": {
+      "name": "Maximal Polygons"
+    },
+    "euler/565": {
+      "name": "Divisibility of Sum of Divisors"
+    },
+    "euler/566": {
+      "name": "Cake Icing Puzzle"
+    },
+    "euler/567": {
+      "name": "Reciprocal Games I"
+    },
+    "euler/568": {
+      "name": "Reciprocal Games II"
+    },
+    "euler/569": {
+      "name": "Prime Mountain Range"
+    },
+    "euler/570": {
+      "name": "Snowflakes"
+    },
+    "euler/571": {
+      "name": "Super Pandigital Numbers"
+    },
+    "euler/572": {
+      "name": "Idempotent Matrices"
+    },
+    "euler/573": {
+      "name": "Unfair Race"
+    },
+    "euler/574": {
+      "name": "Verifying Primes"
+    },
+    "euler/575": {
+      "name": "Wandering Robots"
+    },
+    "euler/576": {
+      "name": "Irrational Jumps"
+    },
+    "euler/577": {
+      "name": "Counting Hexagons"
+    },
+    "euler/578": {
+      "name": "Integers with Decreasing Prime Powers"
+    },
+    "euler/579": {
+      "name": "Lattice Points in Lattice Cubes"
+    },
+    "euler/580": {
+      "name": "Squarefree Hilbert Numbers"
+    },
+    "euler/581": {
+      "name": "$47$-smooth Triangular Numbers"
+    },
+    "euler/582": {
+      "name": "Nearly Isosceles $120$ Degree Triangles"
+    },
+    "euler/583": {
+      "name": "Heron Envelopes"
+    },
+    "euler/584": {
+      "name": "Birthday Problem Revisited"
+    },
+    "euler/585": {
+      "name": "Nested Square Roots"
+    },
+    "euler/586": {
+      "name": "Binary Quadratic Form"
+    },
+    "euler/587": {
+      "name": "Concave Triangle"
+    },
+    "euler/588": {
+      "name": "Quintinomial Coefficients"
+    },
+    "euler/589": {
+      "name": "Poohsticks Marathon"
+    },
+    "euler/590": {
+      "name": "Sets with a Given Least Common Multiple"
+    },
+    "euler/591": {
+      "name": "Best Approximations by Quadratic Integers"
+    },
+    "euler/592": {
+      "name": "Factorial Trailing Digits 2"
+    },
+    "euler/593": {
+      "name": "Fleeting Medians"
+    },
+    "euler/594": {
+      "name": "Rhombus Tilings"
+    },
+    "euler/595": {
+      "name": "Incremental Random Sort"
+    },
+    "euler/596": {
+      "name": "Number of Lattice Points in a Hyperball"
+    },
+    "euler/597": {
+      "name": "Torpids"
+    },
+    "euler/598": {
+      "name": "Split Divisibilities"
+    },
+    "euler/599": {
+      "name": "Distinct Colourings of a Rubik's Cube"
+    },
+    "euler/600": {
+      "name": "Integer Sided Equiangular Hexagons"
+    },
+    "euler/601": {
+      "name": "Divisibility Streaks"
+    },
+    "euler/602": {
+      "name": "Product of Head Counts"
+    },
+    "euler/603": {
+      "name": "Substring Sums of Prime Concatenations"
+    },
+    "euler/604": {
+      "name": "Convex Path in Square"
+    },
+    "euler/605": {
+      "name": "Pairwise Coin-Tossing Game"
+    },
+    "euler/606": {
+      "name": "Gozinta Chains II"
+    },
+    "euler/607": {
+      "name": "Marsh Crossing"
+    },
+    "euler/608": {
+      "name": "Divisor Sums"
+    },
+    "euler/609": {
+      "name": "$\\pi$ Sequences"
+    },
+    "euler/610": {
+      "name": "Roman Numerals II"
+    },
+    "euler/611": {
+      "name": "Hallway of Square Steps"
+    },
+    "euler/612": {
+      "name": "Friend Numbers"
+    },
+    "euler/613": {
+      "name": "Pythagorean Ant"
+    },
+    "euler/614": {
+      "name": "Special Partitions 2"
+    },
+    "euler/615": {
+      "name": "The Millionth Number with at Least One Million Prime Factors"
+    },
+    "euler/616": {
+      "name": "Creative Numbers"
+    },
+    "euler/617": {
+      "name": "Mirror Power Sequence"
+    },
+    "euler/618": {
+      "name": "Numbers with a Given Prime Factor Sum"
+    },
+    "euler/619": {
+      "name": "Square Subsets"
+    },
+    "euler/620": {
+      "name": "Planetary Gears"
+    },
+    "euler/621": {
+      "name": "Expressing an Integer as the Sum of Triangular Numbers"
+    },
+    "euler/622": {
+      "name": "Riffle Shuffles"
+    },
+    "euler/623": {
+      "name": "Lambda Count"
+    },
+    "euler/624": {
+      "name": "Two Heads Are Better Than One"
+    },
+    "euler/625": {
+      "name": "Gcd Sum"
+    },
+    "euler/626": {
+      "name": "Counting Binary Matrices"
+    },
+    "euler/627": {
+      "name": "Counting Products"
+    },
+    "euler/628": {
+      "name": "Open Chess Positions"
+    },
+    "euler/629": {
+      "name": "Scatterstone Nim"
+    },
+    "euler/630": {
+      "name": "Crossed Lines"
+    },
+    "euler/631": {
+      "name": "Constrained Permutations"
+    },
+    "euler/632": {
+      "name": "Square Prime Factors"
+    },
+    "euler/633": {
+      "name": "Square Prime Factors II"
+    },
+    "euler/634": {
+      "name": "Numbers of the Form $a^2b^3$"
+    },
+    "euler/635": {
+      "name": "Subset Sums"
+    },
+    "euler/636": {
+      "name": "Restricted Factorisations"
+    },
+    "euler/637": {
+      "name": "Flexible Digit Sum"
+    },
+    "euler/638": {
+      "name": "Weighted Lattice Paths"
+    },
+    "euler/639": {
+      "name": "Summing a Multiplicative Function"
+    },
+    "euler/640": {
+      "name": "Shut the Box"
+    },
+    "euler/641": {
+      "name": "A Long Row of Dice"
+    },
+    "euler/642": {
+      "name": "Sum of Largest Prime Factors"
+    },
+    "euler/643": {
+      "name": "$2$-Friendly"
+    },
+    "euler/644": {
+      "name": "Squares on the Line"
+    },
+    "euler/645": {
+      "name": "Every Day Is a Holiday"
+    },
+    "euler/646": {
+      "name": "Bounded Divisors"
+    },
+    "euler/647": {
+      "name": "Linear Transformations of Polygonal Numbers"
+    },
+    "euler/648": {
+      "name": "Skipping Squares"
+    },
+    "euler/649": {
+      "name": "Low-Prime Chessboard Nim"
+    },
+    "euler/650": {
+      "name": "Divisors of Binomial Product"
+    },
+    "euler/651": {
+      "name": "Patterned Cylinders"
+    },
+    "euler/652": {
+      "name": "Distinct Values of a Proto-logarithmic Function"
+    },
+    "euler/653": {
+      "name": "Frictionless Tube"
+    },
+    "euler/654": {
+      "name": "Neighbourly Constraints"
+    },
+    "euler/655": {
+      "name": "Divisible Palindromes"
+    },
+    "euler/656": {
+      "name": "Palindromic Sequences"
+    },
+    "euler/657": {
+      "name": "Incomplete Words"
+    },
+    "euler/658": {
+      "name": "Incomplete Words II"
+    },
+    "euler/659": {
+      "name": "Largest Prime"
+    },
+    "euler/660": {
+      "name": "Pandigital Triangles"
+    },
+    "euler/661": {
+      "name": "A Long Chess Match"
+    },
+    "euler/662": {
+      "name": "Fibonacci Paths"
+    },
+    "euler/663": {
+      "name": "Sums of Subarrays"
+    },
+    "euler/664": {
+      "name": "An Infinite Game"
+    },
+    "euler/665": {
+      "name": "Proportionate Nim"
+    },
+    "euler/666": {
+      "name": "Polymorphic Bacteria"
+    },
+    "euler/667": {
+      "name": "Moving Pentagon"
+    },
+    "euler/668": {
+      "name": "Square Root Smooth Numbers"
+    },
+    "euler/669": {
+      "name": "The King's Banquet"
+    },
+    "euler/670": {
+      "name": "Colouring a Strip"
+    },
+    "euler/671": {
+      "name": "Colouring a Loop"
+    },
+    "euler/672": {
+      "name": "One More One"
+    },
+    "euler/673": {
+      "name": "Beds and Desks"
+    },
+    "euler/674": {
+      "name": "Solving $\\mathcal{I}$-equations"
+    },
+    "euler/675": {
+      "name": "$2^{\\omega(n)}$"
+    },
+    "euler/676": {
+      "name": "Matching Digit Sums"
+    },
+    "euler/677": {
+      "name": "Coloured Graphs"
+    },
+    "euler/678": {
+      "name": "Fermat-like Equations"
+    },
+    "euler/679": {
+      "name": "Freefarea"
+    },
+    "euler/680": {
+      "name": "Yarra Gnisrever"
+    },
+    "euler/681": {
+      "name": "Maximal Area"
+    },
+    "euler/682": {
+      "name": "$5$-Smooth Pairs"
+    },
+    "euler/683": {
+      "name": "The Chase II"
+    },
+    "euler/684": {
+      "name": "Inverse Digit Sum"
+    },
+    "euler/685": {
+      "name": "Inverse Digit Sum II"
+    },
+    "euler/686": {
+      "name": "Powers of Two"
+    },
+    "euler/687": {
+      "name": "Shuffling Cards"
+    },
+    "euler/688": {
+      "name": "Piles of Plates"
+    },
+    "euler/689": {
+      "name": "Binary Series"
+    },
+    "euler/690": {
+      "name": "Tom and Jerry"
+    },
+    "euler/691": {
+      "name": "Long Substring with Many Repetitions"
+    },
+    "euler/692": {
+      "name": "Siegbert and Jo"
+    },
+    "euler/693": {
+      "name": "Finite Sequence Generator"
+    },
+    "euler/694": {
+      "name": "Cube-full Divisors"
+    },
+    "euler/695": {
+      "name": "Random Rectangles"
+    },
+    "euler/696": {
+      "name": "Mahjong"
+    },
+    "euler/697": {
+      "name": "Randomly Decaying Sequence"
+    },
+    "euler/698": {
+      "name": "123 Numbers"
+    },
+    "euler/699": {
+      "name": "Triffle Numbers"
+    },
+    "euler/700": {
+      "name": "Eulercoin"
+    },
+    "euler/701": {
+      "name": "Random Connected Area"
+    },
+    "euler/702": {
+      "name": "Jumping Flea"
+    },
+    "euler/703": {
+      "name": "Circular Logic II"
+    },
+    "euler/704": {
+      "name": "Factors of Two in Binomial Coefficients"
+    },
+    "euler/705": {
+      "name": "Total Inversion Count of Divided Sequences"
+    },
+    "euler/706": {
+      "name": "$3$-Like Numbers"
+    },
+    "euler/707": {
+      "name": "Lights Out"
+    },
+    "euler/708": {
+      "name": "Twos Are All You Need"
+    },
+    "euler/709": {
+      "name": "Even Stevens"
+    },
+    "euler/710": {
+      "name": "One Million Members"
+    },
+    "euler/711": {
+      "name": "Binary Blackboard"
+    },
+    "euler/712": {
+      "name": "Exponent Difference"
+    },
+    "euler/713": {
+      "name": "Tur\u00e1n's Water Heating System"
+    },
+    "euler/714": {
+      "name": "Duodigits"
+    },
+    "euler/715": {
+      "name": "Sextuplet Norms"
+    },
+    "euler/716": {
+      "name": "Grid Graphs"
+    },
+    "euler/717": {
+      "name": "Summation of a Modular Formula"
+    },
+    "euler/718": {
+      "name": "Unreachable Numbers"
+    },
+    "euler/719": {
+      "name": "Number Splitting"
+    },
+    "euler/720": {
+      "name": "Unpredictable Permutations"
+    },
+    "euler/721": {
+      "name": "High Powers of Irrational Numbers"
+    },
+    "euler/722": {
+      "name": "Slowly Converging Series"
+    },
+    "euler/723": {
+      "name": "Pythagorean Quadrilaterals"
+    },
+    "euler/724": {
+      "name": "Drone Delivery"
+    },
+    "euler/725": {
+      "name": "Digit Sum Numbers"
+    },
+    "euler/726": {
+      "name": "Falling Bottles"
+    },
+    "euler/727": {
+      "name": "Triangle of Circular Arcs"
+    },
+    "euler/728": {
+      "name": "Circle of Coins"
+    },
+    "euler/729": {
+      "name": "Range of Periodic Sequence"
+    },
+    "euler/730": {
+      "name": "Shifted Pythagorean Triples"
+    },
+    "euler/731": {
+      "name": "A Stoneham Number"
+    },
+    "euler/732": {
+      "name": "Standing on the Shoulders of Trolls"
+    },
+    "euler/733": {
+      "name": "Ascending Subsequences"
+    },
+    "euler/734": {
+      "name": "A Bit of Prime"
+    },
+    "euler/735": {
+      "name": "Divisors of $2n^2$"
+    },
+    "euler/736": {
+      "name": "Paths to Equality"
+    },
+    "euler/737": {
+      "name": "Coin Loops"
+    },
+    "euler/738": {
+      "name": "Counting Ordered Factorisations"
+    },
+    "euler/739": {
+      "name": "Summation of Summations"
+    },
+    "euler/740": {
+      "name": "Secret Santa"
+    },
+    "euler/741": {
+      "name": "Binary Grid Colouring"
+    },
+    "euler/742": {
+      "name": "Minimum Area of a Convex Grid Polygon"
+    },
+    "euler/743": {
+      "name": "Window into a Matrix"
+    },
+    "euler/744": {
+      "name": "What? Where? When?"
+    },
+    "euler/745": {
+      "name": "Sum of Squares II"
+    },
+    "euler/746": {
+      "name": "A Messy Dinner"
+    },
+    "euler/747": {
+      "name": "Triangular Pizza"
+    },
+    "euler/748": {
+      "name": "Upside Down Diophantine Equation"
+    },
+    "euler/749": {
+      "name": "Near Power Sums"
+    },
+    "euler/750": {
+      "name": "Optimal Card Stacking"
+    },
+    "euler/751": {
+      "name": "Concatenation Coincidence"
+    },
+    "euler/752": {
+      "name": "Powers of $1+\\sqrt 7$"
+    },
+    "euler/753": {
+      "name": "Fermat Equation"
+    },
+    "euler/754": {
+      "name": "Product of Gauss Factorials"
+    },
+    "euler/755": {
+      "name": "Not Zeckendorf"
+    },
+    "euler/756": {
+      "name": "Approximating a Sum"
+    },
+    "euler/757": {
+      "name": "Stealthy Numbers"
+    },
+    "euler/758": {
+      "name": "Buckets of Water"
+    },
+    "euler/759": {
+      "name": "A Squared Recurrence Relation"
+    },
+    "euler/760": {
+      "name": "Sum over Bitwise Operators"
+    },
+    "euler/761": {
+      "name": "Runner and Swimmer"
+    },
+    "euler/762": {
+      "name": "Amoebas in a 2D Grid"
+    },
+    "euler/763": {
+      "name": "Amoebas in a 3D Grid"
+    },
+    "euler/764": {
+      "name": "Asymmetric Diophantine Equation"
+    },
+    "euler/765": {
+      "name": "Trillionaire"
+    },
+    "euler/766": {
+      "name": "Sliding Block Puzzle"
+    },
+    "euler/767": {
+      "name": "Window into a Matrix II"
+    },
+    "euler/768": {
+      "name": "Chandelier"
+    },
+    "euler/769": {
+      "name": "Binary Quadratic Form II"
+    },
+    "euler/770": {
+      "name": "Delphi Flip"
+    },
+    "euler/771": {
+      "name": "Pseudo Geometric Sequences"
+    },
+    "euler/772": {
+      "name": "Balanceable $k$-bounded Partitions"
+    },
+    "euler/773": {
+      "name": "Ruff Numbers"
+    },
+    "euler/774": {
+      "name": "Conjunctive Sequences"
+    },
+    "euler/775": {
+      "name": "Saving Paper"
+    },
+    "euler/776": {
+      "name": "Digit Sum Division"
+    },
+    "euler/777": {
+      "name": "Lissajous Curves"
+    },
+    "euler/778": {
+      "name": "Freshman's Product"
+    },
+    "euler/779": {
+      "name": "Prime Factor and Exponent"
+    },
+    "euler/780": {
+      "name": "Toriangulations"
+    },
+    "euler/781": {
+      "name": "Feynman Diagrams"
+    },
+    "euler/782": {
+      "name": "Distinct Rows and Columns"
+    },
+    "euler/783": {
+      "name": "Urns"
+    },
+    "euler/784": {
+      "name": "Reciprocal Pairs"
+    },
+    "euler/785": {
+      "name": "Symmetric Diophantine Equation"
+    },
+    "euler/786": {
+      "name": "Billiard"
+    },
+    "euler/787": {
+      "name": "B\u00e9zout's Game"
+    },
+    "euler/788": {
+      "name": "Dominating Numbers"
+    },
+    "euler/789": {
+      "name": "Minimal Pairing Modulo $p$"
+    },
+    "euler/790": {
+      "name": "Clock Grid"
+    },
+    "euler/791": {
+      "name": "Average and Variance"
+    },
+    "euler/792": {
+      "name": "Too Many Twos"
+    },
+    "euler/793": {
+      "name": "Median of Products"
+    },
+    "euler/794": {
+      "name": "Seventeen Points"
+    },
+    "euler/795": {
+      "name": "Alternating GCD Sum"
+    },
+    "euler/796": {
+      "name": "A Grand Shuffle"
+    },
+    "euler/797": {
+      "name": "Cyclogenic Polynomials"
+    },
+    "euler/798": {
+      "name": "Card Stacking Game"
+    },
+    "euler/799": {
+      "name": "Pentagonal Puzzle"
+    },
+    "euler/800": {
+      "name": "Hybrid Integers"
+    },
+    "euler/801": {
+      "name": "$x^y \\equiv y^x$"
+    },
+    "euler/802": {
+      "name": "Iterated Composition"
+    },
+    "euler/803": {
+      "name": "Pseudorandom Sequence"
+    },
+    "euler/804": {
+      "name": "Counting Binary Quadratic Representations"
+    },
+    "euler/805": {
+      "name": "Shifted Multiples"
+    },
+    "euler/806": {
+      "name": "Nim on Towers of Hanoi"
+    },
+    "euler/807": {
+      "name": "Loops of Ropes"
+    },
+    "euler/808": {
+      "name": "Reversible Prime Squares"
+    },
+    "euler/809": {
+      "name": "Rational Recurrence Relation "
+    },
+    "euler/810": {
+      "name": "XOR-Primes"
+    },
+    "euler/811": {
+      "name": "Bitwise Recursion"
+    },
+    "euler/812": {
+      "name": "Dynamical Polynomials"
+    },
+    "euler/813": {
+      "name": "XOR-Powers"
+    },
+    "euler/814": {
+      "name": "Mezzo-forte"
+    },
+    "euler/815": {
+      "name": "Group by Value"
+    },
+    "euler/816": {
+      "name": "Shortest Distance Among Points"
+    },
+    "euler/817": {
+      "name": "Digits in Squares"
+    },
+    "euler/818": {
+      "name": "SET"
+    },
+    "euler/819": {
+      "name": "Iterative Sampling"
+    },
+    "euler/820": {
+      "name": "$N$<sup>th</sup> Digit of Reciprocals"
+    },
+    "euler/821": {
+      "name": "123-Separable"
+    },
+    "euler/822": {
+      "name": "Square the Smallest"
+    },
+    "euler/823": {
+      "name": "Factor Shuffle"
+    },
+    "euler/824": {
+      "name": "Chess Sliders"
+    },
+    "euler/825": {
+      "name": "Chasing Game"
+    },
+    "euler/826": {
+      "name": "Birds on a Wire"
+    },
+    "euler/827": {
+      "name": "Pythagorean Triple Occurrence"
+    },
+    "euler/828": {
+      "name": "Numbers Challenge"
+    },
+    "euler/829": {
+      "name": "Integral Fusion"
+    },
+    "euler/830": {
+      "name": "Binomials and Powers"
+    },
+    "euler/831": {
+      "name": "Triple Product"
+    },
+    "euler/832": {
+      "name": "Mex Sequence"
+    },
+    "euler/833": {
+      "name": "Square Triangle Products"
+    },
+    "euler/834": {
+      "name": "Add and Divide"
+    },
+    "euler/835": {
+      "name": "Supernatural Triangles"
+    },
+    "euler/836": {
+      "name": "A Bold Proposition"
+    },
+    "euler/837": {
+      "name": "Amidakuji"
+    },
+    "euler/838": {
+      "name": "Not Coprime"
+    },
+    "euler/839": {
+      "name": "Beans in Bowls"
+    },
+    "euler/840": {
+      "name": "Sum of Products"
+    },
+    "euler/841": {
+      "name": "Regular Star Polygons"
+    },
+    "euler/842": {
+      "name": "Irregular Star Polygons"
+    },
+    "euler/843": {
+      "name": "Periodic Circles"
+    },
+    "euler/844": {
+      "name": "$k$-Markov Numbers"
+    },
+    "euler/845": {
+      "name": "Prime Digit Sum"
+    },
+    "euler/846": {
+      "name": "Magic Bracelets"
+    },
+    "euler/847": {
+      "name": "Jack's Bean"
+    },
+    "euler/848": {
+      "name": "Guessing with Sets"
+    },
+    "euler/849": {
+      "name": "The Tournament"
+    },
+    "euler/850": {
+      "name": "Fractions of Powers"
+    },
+    "euler/851": {
+      "name": "SOP and POS"
+    },
+    "euler/852": {
+      "name": "Coins in a Box"
+    },
+    "euler/853": {
+      "name": "Pisano Periods 1"
+    },
+    "euler/854": {
+      "name": "Pisano Periods 2"
+    },
+    "euler/855": {
+      "name": "Delphi Paper"
+    },
+    "euler/856": {
+      "name": "Waiting for a Pair"
+    },
+    "euler/857": {
+      "name": "Beautiful Graphs"
+    },
+    "euler/858": {
+      "name": "LCM"
+    },
+    "euler/859": {
+      "name": "Cookie Game"
+    },
+    "euler/860": {
+      "name": "Gold and Silver Coin Game"
+    },
+    "euler/861": {
+      "name": "Products of Bi-Unitary Divisors"
+    },
+    "euler/862": {
+      "name": "Larger Digit Permutation"
+    },
+    "euler/863": {
+      "name": "Different Dice"
+    },
+    "euler/864": {
+      "name": "Square + 1 = Squarefree"
+    },
+    "euler/865": {
+      "name": "Triplicate Numbers"
+    },
+    "euler/866": {
+      "name": "Tidying Up B"
+    },
+    "euler/867": {
+      "name": "Tiling Dodecagon"
+    },
+    "euler/868": {
+      "name": "Belfry Maths"
+    },
+    "euler/869": {
+      "name": "Prime Guessing"
+    },
+    "euler/870": {
+      "name": "Stone Game IV"
+    },
+    "euler/871": {
+      "name": "Drifting Subsets"
+    },
+    "euler/872": {
+      "name": "Recursive Tree"
+    },
+    "euler/873": {
+      "name": "Words with Gaps"
+    },
+    "euler/874": {
+      "name": "Maximal Prime Score"
+    },
+    "euler/875": {
+      "name": "Quadruple Congruence"
+    },
+    "euler/876": {
+      "name": "Triplet Tricks"
+    },
+    "euler/877": {
+      "name": "XOR-Equation A"
+    },
+    "euler/878": {
+      "name": "XOR-Equation B"
+    },
+    "euler/879": {
+      "name": "Touch-screen Password"
+    },
+    "euler/880": {
+      "name": "Nested Radicals"
+    },
+    "euler/881": {
+      "name": "Divisor Graph Width"
+    },
+    "euler/882": {
+      "name": "Removing Bits"
+    },
+    "euler/883": {
+      "name": "Remarkable Triangles"
+    },
+    "euler/884": {
+      "name": "Removing Cubes"
+    },
+    "euler/885": {
+      "name": "Sorted Digits"
+    },
+    "euler/886": {
+      "name": "Coprime Permutations"
+    },
+    "euler/887": {
+      "name": "Bounded Binary Search"
+    },
+    "euler/888": {
+      "name": "1249 Nim"
+    },
+    "euler/889": {
+      "name": "Rational Blancmange"
+    },
+    "euler/890": {
+      "name": "Binary Partitions"
+    },
+    "euler/891": {
+      "name": "Ambiguous Clock"
+    },
+    "euler/892": {
+      "name": "Zebra Circles"
+    },
+    "euler/893": {
+      "name": "Matchsticks"
+    },
+    "euler/894": {
+      "name": "Spiral of Circles"
+    },
+    "euler/895": {
+      "name": "Gold & Silver Coin Game II"
+    },
+    "euler/896": {
+      "name": "Divisible Ranges"
+    },
+    "euler/897": {
+      "name": "Maximal $n$-gon in a region"
+    },
+    "euler/898": {
+      "name": "Claire Voyant"
+    },
+    "euler/899": {
+      "name": "DistribuNim I"
+    },
+    "euler/900": {
+      "name": "DistribuNim II"
+    },
+    "euler/901": {
+      "name": "Well Drilling"
+    },
+    "euler/902": {
+      "name": "Permutation Powers"
+    },
+    "euler/903": {
+      "name": "Total Permutation Powers"
+    },
+    "euler/904": {
+      "name": "Pythagorean Angle"
+    },
+    "euler/905": {
+      "name": "Now I Know"
+    },
+    "euler/906": {
+      "name": "A Collective Decision"
+    },
+    "euler/907": {
+      "name": "Stacking Cups"
+    },
+    "euler/908": {
+      "name": "Clock Sequence II"
+    },
+    "euler/909": {
+      "name": "L-expressions I"
+    },
+    "euler/910": {
+      "name": "L-expressions II"
+    },
+    "euler/911": {
+      "name": "Khinchin Exceptions"
+    },
+    "euler/912": {
+      "name": "Where are the Odds?"
+    },
+    "euler/913": {
+      "name": "Row-major vs Column-major"
+    },
+    "euler/914": {
+      "name": "Triangles inside Circles"
+    },
+    "euler/915": {
+      "name": "Giant GCDs"
+    },
+    "euler/916": {
+      "name": "Restricted Permutations"
+    },
+    "euler/917": {
+      "name": "Minimal Path Using Additive Cost"
+    },
+    "euler/918": {
+      "name": "Recursive Sequence Summation"
+    },
+    "euler/919": {
+      "name": "Fortunate Triangles"
+    },
+    "euler/920": {
+      "name": "Tau Numbers"
+    },
+    "euler/921": {
+      "name": "Golden Recurrence"
+    },
+    "euler/922": {
+      "name": "Young's Game A"
+    },
+    "euler/923": {
+      "name": "Young's Game B"
+    },
+    "euler/924": {
+      "name": "Larger Digit Permutation II"
+    },
+    "euler/925": {
+      "name": "Larger Digit Permutation III"
+    },
+    "euler/926": {
+      "name": "Total Roundness"
+    },
+    "euler/927": {
+      "name": "Prime-ary Tree"
+    },
+    "euler/928": {
+      "name": "Cribbage"
+    },
+    "euler/929": {
+      "name": "Odd-Run Compositions"
+    },
+    "euler/930": {
+      "name": "The Gathering"
+    },
+    "euler/931": {
+      "name": "Totient Graph"
+    },
+    "euler/932": {
+      "name": "$2025$"
+    },
+    "euler/933": {
+      "name": "Paper Cutting"
+    },
+    "euler/934": {
+      "name": "Unlucky Primes"
+    },
+    "euler/935": {
+      "name": "Rolling Square"
+    },
+    "euler/936": {
+      "name": "Peerless Trees"
+    },
+    "euler/937": {
+      "name": "Equiproduct Partition"
+    },
+    "euler/938": {
+      "name": "Exhausting a Colour"
+    },
+    "euler/939": {
+      "name": "Partisan Nim"
+    },
+    "euler/940": {
+      "name": "Two-Dimensional Recurrence"
+    },
+    "euler/941": {
+      "name": "de Bruijn's Combination Lock"
+    },
+    "euler/942": {
+      "name": "Mersenne's Square Root"
+    },
+    "euler/943": {
+      "name": "Self Describing Sequences"
+    },
+    "euler/944": {
+      "name": "Sum of Elevisors"
+    },
+    "euler/945": {
+      "name": "XOR-Equation C"
+    },
+    "euler/946": {
+      "name": "Continued Fraction Fraction"
+    },
+    "euler/947": {
+      "name": "Fibonacci Residues"
+    },
+    "euler/948": {
+      "name": "Left vs Right"
+    },
+    "euler/949": {
+      "name": "Left vs Right II"
+    },
+    "euler/950": {
+      "name": "Pirate Treasure"
+    },
+    "euler/951": {
+      "name": "A Game of Chance"
+    },
+    "euler/952": {
+      "name": "Order Modulo Factorial"
+    },
+    "euler/953": {
+      "name": "Factorisation Nim"
+    },
+    "euler/954": {
+      "name": "Heptaphobia"
+    },
+    "euler/955": {
+      "name": "Finding Triangles"
+    },
+    "euler/956": {
+      "name": "Super Duper Sum"
+    },
+    "euler/957": {
+      "name": "Point Genesis"
+    },
+    "euler/958": {
+      "name": "Euclid's Labour"
+    },
+    "euler/959": {
+      "name": "Asymmetric Random Walk"
+    },
+    "euler/960": {
+      "name": "Stone Game Solitaire"
+    },
+    "euler/961": {
+      "name": "Removing Digits"
+    },
+    "euler/962": {
+      "name": "Angular Bisector and Tangent 2"
+    },
+    "euler/963": {
+      "name": "Removing Trits"
+    },
+    "euler/964": {
+      "name": "Musical Chairs Revisited"
+    },
+    "euler/965": {
+      "name": "Expected Minimal Fractional Value"
+    },
+    "euler/966": {
+      "name": "Triangle Circle Intersection"
+    },
+    "euler/967": {
+      "name": "$B$-Trivisible Numbers"
+    },
+    "euler/968": {
+      "name": "5D Summation"
+    },
+    "euler/969": {
+      "name": "Kangaroo Hopping"
+    },
+    "euler/970": {
+      "name": "Kangaroo Hopping over Sixes"
+    },
+    "euler/971": {
+      "name": "Modular Polynomial Composition"
+    },
+    "euler/972": {
+      "name": "Hyperbolic Plane"
+    },
+    "euler/973": {
+      "name": "Random Dealings"
+    },
+    "euler/974": {
+      "name": "Very Odd Numbers"
+    },
+    "euler/975": {
+      "name": "A Winding Path"
+    },
+    "euler/976": {
+      "name": "XO Game"
+    },
+    "euler/977": {
+      "name": "Iterated Functions"
+    },
+    "euler/978": {
+      "name": "Random Walk Skewness"
+    },
+    "euler/979": {
+      "name": "Heptagon Hopping"
+    },
+    "euler/980": {
+      "name": "The Quaternion Group I"
+    },
+    "euler/981": {
+      "name": "The Quaternion Group II"
+    },
+    "euler/982": {
+      "name": "The Third Dice"
+    },
+    "euler/983": {
+      "name": "Consonant Circle Crossing"
+    },
+    "euler/984": {
+      "name": "Knights and Horses"
+    },
+    "euler/985": {
+      "name": "Telescoping Triangles"
+    },
+    "euler/986": {
+      "name": "Another Infinite Game"
+    },
+    "euler/987": {
+      "name": "Straight Eight"
+    },
+    "euler/988": {
+      "name": "Non-attacking Frogs"
+    },
+    "euler/989": {
+      "name": "Fibonacci Sum"
+    },
+    "euler/990": {
+      "name": "Addition Equations"
+    },
+    "euler/991": {
+      "name": "Fruit Salad"
+    },
+    "euler/992": {
+      "name": "Another Frog Jumping"
+    },
+    "euler/993": {
+      "name": "Banana Beaver"
+    },
+    "euler/994": {
+      "name": "Counting Triangles"
+    },
+    "euler/995": {
+      "name": "A Particular Pair of Polynomials"
+    },
+    "euler/996": {
+      "name": "Overtakes"
+    },
+    "euler/997": {
+      "name": "Dice Box"
+    },
+    "euler/998": {
+      "name": "Squaring the Triangle"
+    },
+    "euler/999": {
+      "name": "Alternating Recurrence"
+    },
+    "euler/1000": {
+      "name": "Problem $1000$"
+    },
+    "euler/1001": {
+      "name": "Connections I"
+    },
+    "euler/1002": {
+      "name": "Connections II"
+    },
+    "euler/1003": {
+      "name": "Lonely Singles"
+    },
+    "euler/1004": {
+      "name": "Balanced Integer"
+    },
+    "euler/1005": {
+      "name": "Median Prime List"
+    },
+    "euler/1006": {
+      "name": "Fibonacci Subwords"
+    },
+    "euler/1007": {
+      "name": "Alternating Difference"
+    },
+    "euler/1008": {
+      "name": "Functional Inverse"
+    },
+    "euler/1009": {
+      "name": "A Change of Base"
+    },
+    "euler/1010": {
+      "name": "March of the Penguins"
+    },
+    "euler/1011": {
+      "name": "Modified Euclidean Algorithm"
+    },
+    "euler/1012": {
+      "name": "Rock Paper Scissors"
+    },
+    "euler/1013": {
+      "name": "Sum 25 Divisors"
+    },
+    "euler/1014": {
+      "name": "Steiner Club"
+    },
+    "euler/1015": {
+      "name": "Partisan Kayles"
+    },
+    "euler/1016": {
+      "name": "Squareful Matrix"
+    },
+    "euler/1017": {
+      "name": "Complementary Sequences"
+    },
+    "euler/1018": {
+      "name": "Hex"
+    },
+    "euler/1019": {
+      "name": "Dodecahedron Skeleton"
+    }
+  }
+}

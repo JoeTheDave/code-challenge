@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualization</title>
+    <style>
+      body { margin: 0; background: #0f0f23; color: #cccccc; font-family: ui-monospace, Menlo, monospace; }
+      header { padding: 8px 16px; font-size: 13px; color: #888; }
+      main { display: flex; justify-content: center; padding: 16px; }
+      canvas { max-width: 100%; }
+      pre { color: #ff6b6b; white-space: pre-wrap; padding: 16px; }
+    </style>
+  </head>
+  <body>
+    <header id="title"></header>
+    <main><canvas id="canvas"></canvas></main>
+    <pre id="error"></pre>
+    <script type="module" src="/src/vis.ts"></script>
+  </body>
+</html>
