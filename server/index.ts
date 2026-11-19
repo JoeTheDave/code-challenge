@@ -9,6 +9,7 @@ import { isStarted, parseId } from './problems.ts'
 import { getRun, onRunEvent, run } from './runner.ts'
 import { startWatcher, subscribe, unsubscribe } from './watcher.ts'
 import { rootDir } from './paths.ts'
+import { onGitChange, startGitMonitor } from './git.ts'
 
 const host = '127.0.0.1'
 const port = Number(process.env.PORT ?? 5180)
@@ -78,9 +79,14 @@ onProgressChange(() => {
   }, 250)
 })
 
+onGitChange(status => {
+  for (const ws of socketSubs.keys()) send(ws, { type: 'git', status })
+})
+
 // ---- Start ------------------------------------------------------------------
 
 startWatcher()
+startGitMonitor(() => socketSubs.size > 0)
 server.listen(port, host, () => {
   const url = `http://localhost:${port}`
   console.log(`code-challenge running at ${url}`)

@@ -62,6 +62,8 @@ progress.json  All problem state and metadata (committed)
 | GET | `/problems/:id/data` | Selected data set contents |
 | POST | `/problems/:id/open` | Open in VS Code |
 | POST | `/problems/:id/run`, `/stop` | Run / stop the solution |
+| GET | `/git` | Local vs GitHub sync status (also pushed over `/ws` as `{type:'git'}`) |
+| POST | `/git/fetch` | `git fetch` now (`{force:true}`) or if the last one is over a minute old |
 | GET / PUT | `/settings` | Settings (secrets are never returned, only `has*` flags) |
 
 ## Frontend Routes

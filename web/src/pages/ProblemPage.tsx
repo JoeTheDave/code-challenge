@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { GitStatus } from '../components/GitStatus'
 import { api, onMessage, subscribeProblem } from '../api'
 import { Terminal, type TerminalHandle } from '../components/Terminal'
 import { TestDrawer } from '../components/TestDrawer'
@@ -73,7 +74,7 @@ export function ProblemPage({ id }: { id: string }) {
   useEffect(() => {
     const off = onMessage(msg => {
       if (msg.type === 'progress' || msg.type === 'connected') return void load()
-      if (msg.id !== id) return
+      if (msg.type === 'git' || msg.id !== id) return
       switch (msg.type) {
         case 'run-start':
         case 'run-snapshot':
@@ -147,10 +148,13 @@ export function ProblemPage({ id }: { id: string }) {
     <div className="page problem">
       <header className="topbar">
         <Link to="/">← All problems</Link>
-        <nav className="prev-next">
-          {detail.prev && <Link to={problemPath(detail.prev)}>‹ Prev</Link>}
-          {detail.next && <Link to={problemPath(detail.next)}>Next ›</Link>}
-        </nav>
+        <div className="topbar-right">
+          <GitStatus />
+          <nav className="prev-next">
+            {detail.prev && <Link to={problemPath(detail.prev)}>‹ Prev</Link>}
+            {detail.next && <Link to={problemPath(detail.next)}>Next ›</Link>}
+          </nav>
+        </div>
       </header>
 
       <div className="title">

@@ -30,9 +30,22 @@ import {
   fetchEulerNames,
 } from './sites.ts'
 import { rootDir } from './paths.ts'
+import { fetchOnFocus, fetchRemote, getGitStatus } from './git.ts'
 
 export const api = express.Router()
 api.use(express.json({ limit: '10mb' }))
+
+// ---- Git sync status ----------------------------------------------------------
+
+api.get('/git', (_req, res) => {
+  res.json(getGitStatus())
+})
+
+/** `{ force: true }` fetches now; otherwise only if the last fetch is over a minute old. */
+api.post('/git/fetch', async (req, res) => {
+  await (req.body?.force ? fetchRemote() : fetchOnFocus())
+  res.json(getGitStatus())
+})
 
 // ---- Names ------------------------------------------------------------------
 

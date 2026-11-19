@@ -1,4 +1,4 @@
-import type { Detail, Overview, PublicSettings, ServerMessage } from './types'
+import type { Detail, GitStatus, Overview, PublicSettings, ServerMessage } from './types'
 
 export const serverDownMessage = "Can't reach the code-challenge server. Is `npm start` running?"
 
@@ -39,6 +39,8 @@ export const api = {
   run: (id: string) => request('POST', `${p(id)}/run`),
   stop: (id: string) => request('POST', `${p(id)}/stop`),
   settings: () => request<PublicSettings>('GET', '/settings'),
+  git: () => request<GitStatus>('GET', '/git'),
+  gitFetch: (force = false) => request<GitStatus>('POST', '/git/fetch', { force }),
   saveSettings: (patch: object) => request<PublicSettings>('PUT', '/settings', patch),
 }
 

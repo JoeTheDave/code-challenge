@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { GitStatus } from '../components/GitStatus'
 import { api, onMessage } from '../api'
 import { problemPath } from '../routes'
 import type { Entry, Overview } from '../types'
@@ -131,7 +132,10 @@ export function Home() {
     <div className="page home">
       <header className="topbar">
         <h1>code-challenge</h1>
-        <Link to="/settings">Settings</Link>
+        <div className="topbar-right">
+          <GitStatus />
+          <Link to="/settings">Settings</Link>
+        </div>
       </header>
       {!overview.settings.hasAocSession && (
         <p className="banner">

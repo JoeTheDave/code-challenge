@@ -69,8 +69,25 @@ export type Detail = (
   next: string | null
 }
 
+export type GitCommit = { hash: string; subject: string }
+
+export type GitStatus = {
+  repo: boolean
+  branch: string | null
+  upstream: string | null
+  files: { code: string; path: string }[]
+  ahead: GitCommit[]
+  aheadCount: number
+  behind: GitCommit[]
+  behindCount: number
+  lastFetchAt: number | null
+  fetching: boolean
+  fetchError: string | null
+}
+
 export type ServerMessage =
   | { type: 'progress' }
+  | { type: 'git'; status: GitStatus }
   | { type: 'connected' }
   | { type: 'run-start'; id: string; run: RunState }
   | { type: 'run-snapshot'; id: string; run: RunState }
