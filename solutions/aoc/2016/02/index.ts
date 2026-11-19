@@ -7,11 +7,11 @@ const isDirection = (char: string): char is Direction => 'URDL'.includes(char)
 
 class Solution {
   instructions: Direction[][]
-  keypad: number[][]
+  keypad: Cell[]
   cursor: number[]
   code: number[]
 
-  constructor(input: string) {
+  constructor(input: string, keypad: (string | null)[][]) {
     this.instructions = input.split('\n').map(line =>
       line.split('').map(char => {
         if (!isDirection(char)) throw new Error(`Unexpected direction: ${char}`)
@@ -56,8 +56,29 @@ class Solution {
   }
 }
 
+class Cell {
+  U: Cell | null
+  D: Cell | null
+  L: Cell | null
+  R: Cell | null
+  value: string
+
+  constructor(value: string) {
+    this.value = value
+    this.U = null
+    this.D = null
+    this.L = null
+    this.R = null
+  }
+}
+
 export const partOne = (input: string) => {
-  const solution = new Solution(input)
+  const keypad = [
+    ['1', '2', '3'],
+    ['4', '5', '6'],
+    ['7', '8', '9'],
+  ]
+  const solution = new Solution(input, keypad)
   return solution.execute()
 }
 
