@@ -4,173 +4,3012 @@
     "eulerNamesFetchedAt": "2026-11-18T23:38:56.904Z"
   },
   "problems": {
+    "aoc/2015/01": {
+      "name": "Not Quite Lisp",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "138",
+        "1771"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2015/02": {
+      "name": "I Was Told There Would Be No Math",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "1586300",
+        "3737498"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2015/03": {
+      "name": "Perfectly Spherical Houses in a Vacuum",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "2572",
+        "2631"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2015/04": {
+      "name": "The Ideal Stocking Stuffer",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "346386",
+        "9958218"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2015/05": {
+      "name": "Doesn't He Have Intern-Elves For This?",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "258",
+        "53"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2015/06": {
+      "name": "Probably a Fire Hazard",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "400410",
+        "15343601"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2015/07": {
+      "name": "Some Assembly Required",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "3176",
+        "14710"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2015/08": {
+      "name": "Matchsticks",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "1342",
+        "2074"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2015/09": {
+      "name": "All in a Single Night",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "207",
+        "804"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2015/10": {
+      "name": "Elves Look, Elves Say",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "252594",
+        "3579328"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2015/11": {
+      "name": "Corporate Policy",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "hepxxyzz",
+        "heqaabcc"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2015/12": {
+      "name": "JSAbacusFramework.io",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "111754",
+        "65402"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2015/13": {
+      "name": "Knights of the Dinner Table",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "709",
+        "668"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2015/14": {
+      "name": "Reindeer Olympics",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "2660",
+        "1256"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2015/15": {
+      "name": "Science for Hungry People",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "18965440",
+        "15862900"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ],
+      "issue": "Ingredient names are hardcoded (Frosting, Candy, …), so test sets (Butterscotch/Cinnamon) return 0. Real input works."
+    },
+    "aoc/2015/16": {
+      "name": "Aunt Sue",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "373",
+        "260"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
+    },
+    "aoc/2015/17": {
+      "name": "No Such Thing as Too Much",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "1304",
+        "18"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2015/18": {
+      "name": "Like a GIF For Your Yard",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "768",
+        "781"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
+    },
+    "aoc/2015/19": {
+      "name": "Medicine for Rudolph",
+      "stars": [
+        true,
+        false
+      ],
+      "answers": [
+        "576",
+        null
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ],
+      "issue": "Part 2 is unfinished and throws 'Stop' from its own catch block (same as the old code)."
+    },
+    "aoc/2015/20": {
+      "name": "Infinite Elves and Infinite Houses"
+    },
+    "aoc/2015/21": {
+      "name": "RPG Simulator 20XX"
+    },
+    "aoc/2015/22": {
+      "name": "Wizard Simulator 20XX"
+    },
+    "aoc/2015/23": {
+      "name": "Opening the Turing Lock"
+    },
+    "aoc/2015/24": {
+      "name": "It Hangs in the Balance"
+    },
+    "aoc/2015/25": {
+      "name": "Let It Snow"
+    },
+    "aoc/2016/01": {
+      "name": "No Time for a Taxicab",
+      "stars": [
+        true,
+        false
+      ],
+      "answers": [
+        "250",
+        null
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ],
+      "issue": "Part 2 bug: `answer = results.location` keeps a reference to an array that keeps changing, so part 2 returns the final distance (250, same as part 1) instead of the first location visited twice. On test sets part 2 crashes on a null answer."
+    },
+    "aoc/2016/02": {
+      "name": "Bathroom Security",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ],
+      "parts": [
+        true,
+        true
+      ]
+    },
+    "aoc/2016/03": {
+      "name": "Squares With Three Sides"
+    },
+    "aoc/2016/04": {
+      "name": "Security Through Obscurity"
+    },
+    "aoc/2016/05": {
+      "name": "How About a Nice Game of Chess?"
+    },
+    "aoc/2016/06": {
+      "name": "Signals and Noise"
+    },
+    "aoc/2016/07": {
+      "name": "Internet Protocol Version 7"
+    },
+    "aoc/2016/08": {
+      "name": "Two-Factor Authentication"
+    },
+    "aoc/2016/09": {
+      "name": "Explosives in Cyberspace"
+    },
+    "aoc/2016/10": {
+      "name": "Balance Bots"
+    },
+    "aoc/2016/11": {
+      "name": "Radioisotope Thermoelectric Generators"
+    },
+    "aoc/2016/12": {
+      "name": "Leonardo's Monorail"
+    },
+    "aoc/2016/13": {
+      "name": "A Maze of Twisty Little Cubicles"
+    },
+    "aoc/2016/14": {
+      "name": "One-Time Pad"
+    },
+    "aoc/2016/15": {
+      "name": "Timing is Everything"
+    },
+    "aoc/2016/16": {
+      "name": "Dragon Checksum"
+    },
+    "aoc/2016/17": {
+      "name": "Two Steps Forward"
+    },
+    "aoc/2016/18": {
+      "name": "Like a Rogue"
+    },
+    "aoc/2016/19": {
+      "name": "An Elephant Named Joseph"
+    },
+    "aoc/2016/20": {
+      "name": "Firewall Rules"
+    },
+    "aoc/2016/21": {
+      "name": "Scrambled Letters and Hash"
+    },
+    "aoc/2016/22": {
+      "name": "Grid Computing"
+    },
+    "aoc/2016/23": {
+      "name": "Safe Cracking"
+    },
+    "aoc/2016/24": {
+      "name": "Air Duct Spelunking"
+    },
+    "aoc/2016/25": {
+      "name": "Clock Signal"
+    },
+    "aoc/2017/01": {
+      "name": "Inverse Captcha",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "1089",
+        "1156"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2017/02": {
+      "name": "Corruption Checksum",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "41887",
+        "226"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        },
+        {
+          "id": "test-2",
+          "name": "Test 2"
+        }
+      ]
+    },
+    "aoc/2017/03": {
+      "name": "Spiral Memory",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "480",
+        "349975"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2017/04": {
+      "name": "High-Entropy Passphrases",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "337",
+        "231"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2017/05": {
+      "name": "A Maze of Twisty Trampolines, All Alike",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "387096",
+        "28040648"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2017/06": {
+      "name": "Memory Reallocation",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "7864",
+        "1695"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2017/07": {
+      "name": "Recursive Circus",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "cqmvs",
+        "2310"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2017/08": {
+      "name": "I Heard You Like Registers",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "6061",
+        "6696"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2017/09": {
+      "name": "Stream Processing",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "10820",
+        "5547"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2017/10": {
+      "name": "Knot Hash",
+      "stars": [
+        true,
+        false
+      ],
+      "answers": [
+        "46600",
+        null
+      ],
+      "dataSet": "test-1",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2017/11": {
+      "name": "Hex Ed"
+    },
+    "aoc/2017/12": {
+      "name": "Digital Plumber"
+    },
+    "aoc/2017/13": {
+      "name": "Packet Scanners"
+    },
+    "aoc/2017/14": {
+      "name": "Disk Defragmentation"
+    },
+    "aoc/2017/15": {
+      "name": "Dueling Generators"
+    },
+    "aoc/2017/16": {
+      "name": "Permutation Promenade"
+    },
+    "aoc/2017/17": {
+      "name": "Spinlock"
+    },
+    "aoc/2017/18": {
+      "name": "Duet"
+    },
+    "aoc/2017/19": {
+      "name": "A Series of Tubes"
+    },
+    "aoc/2017/20": {
+      "name": "Particle Swarm"
+    },
+    "aoc/2017/21": {
+      "name": "Fractal Art"
+    },
+    "aoc/2017/22": {
+      "name": "Sporifica Virus"
+    },
+    "aoc/2017/23": {
+      "name": "Coprocessor Conflagration"
+    },
+    "aoc/2017/24": {
+      "name": "Electromagnetic Moat"
+    },
+    "aoc/2017/25": {
+      "name": "The Halting Problem"
+    },
+    "aoc/2020/01": {
+      "name": "Report Repair",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "1019371",
+        "278064990"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2020/02": {
+      "name": "Password Philosophy",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "393",
+        "690"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2020/03": {
+      "name": "Toboggan Trajectory",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "292",
+        "9354744432"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2020/04": {
+      "name": "Passport Processing",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "204",
+        "179"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        },
+        {
+          "id": "test-2",
+          "name": "Test 2"
+        }
+      ]
+    },
+    "aoc/2020/05": {
+      "name": "Binary Boarding",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "885",
+        "623"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2020/06": {
+      "name": "Custom Customs",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "6504",
+        "3351"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2020/07": {
+      "name": "Handy Haversacks",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "287",
+        "48160"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2021/01": {
+      "name": "Sonar Sweep",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "1711",
+        "1743"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2021/02": {
+      "name": "Dive!",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "1893605",
+        "2120734350"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2021/03": {
+      "name": "Binary Diagnostic",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "4139586",
+        "1800151"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2021/04": {
+      "name": "Giant Squid",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "49686",
+        "26878"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2021/05": {
+      "name": "Hydrothermal Venture",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "7438",
+        "21406"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2021/06": {
+      "name": "Lanternfish",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "372984",
+        "1681503251694"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2021/07": {
+      "name": "The Treachery of Whales",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "353800",
+        "98119739"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2021/08": {
+      "name": "Seven Segment Search",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "245",
+        "983026"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2021/09": {
+      "name": "Smoke Basin",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "548",
+        "786048"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2021/10": {
+      "name": "Syntax Scoring",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "442131",
+        "3646451424"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2021/11": {
+      "name": "Dumbo Octopus",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "1620",
+        "371"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2021/12": {
+      "name": "Passage Pathing",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "3421",
+        "84870"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        },
+        {
+          "id": "test-2",
+          "name": "Test 2"
+        },
+        {
+          "id": "test-3",
+          "name": "Test 3"
+        }
+      ]
+    },
+    "aoc/2021/13": {
+      "name": "Transparent Origami",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "753",
+        "HZLEHJRK"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2021/14": {
+      "name": "Extended Polymerization",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "2375",
+        "1976896901756"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2021/15": {
+      "name": "Chiton",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "423",
+        "2778"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2021/16": {
+      "name": "Packet Decoder"
+    },
+    "aoc/2021/17": {
+      "name": "Trick Shot"
+    },
+    "aoc/2021/18": {
+      "name": "Snailfish"
+    },
+    "aoc/2021/19": {
+      "name": "Beacon Scanner"
+    },
+    "aoc/2021/20": {
+      "name": "Trench Map"
+    },
+    "aoc/2021/21": {
+      "name": "Dirac Dice"
+    },
+    "aoc/2021/22": {
+      "name": "Reactor Reboot"
+    },
+    "aoc/2021/23": {
+      "name": "Amphipod"
+    },
+    "aoc/2021/24": {
+      "name": "Arithmetic Logic Unit"
+    },
+    "aoc/2021/25": {
+      "name": "Sea Cucumber"
+    },
+    "aoc/2022/01": {
+      "name": "Calorie Counting",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "68775",
+        "202585"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/02": {
+      "name": "Rock Paper Scissors",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "8392",
+        "10116"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/03": {
+      "name": "Rucksack Reorganization",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "7908",
+        "2838"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ],
+      "issue": "Part 2 always loops over 100 groups, so it crashes on test data (which has only 2 groups). Real input works."
+    },
+    "aoc/2022/04": {
+      "name": "Camp Cleanup",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "471",
+        "888"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/05": {
+      "name": "Supply Stacks",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "FJSRQCFTN",
+        "CJVLJQPHS"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/06": {
+      "name": "Tuning Trouble",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "1287",
+        "3716"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/07": {
+      "name": "No Space Left On Device",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "1648397",
+        "1815525"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/08": {
+      "name": "Treetop Tree House",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "1676",
+        "313200"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/09": {
+      "name": "Rope Bridge",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "6090",
+        "2566"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        },
+        {
+          "id": "test-2",
+          "name": "Test 2"
+        }
+      ]
+    },
+    "aoc/2022/10": {
+      "name": "Cathode-Ray Tube",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "13220",
+        "RUAKHBEK"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/11": {
+      "name": "Monkey in the Middle",
+      "stars": [
+        true,
+        false
+      ],
+      "answers": [
+        "120056",
+        null
+      ],
+      "dataSet": "test-1",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/12": {
+      "name": "Hill Climbing Algorithm",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "391",
+        "386"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/13": {
+      "name": "Distress Signal",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "5938",
+        "29025"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/14": {
+      "name": "Regolith Reservoir",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "638",
+        "31722"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/15": {
+      "name": "Beacon Exclusion Zone"
+    },
+    "aoc/2022/16": {
+      "name": "Proboscidea Volcanium",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "1460",
+        "2117"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ],
+      "issue": "Part 2 returns 0 on the test set (the example's answer is 1707). Real input gives the right answer.",
+      "parts": [
+        true,
+        true
+      ]
+    },
+    "aoc/2022/17": {
+      "name": "Pyroclastic Flow"
+    },
+    "aoc/2022/18": {
+      "name": "Boiling Boulders",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "4322",
+        "2516"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/19": {
+      "name": "Not Enough Minerals",
+      "stars": [
+        false,
+        false
+      ],
+      "answers": [
+        null,
+        null
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ],
+      "issue": "Part 1 runs out of memory (\"JavaScript heap out of memory\"): the branch list grows to ~7.5M by minute 16. Unfinished WIP port; the old code crashed the same way. Part 2 returns null."
+    },
+    "aoc/2022/20": {
+      "name": "Grove Positioning System",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "13183",
+        "6676132372578"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/21": {
+      "name": "Monkey Math",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "276156919469632",
+        "3441198826073"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/22": {
+      "name": "Monkey Map",
+      "stars": [
+        true,
+        false
+      ],
+      "answers": [
+        "11464",
+        null
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2022/23": {
+      "name": "Unstable Diffusion"
+    },
+    "aoc/2022/24": {
+      "name": "Blizzard Basin"
+    },
+    "aoc/2022/25": {
+      "name": "Full of Hot Air",
+      "stars": [
+        true,
+        false
+      ],
+      "answers": [
+        "2-1=10=1=1==2-1=-221",
+        null
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/01": {
+      "name": "Trebuchet?!",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "54561",
+        "54076"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        },
+        {
+          "id": "test-2",
+          "name": "Test 2"
+        }
+      ]
+    },
+    "aoc/2023/02": {
+      "name": "Cube Conundrum",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "2085",
+        "79315"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/03": {
+      "name": "Gear Ratios",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "528819",
+        "80403602"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/04": {
+      "name": "Scratchcards",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "24542",
+        "8736438"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/05": {
+      "name": "If You Give A Seed A Fertilizer",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "462648396",
+        "2520479"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/06": {
+      "name": "Wait For It",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "500346",
+        "42515755"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/07": {
+      "name": "Camel Cards",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "250957639",
+        "251515496"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/08": {
+      "name": "Haunted Wasteland",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "19667",
+        "19185263738117"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        },
+        {
+          "id": "test-2",
+          "name": "Test 2"
+        }
+      ]
+    },
+    "aoc/2023/09": {
+      "name": "Mirage Maintenance",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "1992273652",
+        "1012"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/10": {
+      "name": "Pipe Maze",
+      "stars": [
+        true,
+        false
+      ],
+      "answers": [
+        "6903",
+        null
+      ],
+      "dataSet": "test-1",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ],
+      "issue": "Part 1 crashes: TypeError: Cannot set properties of undefined (setting 'step'). startNode.step is never set, so one path walks back into S and finds no unvisited neighbour. The old code crashed the same way, so the code that produced the accepted answer (6903) was never saved. Part 2 is fully commented out."
+    },
+    "aoc/2023/11": {
+      "name": "Cosmic Expansion",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "9623138",
+        "726820169514"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/12": {
+      "name": "Hot Springs",
+      "stars": [
+        true,
+        false
+      ],
+      "answers": [
+        "7622",
+        null
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/13": {
+      "name": "Point of Incidence",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "30705",
+        "44615"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/14": {
+      "name": "Parabolic Reflector Dish",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "110677",
+        "90551"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/15": {
+      "name": "Lens Library",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "509167",
+        "259333"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/16": {
+      "name": "The Floor Will Be Lava",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "7067",
+        "7324"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/17": {
+      "name": "Clumsy Crucible",
+      "stars": [
+        false,
+        false
+      ],
+      "answers": [
+        null,
+        null
+      ],
+      "dataSet": "test-1",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/18": {
+      "name": "Lavaduct Lagoon",
+      "stars": [
+        true,
+        false
+      ],
+      "answers": [
+        "36679",
+        null
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/19": {
+      "name": "Aplenty",
+      "stars": [
+        true,
+        false
+      ],
+      "answers": [
+        "397061",
+        null
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/20": {
+      "name": "Pulse Propagation"
+    },
+    "aoc/2023/21": {
+      "name": "Step Counter",
+      "stars": [
+        true,
+        false
+      ],
+      "answers": [
+        "3594",
+        null
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/22": {
+      "name": "Sand Slabs"
+    },
+    "aoc/2023/23": {
+      "name": "A Long Walk",
+      "stars": [
+        false,
+        false
+      ],
+      "answers": [
+        null,
+        null
+      ],
+      "dataSet": "test-1",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ],
+      "issue": "Part 1 throws \"TypeError: walker.slice is not a function\" (Walker misuse; same as the old code). The file has 6 type errors from the same unfinished logic, so `npm run typecheck` reports them."
+    },
+    "aoc/2023/24": {
+      "name": "Never Tell Me The Odds",
+      "stars": [
+        false,
+        false
+      ],
+      "answers": [
+        null,
+        null
+      ],
+      "dataSet": "test-1",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2023/25": {
+      "name": "Snowverload"
+    },
     "aoc/2024/01": {
-      "name": "Historian Hysteria"
+      "name": "Historian Hysteria",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "1765812",
+        "20520794"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2024/02": {
+      "name": "Red-Nosed Reports",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "332",
+        "398"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2024/03": {
+      "name": "Mull It Over",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "191183308",
+        "92082041"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        },
+        {
+          "id": "test-2",
+          "name": "Test 2"
+        }
+      ]
+    },
+    "aoc/2024/04": {
+      "name": "Ceres Search",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "2547",
+        "1939"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2024/05": {
+      "name": "Print Queue",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "6041",
+        "4884"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2024/06": {
+      "name": "Guard Gallivant",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "5145",
+        "1523"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2024/07": {
+      "name": "Bridge Repair",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "267566105056",
+        "116094961956019"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2024/08": {
+      "name": "Resonant Collinearity",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "379",
+        "1339"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2024/09": {
+      "name": "Disk Fragmenter",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "6301895872542",
+        "6323761685944"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2024/10": {
+      "name": "Hoof It",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "593",
+        "1192"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2024/11": {
+      "name": "Plutonian Pebbles",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "202019",
+        "239321955280205"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        },
+        {
+          "id": "test-2",
+          "name": "Short test"
+        }
+      ]
+    },
+    "aoc/2024/12": {
+      "name": "Garden Groups",
+      "stars": [
+        true,
+        false
+      ],
+      "answers": [
+        "1377008",
+        null
+      ],
+      "dataSet": "test-1",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2024/13": {
+      "name": "Claw Contraption",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "28059",
+        "102255878088512"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2024/14": {
+      "name": "Restroom Redoubt",
+      "stars": [
+        true,
+        true
+      ],
+      "answers": [
+        "231019008",
+        "8280"
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2024/15": {
+      "name": "Warehouse Woes",
+      "stars": [
+        true,
+        false
+      ],
+      "answers": [
+        "1421727",
+        null
+      ],
+      "dataSet": "test-1",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        },
+        {
+          "id": "test-2",
+          "name": "Small test"
+        }
+      ]
+    },
+    "aoc/2024/16": {
+      "name": "Reindeer Maze",
+      "stars": [
+        false,
+        false
+      ],
+      "answers": [
+        null,
+        null
+      ],
+      "dataSet": "test-1",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2024/17": {
+      "name": "Chronospatial Computer",
+      "stars": [
+        true,
+        false
+      ],
+      "answers": [
+        "6,2,7,2,3,1,6,0,5",
+        null
+      ],
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        },
+        {
+          "id": "test-2",
+          "name": "Part 2 test"
+        }
+      ],
+      "issue": "Part 2 doesn't finish (still running after 3+ minutes, same as the old code). Its hardcoded 2^45–2^48 search range is only meant for the real input, so on test sets it throws \"unable to determine new search range\".",
+      "parts": [
+        true,
+        false
+      ]
+    },
+    "aoc/2024/18": {
+      "name": "RAM Run"
+    },
+    "aoc/2024/19": {
+      "name": "Linen Layout",
+      "stars": [
+        false,
+        false
+      ],
+      "answers": [
+        null,
+        null
+      ],
+      "dataSet": "test-1",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2024/20": {
+      "name": "Race Condition"
+    },
+    "aoc/2024/21": {
+      "name": "Keypad Conundrum"
+    },
+    "aoc/2024/22": {
+      "name": "Monkey Market",
+      "stars": [
+        false,
+        false
+      ],
+      "answers": [
+        null,
+        null
+      ],
+      "dataSet": "test-1",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test"
+        }
+      ]
+    },
+    "aoc/2024/23": {
+      "name": "LAN Party"
+    },
+    "aoc/2024/24": {
+      "name": "Crossed Wires"
+    },
+    "aoc/2024/25": {
+      "name": "Code Chronicle"
+    },
+    "aoc/2025/01": {
+      "name": "Secret Entrance"
+    },
+    "aoc/2025/02": {
+      "name": "Gift Shop"
+    },
+    "aoc/2025/03": {
+      "name": "Lobby"
+    },
+    "aoc/2025/04": {
+      "name": "Printing Department"
+    },
+    "aoc/2025/05": {
+      "name": "Cafeteria"
+    },
+    "aoc/2025/06": {
+      "name": "Trash Compactor"
+    },
+    "aoc/2025/07": {
+      "name": "Laboratories"
+    },
+    "aoc/2025/08": {
+      "name": "Playground"
+    },
+    "aoc/2025/09": {
+      "name": "Movie Theater"
+    },
+    "aoc/2025/10": {
+      "name": "Factory"
+    },
+    "aoc/2025/11": {
+      "name": "Reactor"
+    },
+    "aoc/2025/12": {
+      "name": "Christmas Tree Farm"
     },
     "euler/001": {
-      "name": "Multiples of 3 or 5"
+      "name": "Multiples of 3 or 5",
+      "solved": true,
+      "answer": "233168",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/002": {
-      "name": "Even Fibonacci Numbers"
+      "name": "Even Fibonacci Numbers",
+      "solved": true,
+      "answer": "4613732",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/003": {
-      "name": "Largest Prime Factor"
+      "name": "Largest Prime Factor",
+      "solved": true,
+      "answer": "6857",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/004": {
-      "name": "Largest Palindrome Product"
+      "name": "Largest Palindrome Product",
+      "solved": true,
+      "answer": "906609",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/005": {
-      "name": "Smallest Multiple"
+      "name": "Smallest Multiple",
+      "solved": true,
+      "answer": "232792560",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/006": {
-      "name": "Sum Square Difference"
+      "name": "Sum Square Difference",
+      "solved": true,
+      "answer": "25164150",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/007": {
-      "name": "10 001st Prime"
+      "name": "10 001st Prime",
+      "solved": true,
+      "answer": "104743",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/008": {
-      "name": "Largest Product in a Series"
+      "name": "Largest Product in a Series",
+      "solved": true,
+      "answer": "23514624000",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/009": {
-      "name": "Special Pythagorean Triplet"
+      "name": "Special Pythagorean Triplet",
+      "solved": true,
+      "answer": "31875000",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/010": {
-      "name": "Summation of Primes"
+      "name": "Summation of Primes",
+      "solved": true,
+      "answer": "142913828922",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/011": {
-      "name": "Largest Product in a Grid"
+      "name": "Largest Product in a Grid",
+      "solved": true,
+      "answer": "70600674",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/012": {
-      "name": "Highly Divisible Triangular Number"
+      "name": "Highly Divisible Triangular Number",
+      "solved": true,
+      "answer": "76576500",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/013": {
-      "name": "Large Sum"
+      "name": "Large Sum",
+      "solved": true,
+      "answer": "5537376230",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/014": {
-      "name": "Longest Collatz Sequence"
+      "name": "Longest Collatz Sequence",
+      "solved": true,
+      "answer": "837799",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/015": {
-      "name": "Lattice Paths"
+      "name": "Lattice Paths",
+      "solved": true,
+      "answer": "137846528820",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/016": {
-      "name": "Power Digit Sum"
+      "name": "Power Digit Sum",
+      "solved": true,
+      "answer": "1366",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/017": {
-      "name": "Number Letter Counts"
+      "name": "Number Letter Counts",
+      "solved": true,
+      "answer": "21124",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/018": {
-      "name": "Maximum Path Sum I"
+      "name": "Maximum Path Sum I",
+      "solved": true,
+      "answer": "1074",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/019": {
-      "name": "Counting Sundays"
+      "name": "Counting Sundays",
+      "solved": true,
+      "answer": "171",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/020": {
-      "name": "Factorial Digit Sum"
+      "name": "Factorial Digit Sum",
+      "solved": true,
+      "answer": "648",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/021": {
-      "name": "Amicable Numbers"
+      "name": "Amicable Numbers",
+      "solved": true,
+      "answer": "31626",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/022": {
-      "name": "Names Scores"
+      "name": "Names Scores",
+      "solved": true,
+      "answer": "871198282",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/023": {
-      "name": "Non-Abundant Sums"
+      "name": "Non-Abundant Sums",
+      "solved": true,
+      "answer": "4179871",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/024": {
-      "name": "Lexicographic Permutations"
+      "name": "Lexicographic Permutations",
+      "solved": true,
+      "answer": "2783915460",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/025": {
-      "name": "$1000$-digit Fibonacci Number"
+      "name": "1000-digit Fibonacci Number",
+      "solved": true,
+      "answer": "4782",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/026": {
-      "name": "Reciprocal Cycles"
+      "name": "Reciprocal Cycles",
+      "solved": true,
+      "answer": "983",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/027": {
-      "name": "Quadratic Primes"
+      "name": "Quadratic Primes",
+      "solved": true,
+      "answer": "-59231",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/028": {
-      "name": "Number Spiral Diagonals"
+      "name": "Number Spiral Diagonals",
+      "solved": true,
+      "answer": "669171001",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/029": {
-      "name": "Distinct Powers"
+      "name": "Distinct Powers",
+      "solved": true,
+      "answer": "9183",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/030": {
-      "name": "Digit Fifth Powers"
+      "name": "Digit Fifth Powers",
+      "solved": true,
+      "answer": "443839",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/031": {
-      "name": "Coin Sums"
+      "name": "Coin Sums",
+      "solved": true,
+      "answer": "73682",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/032": {
-      "name": "Pandigital Products"
+      "name": "Pandigital Products",
+      "solved": true,
+      "answer": "45228",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/033": {
-      "name": "Digit Cancelling Fractions"
+      "name": "Digit Cancelling Fractions",
+      "solved": true,
+      "answer": "100",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/034": {
-      "name": "Digit Factorials"
+      "name": "Digit Factorials",
+      "solved": true,
+      "answer": "40730",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/035": {
-      "name": "Circular Primes"
+      "name": "Circular Primes",
+      "solved": true,
+      "answer": "55",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/036": {
-      "name": "Double-base Palindromes"
+      "name": "Double-base Palindromes",
+      "solved": true,
+      "answer": "872187",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/037": {
-      "name": "Truncatable Primes"
+      "name": "Truncatable Primes",
+      "solved": true,
+      "answer": "748317",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/038": {
-      "name": "Pandigital Multiples"
+      "name": "Pandigital Multiples",
+      "solved": true,
+      "answer": "932718654",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/039": {
-      "name": "Integer Right Triangles"
+      "name": "Integer Right Triangles",
+      "solved": true,
+      "answer": "840",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/040": {
-      "name": "Champernowne's Constant"
+      "name": "Champernowne's Constant",
+      "solved": true,
+      "answer": "210",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/041": {
-      "name": "Pandigital Prime"
+      "name": "Pandigital Prime",
+      "solved": true,
+      "answer": "7652413",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/042": {
-      "name": "Coded Triangle Numbers"
+      "name": "Coded Triangle Numbers",
+      "solved": true,
+      "answer": "162",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/043": {
-      "name": "Sub-string Divisibility"
+      "name": "Sub-string Divisibility",
+      "solved": true,
+      "answer": "16695334890",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/044": {
-      "name": "Pentagon Numbers"
+      "name": "Pentagon Numbers",
+      "solved": true,
+      "answer": "5482660",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/045": {
-      "name": "Triangular, Pentagonal, and Hexagonal"
+      "name": "Triangular, Pentagonal, and Hexagonal",
+      "solved": true,
+      "answer": "1533776805",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/046": {
-      "name": "Goldbach's Other Conjecture"
+      "name": "Goldbach's Other Conjecture",
+      "solved": true,
+      "answer": "5777",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/047": {
-      "name": "Distinct Primes Factors"
+      "name": "Distinct Primes Factors",
+      "solved": true,
+      "answer": "134043",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/048": {
-      "name": "Self Powers"
+      "name": "Self Powers",
+      "solved": true,
+      "answer": "9110846700",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/049": {
-      "name": "Prime Permutations"
+      "name": "Prime Permutations",
+      "solved": true,
+      "answer": "296962999629",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/050": {
-      "name": "Consecutive Prime Sum"
+      "name": "Consecutive Prime Sum",
+      "solved": true,
+      "answer": null,
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ],
+      "issue": "solve() doesn't finish (still running after 3+ minutes, same as the old code). Marked solved, but no answer is stored because it never produced one."
     },
     "euler/051": {
       "name": "Prime Digit Replacements"
     },
     "euler/052": {
-      "name": "Permuted Multiples"
+      "name": "Permuted Multiples",
+      "solved": true,
+      "answer": "142857",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/053": {
       "name": "Combinatoric Selections"
     },
     "euler/054": {
-      "name": "Poker Hands"
+      "name": "Poker Hands",
+      "solved": true,
+      "answer": "376",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/055": {
-      "name": "Lychrel Numbers"
+      "name": "Lychrel Numbers",
+      "solved": true,
+      "answer": "249",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/056": {
       "name": "Powerful Digit Sum"
@@ -179,7 +3018,16 @@
       "name": "Square Root Convergents"
     },
     "euler/058": {
-      "name": "Spiral Primes"
+      "name": "Spiral Primes",
+      "solved": true,
+      "answer": "26241",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/059": {
       "name": "XOR Decryption"
@@ -200,13 +3048,22 @@
       "name": "Odd Period Square Roots"
     },
     "euler/065": {
-      "name": "Convergents of $e$"
+      "name": "Convergents of e"
     },
     "euler/066": {
       "name": "Diophantine Equation"
     },
     "euler/067": {
-      "name": "Maximum Path Sum II"
+      "name": "Maximum Path Sum II",
+      "solved": true,
+      "answer": "7273",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/068": {
       "name": "Magic 5-gon Ring"
@@ -248,7 +3105,16 @@
       "name": "Square Root Digital Expansion"
     },
     "euler/081": {
-      "name": "Path Sum: Two Ways"
+      "name": "Path Sum: Two Ways",
+      "solved": true,
+      "answer": "427337",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Sample"
+        }
+      ]
     },
     "euler/082": {
       "name": "Path Sum: Three Ways"
@@ -293,7 +3159,16 @@
       "name": "Amicable Chains"
     },
     "euler/096": {
-      "name": "Su Doku"
+      "name": "Su Doku",
+      "solved": true,
+      "answer": "24702",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "euler/097": {
       "name": "Large Non-Mersenne Prime"
@@ -590,7 +3465,7 @@
       "name": "Coloured Configurations"
     },
     "euler/195": {
-      "name": "$60$-degree Triangle Inscribed Circles"
+      "name": "60-degree Triangle Inscribed Circles"
     },
     "euler/196": {
       "name": "Prime Triplets"
@@ -653,7 +3528,7 @@
       "name": "Crack-free Walls"
     },
     "euler/216": {
-      "name": "The Primality of $2n^2 - 1$"
+      "name": "The Primality of 2n^2 - 1"
     },
     "euler/217": {
       "name": "Balanced Numbers"
@@ -716,7 +3591,7 @@
       "name": "Luxury Hampers"
     },
     "euler/237": {
-      "name": "Tours on a $4 \\times N$ Playing Board"
+      "name": "Tours on a 4 × N Playing Board"
     },
     "euler/238": {
       "name": "Infinite String Tour"
@@ -755,7 +3630,7 @@
       "name": "Prime Subset Sums"
     },
     "euler/250": {
-      "name": "$250250$"
+      "name": "250250"
     },
     "euler/251": {
       "name": "Cardano Triplets"
@@ -941,7 +3816,7 @@
       "name": "Biclinic Integral Quadrilaterals"
     },
     "euler/312": {
-      "name": "Cyclic Paths on Sierpi\u0144ski Graphs"
+      "name": "Cyclic Paths on Sierpiński Graphs"
     },
     "euler/313": {
       "name": "Sliding Game"
@@ -1094,7 +3969,7 @@
       "name": "Squarefree Factors"
     },
     "euler/363": {
-      "name": "B\u00e9zier Curves"
+      "name": "Bézier Curves"
     },
     "euler/364": {
       "name": "Comfortable Distance"
@@ -1148,7 +4023,7 @@
       "name": "Amazing Mazes!"
     },
     "euler/381": {
-      "name": "$(\\text{prime}-k)$ Factorial"
+      "name": "(prime-k) Factorial"
     },
     "euler/382": {
       "name": "Generating Polygons"
@@ -1265,10 +4140,10 @@
       "name": "Look and Say Sequence"
     },
     "euler/420": {
-      "name": "$2 \\times 2$ Positive Integer Matrix"
+      "name": "2 × 2 Positive Integer Matrix"
     },
     "euler/421": {
-      "name": "Prime Factors of $n^{15}+1$"
+      "name": "Prime Factors of n^15+1"
     },
     "euler/422": {
       "name": "Sequence of Points on a Hyperbola"
@@ -1286,7 +4161,7 @@
       "name": "Box-Ball System"
     },
     "euler/427": {
-      "name": "$n$-sequences"
+      "name": "n-sequences"
     },
     "euler/428": {
       "name": "Necklace of Circles"
@@ -1397,7 +4272,7 @@
       "name": "A Weird Recurrence Relation"
     },
     "euler/464": {
-      "name": "M\u00f6bius Function and Intervals"
+      "name": "Möbius Function and Intervals"
     },
     "euler/465": {
       "name": "Polar Polygons"
@@ -1478,7 +4353,7 @@
       "name": "Jumping Frog"
     },
     "euler/491": {
-      "name": "Double Pandigital Number Divisible by $11$"
+      "name": "Double Pandigital Number Divisible by 11"
     },
     "euler/492": {
       "name": "Exploding Sequence"
@@ -1490,7 +4365,7 @@
       "name": "Collatz Prefix Families"
     },
     "euler/495": {
-      "name": "Writing $n$ as the Product of $k$ Distinct Positive Integers"
+      "name": "Writing n as the Product of k Distinct Positive Integers"
     },
     "euler/496": {
       "name": "Incenter and Circumcenter of Triangle"
@@ -1529,7 +4404,7 @@
       "name": "Shortest Lattice Vector"
     },
     "euler/508": {
-      "name": "Integers in Base $i-1$"
+      "name": "Integers in Base i-1"
     },
     "euler/509": {
       "name": "Divisor Nim"
@@ -1553,7 +4428,7 @@
       "name": "Dissonant Numbers"
     },
     "euler/516": {
-      "name": "$5$-smooth Totients"
+      "name": "5-smooth Totients"
     },
     "euler/517": {
       "name": "A Real Recursion"
@@ -1592,7 +4467,7 @@
       "name": "Constrained Sums"
     },
     "euler/529": {
-      "name": "$10$-substrings"
+      "name": "10-substrings"
     },
     "euler/530": {
       "name": "GCD of Divisors"
@@ -1748,10 +4623,10 @@
       "name": "Squarefree Hilbert Numbers"
     },
     "euler/581": {
-      "name": "$47$-smooth Triangular Numbers"
+      "name": "47-smooth Triangular Numbers"
     },
     "euler/582": {
-      "name": "Nearly Isosceles $120$ Degree Triangles"
+      "name": "Nearly Isosceles 120 Degree Triangles"
     },
     "euler/583": {
       "name": "Heron Envelopes"
@@ -1832,7 +4707,7 @@
       "name": "Divisor Sums"
     },
     "euler/609": {
-      "name": "$\\pi$ Sequences"
+      "name": "π Sequences"
     },
     "euler/610": {
       "name": "Roman Numerals II"
@@ -1907,7 +4782,7 @@
       "name": "Square Prime Factors II"
     },
     "euler/634": {
-      "name": "Numbers of the Form $a^2b^3$"
+      "name": "Numbers of the Form a^2b^3"
     },
     "euler/635": {
       "name": "Subset Sums"
@@ -1934,7 +4809,7 @@
       "name": "Sum of Largest Prime Factors"
     },
     "euler/643": {
-      "name": "$2$-Friendly"
+      "name": "2-Friendly"
     },
     "euler/644": {
       "name": "Squares on the Line"
@@ -2027,10 +4902,10 @@
       "name": "Beds and Desks"
     },
     "euler/674": {
-      "name": "Solving $\\mathcal{I}$-equations"
+      "name": "Solving I-equations"
     },
     "euler/675": {
-      "name": "$2^{\\omega(n)}$"
+      "name": "2^ω(n)"
     },
     "euler/676": {
       "name": "Matching Digit Sums"
@@ -2051,7 +4926,7 @@
       "name": "Maximal Area"
     },
     "euler/682": {
-      "name": "$5$-Smooth Pairs"
+      "name": "5-Smooth Pairs"
     },
     "euler/683": {
       "name": "The Chase II"
@@ -2123,7 +4998,7 @@
       "name": "Total Inversion Count of Divided Sequences"
     },
     "euler/706": {
-      "name": "$3$-Like Numbers"
+      "name": "3-Like Numbers"
     },
     "euler/707": {
       "name": "Lights Out"
@@ -2144,7 +5019,7 @@
       "name": "Exponent Difference"
     },
     "euler/713": {
-      "name": "Tur\u00e1n's Water Heating System"
+      "name": "Turán's Water Heating System"
     },
     "euler/714": {
       "name": "Duodigits"
@@ -2210,7 +5085,7 @@
       "name": "A Bit of Prime"
     },
     "euler/735": {
-      "name": "Divisors of $2n^2$"
+      "name": "Divisors of 2n^2"
     },
     "euler/736": {
       "name": "Paths to Equality"
@@ -2261,7 +5136,7 @@
       "name": "Concatenation Coincidence"
     },
     "euler/752": {
-      "name": "Powers of $1+\\sqrt 7$"
+      "name": "Powers of 1+√7"
     },
     "euler/753": {
       "name": "Fermat Equation"
@@ -2321,7 +5196,7 @@
       "name": "Pseudo Geometric Sequences"
     },
     "euler/772": {
-      "name": "Balanceable $k$-bounded Partitions"
+      "name": "Balanceable k-bounded Partitions"
     },
     "euler/773": {
       "name": "Ruff Numbers"
@@ -2366,13 +5241,13 @@
       "name": "Billiard"
     },
     "euler/787": {
-      "name": "B\u00e9zout's Game"
+      "name": "Bézout's Game"
     },
     "euler/788": {
       "name": "Dominating Numbers"
     },
     "euler/789": {
-      "name": "Minimal Pairing Modulo $p$"
+      "name": "Minimal Pairing Modulo p"
     },
     "euler/790": {
       "name": "Clock Grid"
@@ -2408,7 +5283,7 @@
       "name": "Hybrid Integers"
     },
     "euler/801": {
-      "name": "$x^y \\equiv y^x$"
+      "name": "x^y ≡ y^x"
     },
     "euler/802": {
       "name": "Iterated Composition"
@@ -2465,7 +5340,7 @@
       "name": "Iterative Sampling"
     },
     "euler/820": {
-      "name": "$N$<sup>th</sup> Digit of Reciprocals"
+      "name": "Nth Digit of Reciprocals"
     },
     "euler/821": {
       "name": "123-Separable"
@@ -2537,7 +5412,7 @@
       "name": "Periodic Circles"
     },
     "euler/844": {
-      "name": "$k$-Markov Numbers"
+      "name": "k-Markov Numbers"
     },
     "euler/845": {
       "name": "Prime Digit Sum"
@@ -2696,7 +5571,7 @@
       "name": "Divisible Ranges"
     },
     "euler/897": {
-      "name": "Maximal $n$-gon in a region"
+      "name": "Maximal n-gon in a region"
     },
     "euler/898": {
       "name": "Claire Voyant"
@@ -2801,7 +5676,7 @@
       "name": "Totient Graph"
     },
     "euler/932": {
-      "name": "$2025$"
+      "name": "2025"
     },
     "euler/933": {
       "name": "Paper Cutting"
@@ -2906,7 +5781,7 @@
       "name": "Triangle Circle Intersection"
     },
     "euler/967": {
-      "name": "$B$-Trivisible Numbers"
+      "name": "B-Trivisible Numbers"
     },
     "euler/968": {
       "name": "5D Summation"
@@ -3005,7 +5880,7 @@
       "name": "Alternating Recurrence"
     },
     "euler/1000": {
-      "name": "Problem $1000$"
+      "name": "Problem 1000"
     },
     "euler/1001": {
       "name": "Connections I"

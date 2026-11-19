@@ -1,0 +1,56 @@
+// Advent of Code | 2015 | Day 3 | Perfectly Spherical Houses in a Vacuum
+// https://adventofcode.com/2015/day/3
+
+export const partOne = (input: string) => {
+  const data = input.split('\n')
+  const positionPresents = {} as { [key: string]: number }
+  const position = [0, 0]
+  const deliverPresent = (pos: number[]) => {
+    const key = `${pos[0]}|${pos[1]}`
+    positionPresents[key] = (positionPresents[key] || 0) + 1
+  }
+  deliverPresent(position)
+
+  data[0].split('').forEach(direction => {
+    if (direction === '^') {
+      position[0]++
+    } else if (direction === 'v') {
+      position[0]--
+    } else if (direction === '<') {
+      position[1]--
+    } else if (direction === '>') {
+      position[1]++
+    }
+    deliverPresent(position)
+  })
+  return Object.keys(positionPresents).length
+}
+
+export const partTwo = (input: string) => {
+  const data = input.split('\n')
+  const positionPresents = {} as { [key: string]: number }
+  const santaPosition = [0, 0]
+  const roboSantaPosition = [0, 0]
+
+  const deliverPresent = (pos: number[]) => {
+    const key = `${pos[0]}|${pos[1]}`
+    positionPresents[key] = (positionPresents[key] || 0) + 1
+  }
+  deliverPresent(santaPosition)
+  deliverPresent(roboSantaPosition)
+
+  data[0].split('').forEach((direction, i) => {
+    const position = i % 2 === 0 ? santaPosition : roboSantaPosition
+    if (direction === '^') {
+      position[0]++
+    } else if (direction === 'v') {
+      position[0]--
+    } else if (direction === '<') {
+      position[1]--
+    } else if (direction === '>') {
+      position[1]++
+    }
+    deliverPresent(position)
+  })
+  return Object.keys(positionPresents).length
+}

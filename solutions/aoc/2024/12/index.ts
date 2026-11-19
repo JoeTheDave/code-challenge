@@ -1,0 +1,143 @@
+// Advent of Code | 2024 | Day 12 | Garden Groups
+// https://adventofcode.com/2024/day/12
+
+export class Map {
+  nodes: Node[]
+  nextGroupId: number
+
+  constructor(data: string[]) {
+    this.nodes = []
+    this.nextGroupId = 1
+    for (let y = 0; y < data.length; y++) {
+      for (let x = 0; x < data[y].length; x++) {
+        const id = data[y].length * y + x
+        this.nodes.push(new Node(data[y][x], x, y, id))
+      }
+    }
+    this.nodes.forEach(node => {
+      if (node.y > 0) {
+        node.n = this.nodes.find(n => n.y === node.y - 1 && n.x === node.x) as Node
+      }
+      if (node.y > 0 && node.x < data[0].length - 1) {
+        node.ne = this.nodes.find(n => n.y === node.y - 1 && n.x === node.x + 1) as Node
+      }
+      if (node.x < data[0].length - 1) {
+        node.e = this.nodes.find(n => n.y === node.y && n.x === node.x + 1) as Node
+      }
+      if (node.x < data[0].length - 1 && node.y < data.length - 1) {
+        node.se = this.nodes.find(n => n.y === node.y + 1 && n.x === node.x + 1) as Node
+      }
+      if (node.y < data.length - 1) {
+        node.s = this.nodes.find(n => n.y === node.y + 1 && n.x === node.x) as Node
+      }
+      if (node.y < data.length - 1 && node.x > 0) {
+        node.sw = this.nodes.find(n => n.y === node.y + 1 && n.x === node.x - 1) as Node
+      }
+      if (node.x > 0) {
+        node.w = this.nodes.find(n => n.y === node.y && n.x === node.x - 1) as Node
+      }
+      if (node.x > 0 && node.y > 0) {
+        node.nw = this.nodes.find(n => n.y === node.y - 1 && n.x === node.x - 1) as Node
+      }
+    })
+    while (this.nodes.some(node => !node.groupId)) {
+      const groupStartNode = this.nodes.find(node => !node.groupId) as Node
+      groupStartNode.groupId = this.nextGroupId
+      this.nextGroupId++
+      groupStartNode.propigateGroupId()
+    }
+  }
+
+  getCost = () => {
+    let sum = 0
+    for (let i = this.nextGroupId - 1; i >= 1; i--) {
+      const groupNodes = this.nodes.filter(n => n.groupId === i)
+      const area = groupNodes.length
+      const perimeter = groupNodes
+        .map(n => {
+          return [n.n, n.s, n.e, n.w].reduce((perim, neighbor) => perim + (neighbor?.value !== n.value ? 1 : 0), 0)
+        })
+        .reduce((sum, num) => sum + num, 0)
+      sum += area * perimeter
+    }
+    return sum
+  }
+
+  getDiscountCost = () => {
+    let sum = 0
+    for (let i = this.nextGroupId - 1; i >= 1; i--) {
+      const groupNodes = this.nodes.filter(n => n.groupId === i)
+      const area = groupNodes.length
+
+      const groupPerimeterNodes = groupNodes.filter(n =>
+        [n.n, n.ne, n.e, n.se, n.s, n.sw, n.w, n.nw].some(nn => nn === null || nn.groupId !== n.groupId),
+      )
+
+      const perimeterWalk: Node[] = [groupPerimeterNodes[0]]
+
+      // const groupPerimeterCornerNodes = groupPerimeterNodes.filter((n => ))
+
+      // sum += area * groupPerimeterCornerNodes
+    }
+    return sum
+  }
+}
+
+export class Node {
+  value: string
+  x: number
+  y: number
+  id: number
+  groupId: number | null
+  n: Node | null
+  ne: Node | null
+  e: Node | null
+  se: Node | null
+  s: Node | null
+  sw: Node | null
+  w: Node | null
+  nw: Node | null
+
+  constructor(value: string, x: number, y: number, id: number) {
+    this.value = value
+    this.x = x
+    this.y = y
+    this.id = id
+    this.groupId = null
+    this.n = null
+    this.ne = null
+    this.e = null
+    this.se = null
+    this.s = null
+    this.sw = null
+    this.w = null
+    this.nw = null
+  }
+
+  propigateGroupId = () => {
+    if (this.groupId !== null) {
+      const neighbors = [this.n, this.s, this.e, this.w].filter(
+        nn => !!nn && !nn.groupId && nn.value === this.value,
+      ) as Node[]
+      neighbors.forEach(node => {
+        node.groupId = this.groupId
+        node.propigateGroupId()
+      })
+    }
+  }
+}
+
+export const wrapGrid = (rawData: string[]) =>
+  [Array(rawData.length + 2).fill('.'), ...rawData.map(d => `.${d}.`), Array(rawData.length + 2).fill('.')] as string[]
+
+export const partOne = (input: string) => {
+  const rawData = input.split('\n')
+  const map = new Map(rawData)
+  return map.getCost()
+}
+
+export const partTwo = (input: string) => {
+  const rawData = input.split('\n')
+  const map = new Map(wrapGrid(rawData))
+  return map.getDiscountCost()
+}
