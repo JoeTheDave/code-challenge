@@ -1,11 +1,18 @@
 import type { Detail, Overview, PublicSettings, ServerMessage } from './types'
 
+export const serverDownMessage = "Can't reach the code-challenge server. Is `npm start` running?"
+
 async function request<T>(method: string, url: string, body?: unknown): Promise<T> {
-  const res = await fetch(`/api${url}`, {
-    method,
-    headers: body === undefined ? {} : { 'Content-Type': 'application/json' },
-    body: body === undefined ? undefined : JSON.stringify(body),
-  })
+  let res: Response
+  try {
+    res = await fetch(`/api${url}`, {
+      method,
+      headers: body === undefined ? {} : { 'Content-Type': 'application/json' },
+      body: body === undefined ? undefined : JSON.stringify(body),
+    })
+  } catch {
+    throw new Error(serverDownMessage)
+  }
   if (!res.ok) throw new Error((await res.json().catch(() => null))?.error ?? `${method} ${url} failed (${res.status})`)
   return res.headers.get('content-type')?.includes('json') ? res.json() : (res.text() as T)
 }
@@ -45,7 +52,11 @@ const subscriptions = new Map<string, number>()
 
 function connect() {
   socket = new WebSocket(`ws://${location.host}/ws`)
-  socket.onopen = () => subscriptions.forEach((_, id) => socket!.send(JSON.stringify({ type: 'subscribe', id })))
+  socket.onopen = () => {
+    subscriptions.forEach((_, id) => socket!.send(JSON.stringify({ type: 'subscribe', id })))
+    // Lets pages reload their data after the server restarts.
+    handlers.forEach(h => h({ type: 'connected' }))
+  }
   socket.onmessage = e => handlers.forEach(h => h(JSON.parse(e.data)))
   socket.onclose = () => setTimeout(connect, 1000)
 }

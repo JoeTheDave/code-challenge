@@ -79,13 +79,26 @@ export async function fetchAocAnswers(year: number, day: number) {
 
 // ---- Project Euler ----------------------------------------------------------
 
+const latex: Record<string, string> = { times: '×', pi: 'π', omega: 'ω', equiv: '≡', sqrt: '√', cdot: '·', le: '≤', ge: '≥' }
+
+/** Euler titles contain inline LaTeX and HTML, e.g. "$N$<sup>th</sup> Digit", "$4 \\times N$". */
+export const plainTitle = (title: string) =>
+  stripTags(title)
+    .replace(/\$([^$]*)\$/g, (_, math: string) =>
+      math
+        .replace(/\\(?:text|mathcal|mathrm)\{([^}]*)\}/g, '$1')
+        .replace(/\\sqrt /g, '√')
+        .replace(/\\([a-z]+)/gi, (m, cmd: string) => latex[cmd] ?? m)
+        .replace(/[{}]/g, ''),
+    )
+
 export async function fetchEulerNames() {
   const { status, text } = await fetchText('https://projecteuler.net/minimal=problems')
   if (status !== 200) throw new SiteError(`Project Euler returned ${status} for the problem list.`)
   const names = new Map<number, string>()
   for (const line of text.split('\n').slice(1)) {
     const [id, title] = line.split('##')
-    if (Number(id) > 0 && title) names.set(Number(id), decode(title))
+    if (Number(id) > 0 && title) names.set(Number(id), plainTitle(title))
   }
   if (names.size === 0) throw new SiteError('Project Euler problem list was empty.')
   return names

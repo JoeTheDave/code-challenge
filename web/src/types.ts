@@ -10,6 +10,8 @@ export interface Entry {
   solved?: boolean
   answer?: string | null
   dataSet?: string
+  parts?: [boolean, boolean]
+  issue?: string
   testSets?: TestSet[]
 }
 
@@ -69,6 +71,7 @@ export type Detail = (
 
 export type ServerMessage =
   | { type: 'progress' }
+  | { type: 'connected' }
   | { type: 'run-start'; id: string; run: RunState }
   | { type: 'run-snapshot'; id: string; run: RunState }
   | { type: 'output'; id: string; runId: number; data: string }

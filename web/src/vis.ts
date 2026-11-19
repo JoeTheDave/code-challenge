@@ -14,7 +14,8 @@ async function main() {
   document.getElementById('title')!.textContent = `${id}${name}`
   const mod = await import(/* @vite-ignore */ `/@fs${detail.visPath}`)
   if (typeof mod.visualize !== 'function') throw new Error('vis.ts does not export a visualize function')
-  await mod.visualize(document.getElementById('canvas') as HTMLCanvasElement, input)
+  const isTest = (detail.entry.dataSet ?? 'input') !== 'input'
+  await mod.visualize(document.getElementById('canvas') as HTMLCanvasElement, input, isTest)
 }
 
 main().catch(showError)

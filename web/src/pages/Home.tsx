@@ -40,6 +40,11 @@ function cellState(kind: 'aoc' | 'euler', entry: Entry | undefined, started: boo
   return started ? 'started' : 'none'
 }
 
+function IssueCount({ ids, problems }: { ids: string[]; problems: Overview['problems'] }) {
+  const n = ids.filter(id => problems[id]?.issue).length
+  return n ? <span className="issue-count">⚠ {n}</span> : null
+}
+
 const stateLabel: Record<CellState, string> = {
   locked: 'Locked',
   none: 'Not started',
@@ -49,11 +54,13 @@ const stateLabel: Record<CellState, string> = {
   solved: 'Solved',
 }
 
-function Cell({ id, n, state, name }: { id: string; n: number; state: CellState; name?: string }) {
-  const title = `${n}${name ? `: ${name}` : ''} — ${stateLabel[state]}`
+function Cell(props: { id: string; n: number; state: CellState; name?: string; issue?: string }) {
+  const { id, n, state, name, issue } = props
+  const title = `${n}${name ? `: ${name}` : ''} — ${stateLabel[state]}${issue ? `\n⚠ ${issue}` : ''}`
   if (state === 'locked') return <span className="cell locked" title={title}>{n}</span>
   return (
-    <Link to={problemPath(id)} className={`cell ${state}`} title={title}>
+    <Link to={problemPath(id)} className={`cell ${state} ${issue ? 'has-issue' : ''}`} title={title}>
+      {issue && <span className="cell-issue" aria-label="Has issue" />}
       <span>{n}</span>
       {state === 'one' && <span className="cell-stars">★</span>}
       {state === 'two' && <span className="cell-stars">★★</span>}
@@ -85,10 +92,20 @@ export function Home() {
   const [error, setError] = useState('')
   const [expanded, toggle] = useExpanded()
 
-  const load = useCallback(() => api.overview().then(setOverview, e => setError(String(e))), [])
+  const load = useCallback(
+    () =>
+      api.overview().then(
+        o => {
+          setOverview(o)
+          setError('')
+        },
+        e => setError((e as Error).message),
+      ),
+    [],
+  )
   useEffect(() => {
     void load()
-    return onMessage(msg => msg.type === 'progress' && void load())
+    return onMessage(msg => (msg.type === 'progress' || msg.type === 'connected') && void load())
   }, [load])
 
   // Fetch names for any expanded year that has unlocked days without one.
@@ -135,7 +152,7 @@ export function Home() {
             onToggle={() => toggle(`aoc-${year}`)}
             summary={
               <>
-                {complete} / {days} <span className="gold">{stars}★</span>
+                {complete} / {days} <span className="gold">{stars}★</span> <IssueCount ids={ids} problems={problems} />
               </>
             }
           >
@@ -145,6 +162,7 @@ export function Home() {
                 id={id}
                 n={i + 1}
                 name={problems[id]?.name}
+                issue={problems[id]?.issue}
                 state={i < unlocked ? cellState('aoc', problems[id], started.has(id)) : 'locked'}
               />
             ))}
@@ -165,7 +183,11 @@ export function Home() {
             label={`${first}–${last}`}
             open={expanded.has(`euler-${b}`)}
             onToggle={() => toggle(`euler-${b}`)}
-            summary={`${solved} / ${numbers.length}`}
+            summary={
+              <>
+                {solved} / {numbers.length} <IssueCount ids={numbers.map(eulerId)} problems={problems} />
+              </>
+            }
           >
             {numbers.map(n => {
               const id = eulerId(n)
@@ -175,6 +197,7 @@ export function Home() {
                   id={id}
                   n={n}
                   name={problems[id]?.name}
+                  issue={problems[id]?.issue}
                   state={cellState('euler', problems[id], started.has(id))}
                 />
               )

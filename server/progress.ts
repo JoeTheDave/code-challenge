@@ -16,7 +16,11 @@ export interface Entry {
   answer?: string | null
   // Both
   dataSet?: string
+  /** AoC: which parts to run. Defaults to both; never both off. */
+  parts?: [boolean, boolean]
   testSets?: TestSet[]
+  /** Known problem with the solution; present = flagged on the grid until cleared. */
+  issue?: string
 }
 
 export interface Progress {

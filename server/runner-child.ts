@@ -4,7 +4,8 @@ import { readFileSync } from 'node:fs'
 import { pathToFileURL } from 'node:url'
 import { inspect } from 'node:util'
 
-const [solutionPath, kind, inputPath] = process.argv.slice(2)
+const [solutionPath, kind, inputPath, enabledParts = '0,1', dataSet = 'input'] = process.argv.slice(2)
+const isTest = dataSet !== 'input'
 
 const dim = (s: string) => `\x1b[2m${s}\x1b[0m`
 const bold = (s: string) => `\x1b[1;36m${s}\x1b[0m`
@@ -43,7 +44,9 @@ async function main() {
     return
   }
 
+  const enabled = enabledParts.split(',').map(Number)
   for (const [index, name] of parts.entries()) {
+    if (!enabled.includes(index)) continue
     const fn = mod[name]
     if (typeof fn !== 'function') {
       console.log(dim(`${name} is not exported\n`))
@@ -52,7 +55,7 @@ async function main() {
     console.log(bold(`▶ ${name}`))
     const start = performance.now()
     try {
-      const value = await fn(input)
+      const value = await fn(input, isTest)
       const ms = performance.now() - start
       console.log(`${formatValue(value)}  ${dim(formatMs(ms))}\n`)
       const text = value === undefined || value === null ? null : typeof value === 'object' ? formatPlain(value) : String(value)

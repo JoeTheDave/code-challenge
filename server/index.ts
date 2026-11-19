@@ -1,4 +1,5 @@
 import http from 'node:http'
+import { spawn } from 'node:child_process'
 import express from 'express'
 import { createServer as createViteServer } from 'vite'
 import { WebSocketServer, type WebSocket } from 'ws'
@@ -80,7 +81,15 @@ onProgressChange(() => {
 // ---- Start ------------------------------------------------------------------
 
 startWatcher()
-server.listen(port, host, () => console.log(`code-challenge running at http://localhost:${port}`))
+server.listen(port, host, () => {
+  const url = `http://localhost:${port}`
+  console.log(`code-challenge running at ${url}`)
+  // Open a browser tab unless one reconnects first (tsx watch restarts the server when its code changes).
+  if (process.env.NO_OPEN) return
+  setTimeout(() => {
+    if (socketSubs.size === 0) spawn('open', [url], { stdio: 'ignore', detached: true }).unref()
+  }, 1500)
+})
 
 for (const signal of ['SIGINT', 'SIGTERM'] as const) {
   process.on(signal, () => {

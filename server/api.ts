@@ -209,13 +209,17 @@ api.patch('/problems/:id', async (req, res) => {
   const p = problemFrom(req, res)
   if (!p) return
   const before = getEntry(p.id)
-  const { stars, solved, dataSet, answers, answer } = req.body as Entry
+  const { stars, solved, dataSet, answers, answer, parts } = req.body as Entry
+  const { issue } = req.body as { issue?: string | null }
   const patch: Partial<Entry> = {}
   if (stars) patch.stars = stars
   if (solved !== undefined) patch.solved = solved
   if (answers) patch.answers = answers
   if (answer !== undefined) patch.answer = answer
   if (dataSet) patch.dataSet = dataSet
+  if (parts && parts.length === 2 && parts.some(Boolean)) patch.parts = parts
+  // undefined drops the key when progress.json is written.
+  if (issue !== undefined) patch.issue = issue?.trim() || undefined
   updateEntry(p.id, patch)
 
   let warning: string | undefined
@@ -224,7 +228,8 @@ api.patch('/problems/:id', async (req, res) => {
     if (turnedOn.length) warning = await fetchAnswers(p, turnedOn)
   }
   if (solved && !before.solved) warning = await fetchAnswers(p, [0])
-  if (dataSet && dataSet !== before.dataSet) run(p.id)
+  const partsChanged = patch.parts && String(patch.parts) !== String(before.parts ?? [true, true])
+  if ((dataSet && dataSet !== before.dataSet) || partsChanged) run(p.id)
   res.json({ detail: detail(p), warning })
 })
 

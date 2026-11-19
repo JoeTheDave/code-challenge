@@ -9,7 +9,7 @@ the full design.
 
 ```sh
 npm install
-npm run dev        # http://localhost:5180 (restarts itself when server/ code changes)
+npm start          # opens http://localhost:5180 (set NO_OPEN=1 to skip); restarts when server/ code changes
 ```
 
 1. Open **Settings** and paste your Advent of Code `session` cookie, plus your Project Euler cookies

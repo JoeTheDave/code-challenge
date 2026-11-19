@@ -39,7 +39,17 @@ export function ProblemPage({ id }: { id: string }) {
     term.current?.write(text)
   }
 
-  const load = useCallback(() => api.problem(id).then(setDetail, e => setError(String(e))), [id])
+  const load = useCallback(
+    () =>
+      api.problem(id).then(
+        d => {
+          setDetail(d)
+          setError('')
+        },
+        e => setError((e as Error).message),
+      ),
+    [id],
+  )
 
   useEffect(() => {
     setDetail(null)
@@ -62,7 +72,7 @@ export function ProblemPage({ id }: { id: string }) {
 
   useEffect(() => {
     const off = onMessage(msg => {
-      if (msg.type === 'progress') return void load()
+      if (msg.type === 'progress' || msg.type === 'connected') return void load()
       if (msg.id !== id) return
       switch (msg.type) {
         case 'run-start':
@@ -121,6 +131,14 @@ export function ProblemPage({ id }: { id: string }) {
   const dataSet = entry.dataSet ?? 'input'
   const dataSets = ['input', ...detail.testSets.map(t => t.id)]
   const parts = isAoc ? ['Part 1', 'Part 2'] : ['Answer']
+  const enabledParts = isAoc ? (entry.parts ?? [true, true]) : [true]
+  // Turning off the only enabled part switches to the other one, so something always runs.
+  const togglePart = (i: number) => {
+    const next: [boolean, boolean] = [enabledParts[0], enabledParts[1]]
+    next[i] = !next[i]
+    if (!next[0] && !next[1]) next[1 - i] = true
+    return act(() => api.update(id, { parts: next }))
+  }
   const storedAnswers = isAoc ? (entry.answers ?? [null, null]) : [entry.answer ?? null]
 
   const selectDataSet = (value: string) => act(() => api.update(id, { dataSet: value }))
@@ -164,6 +182,18 @@ export function ProblemPage({ id }: { id: string }) {
             <button onClick={() => act(() => api.createVis(id))}>Generate Visualization File</button>
           ))}
       </div>
+
+      {entry.issue && (
+        <div className="issue">
+          <div>
+            <strong>⚠ Known issue</strong>
+            <p>{entry.issue}</p>
+          </div>
+          <button disabled={busy} onClick={() => act(() => api.update(id, { issue: null }))}>
+            Mark resolved
+          </button>
+        </div>
+      )}
 
       {warning && (
         <p className="banner">
@@ -229,6 +259,20 @@ export function ProblemPage({ id }: { id: string }) {
           )}
 
           <div className="run-bar">
+            {isAoc && (
+              <div className="segmented">
+                {parts.map((label, i) => (
+                  <button
+                    key={label}
+                    className={enabledParts[i] ? 'active' : ''}
+                    aria-pressed={enabledParts[i]}
+                    onClick={() => togglePart(i)}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+            )}
             <div className="segmented">
               {dataSets.map(ds => (
                 <button
@@ -251,6 +295,7 @@ export function ProblemPage({ id }: { id: string }) {
 
           <div className="results">
             {parts.map((label, i) => {
+              if (!enabledParts[i]) return null
               const result = run?.results.find(r => r.part === i)
               const expected = storedAnswers[i]
               const checkable = run?.dataSet === 'input' && expected != null && result?.value != null

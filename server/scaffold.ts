@@ -27,9 +27,9 @@ export const solve = (input: string) => {
 }
 
 export const visTemplate = `// Opened in its own browser tab via "Launch Visualization". Saving this file reloads the tab.
-// \`input\` is the problem's currently selected data set.
+// \`input\` is the problem's currently selected data set; \`isTest\` is true for test sets.
 
-export const visualize = (canvas: HTMLCanvasElement, input: string) => {
+export const visualize = (canvas: HTMLCanvasElement, input: string, isTest: boolean) => {
   canvas.width = 800
   canvas.height = 800
   const ctx = canvas.getContext('2d')!

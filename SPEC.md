@@ -9,7 +9,7 @@ the output in a terminal panel.
 
 - Express server + Vite (middleware mode) + React, all TypeScript, one process, one port.
 - Binds to `127.0.0.1` only. Has full file-system access.
-- `npm run dev` starts everything.
+- `npm start` starts everything and opens the app in the browser.
 - Solutions are TypeScript only. They run in a child process via `tsx`.
 
 ## Repository layout
@@ -33,6 +33,9 @@ All state and metadata live in one committed `progress.json`, keyed by problem i
 - AoC: `stars: [bool, bool]`, `answers: [string | null, string | null]`
 - Euler: `solved: bool`, `answer: string | null`
 - `dataSet`: the selected data set (`input` or a test-set id)
+- `issue`: optional reason a solution is known to be broken. Flagged problems get a red marker on
+  the grid and an issue count on collapsed groups; the puzzle page shows the reason with a
+  **Mark resolved** button that clears it.
 - `testSets: [{ id, name }]`: test data contents are stored as files (`test-1.txt`, …) in the
   problem folder
 
@@ -69,6 +72,8 @@ export const solve = (input: string) => { … }
 - No status or data flags in code.
 - The runner passes the selected data set's contents as `input`, with one trailing newline
   removed.
+- A second argument, `isTest`, is true when a test set is selected (for puzzles whose
+  parameters differ between the example and the real input).
 - Functions may be async.
 - `console.log` output streams to the terminal panel.
 - Each part's return value, run time and a Copy button are shown separately.
@@ -112,6 +117,7 @@ export const solve = (input: string) => { … }
 - Optional contact info for the User-Agent header sent to the sites.
 - Stored in `.local/config.json` (gitignored).
 
-## Later
+## Migration
 
-- Migrate solutions from the old `advent-of-code` project, then retire it.
+Solutions from the old `advent-of-code` project were migrated on 2026-11-18 (114 AoC days, 57
+Euler problems), verified against AoC's accepted answers and the old code's output.

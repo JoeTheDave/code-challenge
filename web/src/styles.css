@@ -1,8 +1,10 @@
 :root {
-  --bg: #0f0f23;
+  --bg: #000000;
   --bg-raised: #17172f;
   --bg-term: #0a0a17;
   --border: #2a2a4a;
+  --hover-bg: #26264a;
+  --hover-border: #55557f;
   --text: #cccccc;
   --muted: #7a7a99;
   --accent: #00cc00;
@@ -70,9 +72,11 @@ button {
   cursor: pointer;
   white-space: nowrap;
 }
+/* Hover is a neutral brighten; green and gold are reserved for active / "on" states. */
 button:hover:not(:disabled) {
-  border-color: var(--accent);
-  color: var(--accent);
+  background: var(--hover-bg);
+  border-color: var(--hover-border);
+  color: #ffffff;
 }
 button:disabled {
   opacity: 0.5;
@@ -89,6 +93,15 @@ button.link {
   padding: 0;
   color: var(--link);
 }
+button.link:hover:not(:disabled) {
+  background: none;
+  color: var(--accent);
+  text-decoration: underline;
+}
+button.icon:hover:not(:disabled) {
+  background: none;
+  color: #ffffff;
+}
 button.icon {
   background: none;
   border: none;
@@ -98,6 +111,11 @@ button.icon {
 button.danger:hover:not(:disabled) {
   border-color: var(--danger);
   color: var(--danger);
+}
+button.primary:hover:not(:disabled) {
+  background: #123d17;
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 input,
@@ -173,10 +191,7 @@ textarea:focus {
 /* ---- Landing page ---- */
 
 .group {
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  margin-bottom: 8px;
-  background: var(--bg-raised);
+  margin-bottom: 2px;
 }
 .group-header {
   display: flex;
@@ -222,8 +237,13 @@ textarea:focus {
   line-height: 1.1;
 }
 .cell:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  background: var(--hover-bg);
+  border-color: var(--hover-border);
+  color: #ffffff;
+}
+/* Started / starred / solved cells keep their state colors on hover and just brighten. */
+.cell:not(.none):hover {
+  filter: brightness(1.5);
 }
 .cell.locked {
   opacity: 0.3;
@@ -284,9 +304,14 @@ textarea:focus {
   gap: 8px;
   margin-right: 8px;
 }
-.toggle.on {
+.toggle.on,
+.toggle.on:hover:not(:disabled) {
   border-color: var(--gold);
   color: var(--gold);
+  background: #2e2e12;
+}
+.toggle.on:hover:not(:disabled) {
+  background: #3d3d18;
 }
 .answer code {
   color: var(--text);
@@ -317,10 +342,11 @@ textarea:focus {
 .segmented button:last-child {
   border-radius: 0 4px 4px 0;
 }
-.segmented button.active {
+.segmented button.active,
+.segmented button.active:hover:not(:disabled) {
   border-color: var(--accent);
   color: var(--accent);
-  background: #0f2a12;
+  background: #123d17;
   position: relative;
 }
 .spacer {
@@ -479,4 +505,43 @@ textarea:focus {
 .terminal .xterm-viewport,
 .terminal .xterm-screen {
   background-color: var(--bg-term) !important;
+}
+
+/* ---- Issue markers ---- */
+
+.cell {
+  position: relative;
+}
+.cell-issue {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--danger);
+}
+.cell.has-issue {
+  border-style: dashed;
+}
+.issue-count {
+  color: var(--danger);
+}
+.issue {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border: 1px solid #6b2a2a;
+  background: #2a1010;
+  color: #ffb3b3;
+  border-radius: 4px;
+}
+.issue > div {
+  flex: 1;
+}
+.issue p {
+  margin: 4px 0 0;
+  white-space: pre-wrap;
 }

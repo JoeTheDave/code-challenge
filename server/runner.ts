@@ -68,7 +68,9 @@ export function run(id: string) {
     results: [],
     startedAt: Date.now(),
   }
-  const child = fork(childScript, [solutionFile(id), problem.kind, dataFile], {
+  const parts = getEntry(id).parts ?? [true, true]
+  const enabledParts = [0, 1].filter(i => parts[i]).join(',')
+  const child = fork(childScript, [solutionFile(id), problem.kind, dataFile, enabledParts, state.dataSet], {
     cwd: path.dirname(solutionFile(id)),
     execArgv: ['--import', 'tsx'],
     stdio: ['ignore', 'pipe', 'pipe', 'ipc'],
