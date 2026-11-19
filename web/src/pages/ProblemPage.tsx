@@ -4,6 +4,7 @@ import { GitStatus } from '../components/GitStatus'
 import { api, onMessage, subscribeProblem } from '../api'
 import { Terminal, type TerminalHandle } from '../components/Terminal'
 import { TestDrawer } from '../components/TestDrawer'
+import { Toast, useToast } from '../components/Toast'
 import { problemLabel, problemPath } from '../routes'
 import type { Detail, RunState } from '../types'
 
@@ -23,6 +24,12 @@ export function ProblemPage({ id }: { id: string }) {
   const [run, setRun] = useState<RunState | null>(null)
   const [drawerOpen, setDrawerOpen] = useState(false)
   const [busy, setBusy] = useState(false)
+  const { toast, setToast, dismiss } = useToast()
+  const copy = (value: string) =>
+    navigator.clipboard.writeText(value).then(
+      () => setToast({ kind: 'ok', text: `Copied ${value.length > 40 ? value.slice(0, 40) + '…' : value}`, ms: 2000 }),
+      () => setToast({ kind: 'error', text: "Couldn't copy to the clipboard." }),
+    )
   const term = useRef<TerminalHandle>(null)
   const detailRef = useRef<Detail | null>(null)
   const runIdRef = useRef(0)
@@ -246,11 +253,9 @@ export function ProblemPage({ id }: { id: string }) {
                 </div>
               )
             })}
-            {(isAoc ? entry.stars?.some(Boolean) : entry.solved) && (
-              <button className="link" disabled={busy} onClick={() => act(() => api.fetchAnswers(id))}>
-                re-fetch answers
-              </button>
-            )}
+            <button className="link" disabled={busy} onClick={() => act(() => api.fetchAnswers(id))}>
+              {(isAoc ? entry.stars?.some(Boolean) : entry.solved) ? 're-fetch answers' : 'fetch answers'}
+            </button>
           </div>
 
           {isAoc && !detail.hasInput && (
@@ -317,7 +322,7 @@ export function ProblemPage({ id }: { id: string }) {
                   )}
                   {result && <span className="muted result-ms">{formatMs(result.ms)}</span>}
                   {result?.value != null && (
-                    <button onClick={() => navigator.clipboard.writeText(result.value!)}>Copy</button>
+                    <button onClick={() => copy(result.value!)}>Copy</button>
                   )}
                 </div>
               )
@@ -335,6 +340,7 @@ export function ProblemPage({ id }: { id: string }) {
           />
         </>
       )}
+      <Toast toast={toast} onDismiss={dismiss} />
     </div>
   )
 }

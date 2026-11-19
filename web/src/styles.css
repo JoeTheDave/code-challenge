@@ -674,7 +674,7 @@ textarea:focus {
 .git-commit input {
   width: 100%;
 }
-.git-toast {
+.toast {
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -691,7 +691,7 @@ textarea:focus {
   white-space: pre-wrap;
   font-size: 13px;
 }
-.git-toast.error {
+.toast.error {
   border-color: var(--danger);
   color: var(--danger);
 }

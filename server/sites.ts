@@ -74,7 +74,11 @@ export async function fetchAocAnswers(year: number, day: number) {
   if (!text.includes('<div class="user">')) {
     throw new SiteError('Not logged in to Advent of Code; the session cookie may have expired (see Settings).')
   }
-  return [...text.matchAll(/Your puzzle answer was <code>(.*?)<\/code>/g)].map(m => decode(m[1]))
+  return {
+    answers: [...text.matchAll(/Your puzzle answer was <code>(.*?)<\/code>/g)].map(m => decode(m[1])),
+    // Covers the last day, whose second star has no answer of its own.
+    bothComplete: text.includes('Both parts of this puzzle are complete'),
+  }
 }
 
 // ---- Project Euler ----------------------------------------------------------

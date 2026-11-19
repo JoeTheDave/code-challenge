@@ -158,16 +158,24 @@ function detail(p: Problem) {
 /** Scrape the accepted answer(s) after a star / solved toggle. Returns a warning, if any. */
 async function fetchAnswers(p: Problem, parts: number[]): Promise<string | undefined> {
   try {
+    // An accepted answer on the site means the part is solved, so credit it too (never un-credit).
     if (p.kind === 'euler') {
-      updateEntry(p.id, { answer: await fetchEulerAnswer(p.number) })
+      updateEntry(p.id, { answer: await fetchEulerAnswer(p.number), solved: true })
       return
     }
-    const found = await fetchAocAnswers(p.year, p.day)
-    const answers = [...(getEntry(p.id).answers ?? [null, null])] as [string | null, string | null]
-    found.forEach((a, i) => (answers[i] = a))
-    updateEntry(p.id, { answers })
+    const { answers: found, bothComplete } = await fetchAocAnswers(p.year, p.day)
+    const entry = getEntry(p.id)
+    const answers = [...(entry.answers ?? [null, null])] as [string | null, string | null]
+    const stars = [...(entry.stars ?? [false, false])] as [boolean, boolean]
+    found.forEach((a, i) => {
+      answers[i] = a
+      stars[i] = true
+    })
+    if (bothComplete) stars.fill(true)
+    updateEntry(p.id, { answers, stars })
     // The last day's second star has no puzzle, so it never has an answer.
     const isFreeStar = (i: number) => i === 1 && p.day === daysInYear(p.year)
+    if (!found.length && !bothComplete) return "Advent of Code doesn't show an accepted answer for this puzzle yet."
     const missing = parts.filter(i => !found[i] && !isFreeStar(i))
     if (missing.length) {
       return `Advent of Code doesn't show an answer for part ${missing.map(i => i + 1).join(' & ')} yet.`

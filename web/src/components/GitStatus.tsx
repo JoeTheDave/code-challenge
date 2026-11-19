@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { api, onMessage } from '../api'
+import { Toast, useToast } from './Toast'
 import type { GitCommit, GitStatus as Status } from '../types'
 
 function ago(ts: number | null, now: number) {
@@ -25,8 +26,6 @@ export function defaultMessage(files: Status['files']) {
   return list.length ? `Update ${list.join(', ')}` : 'Update'
 }
 
-type Toast = { kind: 'ok' | 'error'; text: string }
-
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`
 
 function Commits({ list, total }: { list: GitCommit[]; total: number }) {
@@ -49,7 +48,7 @@ export function GitStatus() {
   const [now, setNow] = useState(Date.now())
   const [message, setMessage] = useState('')
   const [edited, setEdited] = useState(false)
-  const [toast, setToast] = useState<Toast | null>(null)
+  const { toast, setToast, dismiss } = useToast()
   const root = useRef<HTMLDivElement>(null)
 
   // Keep the suggested commit message current until the user types their own.
@@ -57,13 +56,6 @@ export function GitStatus() {
   useEffect(() => {
     if (!edited) setMessage(suggested)
   }, [suggested, edited])
-
-  // Successes fade on their own; errors stay until dismissed.
-  useEffect(() => {
-    if (toast?.kind !== 'ok') return
-    const t = setTimeout(() => setToast(null), 4000)
-    return () => clearTimeout(t)
-  }, [toast])
 
   const act = async (steps: (() => Promise<Status>)[], done: string) => {
     setToast(null)
@@ -254,14 +246,7 @@ export function GitStatus() {
         </div>
       )}
 
-      {toast && (
-        <div className={`git-toast ${toast.kind}`} role="status">
-          <span>{toast.text}</span>
-          <button className="icon" onClick={() => setToast(null)} aria-label="Dismiss">
-            ✕
-          </button>
-        </div>
-      )}
+      <Toast toast={toast} onDismiss={dismiss} />
     </div>
   )
 }
