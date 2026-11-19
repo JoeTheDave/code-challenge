@@ -64,6 +64,7 @@ progress.json  All problem state and metadata (committed)
 | POST | `/problems/:id/run`, `/stop` | Run / stop the solution |
 | GET | `/git` | Local vs GitHub sync status (also pushed over `/ws` as `{type:'git'}`) |
 | POST | `/git/fetch` | `git fetch` now (`{force:true}`) or if the last one is over a minute old |
+| POST | `/git/commit`, `/git/push`, `/git/pull` | Commit all (`{message}`), push, pull (`--rebase`, clean tree only; a conflict is aborted). 409 + `error` on refusal |
 | GET / PUT | `/settings` | Settings (secrets are never returned, only `has*` flags) |
 
 ## Frontend Routes

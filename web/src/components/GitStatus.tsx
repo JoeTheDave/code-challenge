@@ -10,6 +10,23 @@ function ago(ts: number | null, now: number) {
   return m < 60 ? `${m} min ago` : `${Math.round(m / 60)} h ago`
 }
 
+/** "Update aoc/2016/01, progress.json" from the changed paths. */
+export function defaultMessage(files: Status['files']) {
+  const parts = new Set<string>()
+  let other = 0
+  for (const { path } of files) {
+    const m = path.match(/^solutions\/(aoc\/\d{4}\/\d{2}|euler\/\d{3})\//)
+    if (m) parts.add(m[1])
+    else if (path === 'progress.json') parts.add('progress.json')
+    else other++
+  }
+  const list = [...parts].sort((a, b) => Number(a === 'progress.json') - Number(b === 'progress.json') || a.localeCompare(b))
+  if (other) list.push(plural(other, 'other file'))
+  return list.length ? `Update ${list.join(', ')}` : 'Update'
+}
+
+type Toast = { kind: 'ok' | 'error'; text: string }
+
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`
 
 function Commits({ list, total }: { list: GitCommit[]; total: number }) {
@@ -30,7 +47,40 @@ export function GitStatus() {
   const [status, setStatus] = useState<Status | null>(null)
   const [open, setOpen] = useState(false)
   const [now, setNow] = useState(Date.now())
+  const [message, setMessage] = useState('')
+  const [edited, setEdited] = useState(false)
+  const [toast, setToast] = useState<Toast | null>(null)
   const root = useRef<HTMLDivElement>(null)
+
+  // Keep the suggested commit message current until the user types their own.
+  const suggested = status ? defaultMessage(status.files) : ''
+  useEffect(() => {
+    if (!edited) setMessage(suggested)
+  }, [suggested, edited])
+
+  // Successes fade on their own; errors stay until dismissed.
+  useEffect(() => {
+    if (toast?.kind !== 'ok') return
+    const t = setTimeout(() => setToast(null), 4000)
+    return () => clearTimeout(t)
+  }, [toast])
+
+  const act = async (steps: (() => Promise<Status>)[], done: string) => {
+    setToast(null)
+    try {
+      for (const step of steps) setStatus(await step())
+      setToast({ kind: 'ok', text: done })
+      return true
+    } catch (e) {
+      setToast({ kind: 'error', text: (e as Error).message })
+      return false
+    }
+  }
+  const commit = async (andPush: boolean) => {
+    const steps = [() => api.gitCommit(message)]
+    if (andPush) steps.push(() => api.gitPush())
+    if (await act(steps, andPush ? 'Committed and pushed to GitHub.' : 'Committed.')) setEdited(false)
+  }
 
   useEffect(() => {
     const load = () => api.git().then(setStatus, () => {})
@@ -74,6 +124,8 @@ export function GitStatus() {
   if (!status.upstream) segments.push({ text: 'no remote branch', cls: 'none' })
   if (!segments.length) segments.push({ text: '✓ synced', cls: 'synced' })
   const pillCls = segments[0].cls
+  const busy = status.busy !== null
+  const busyLabel = { commit: 'Committing…', push: 'Pushing…', pull: 'Pulling…' } as const
 
   return (
     <div className="git-status" ref={root}>
@@ -84,7 +136,7 @@ export function GitStatus() {
         aria-haspopup="dialog"
         title="Local vs GitHub"
       >
-        {status.fetching && <span className="git-spin" aria-label="Checking GitHub" />}
+        {(status.fetching || busy) && <span className="git-spin" aria-label="Working" />}
         {segments.map(s => (
           <span key={s.cls} className={`git-seg ${s.cls}`}>
             {s.text}
@@ -109,15 +161,29 @@ export function GitStatus() {
             <section>
               <h3 className="behind">↓ {plural(status.behindCount, 'commit')} on GitHub, not here</h3>
               <Commits list={status.behind} total={status.behindCount} />
-              <p className="muted git-hint">
-                Pull to get them: <code>git pull</code>
-              </p>
+              {dirty ? (
+                <p className="muted git-hint">Commit your changes below, then pull.</p>
+              ) : (
+                <div className="git-actions">
+                  <button className="primary" disabled={busy} onClick={() => act([api.gitPull], 'Pulled from GitHub.')}>
+                    {status.busy === 'pull' ? busyLabel.pull : 'Pull'}
+                  </button>
+                </div>
+              )}
             </section>
           )}
           {status.aheadCount > 0 && (
             <section>
               <h3 className="ahead">↑ {plural(status.aheadCount, 'commit')} here, not on GitHub</h3>
               <Commits list={status.ahead} total={status.aheadCount} />
+              {!status.behindCount && (
+                <div className="git-actions">
+                  <button className="primary" disabled={busy} onClick={() => act([api.gitPush], 'Pushed to GitHub.')}>
+                    {status.busy === 'push' ? busyLabel.push : 'Push'}
+                  </button>
+                </div>
+              )}
+              {status.behindCount > 0 && <p className="muted git-hint">Pull first, then push.</p>}
             </section>
           )}
           {dirty > 0 && (
@@ -131,6 +197,34 @@ export function GitStatus() {
                 ))}
                 {dirty > 30 && <li className="muted">…and {dirty - 30} more</li>}
               </ul>
+              <form
+                className="git-commit"
+                onSubmit={e => {
+                  e.preventDefault()
+                  void commit(false)
+                }}
+              >
+                <input
+                  value={message}
+                  onChange={e => {
+                    setMessage(e.target.value)
+                    setEdited(true)
+                  }}
+                  placeholder="Commit message"
+                  aria-label="Commit message"
+                  disabled={busy}
+                />
+                <div className="git-actions">
+                  <button type="submit" disabled={busy || !message.trim()}>
+                    {status.busy === 'commit' ? busyLabel.commit : 'Commit all'}
+                  </button>
+                  {status.upstream && !status.behindCount && (
+                    <button type="button" className="primary" disabled={busy || !message.trim()} onClick={() => commit(true)}>
+                      Commit & push
+                    </button>
+                  )}
+                </div>
+              </form>
             </section>
           )}
           {!status.upstream && (
@@ -142,19 +236,30 @@ export function GitStatus() {
             <span className={status.fetchError ? 'error' : 'muted'}>
               {status.fetchError
                 ? `Couldn't reach GitHub: ${status.fetchError}`
-                : status.fetching
+                : status.busy
+                  ? busyLabel[status.busy]
+                  : status.fetching
                   ? 'Checking GitHub…'
                   : `GitHub checked ${ago(status.lastFetchAt, now)}`}
             </span>
             {status.upstream && (
               <button
                 onClick={() => api.gitFetch(true).then(setStatus, () => {})}
-                disabled={status.fetching}
+                disabled={status.fetching || busy}
               >
                 Check now
               </button>
             )}
           </div>
+        </div>
+      )}
+
+      {toast && (
+        <div className={`git-toast ${toast.kind}`} role="status">
+          <span>{toast.text}</span>
+          <button className="icon" onClick={() => setToast(null)} aria-label="Dismiss">
+            ✕
+          </button>
         </div>
       )}
     </div>

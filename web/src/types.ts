@@ -83,6 +83,7 @@ export type GitStatus = {
   lastFetchAt: number | null
   fetching: boolean
   fetchError: string | null
+  busy: 'commit' | 'push' | 'pull' | null
 }
 
 export type ServerMessage =

@@ -30,7 +30,7 @@ import {
   fetchEulerNames,
 } from './sites.ts'
 import { rootDir } from './paths.ts'
-import { fetchOnFocus, fetchRemote, getGitStatus } from './git.ts'
+import { GitOpError, commitAll, fetchOnFocus, fetchRemote, getGitStatus, pull, push } from './git.ts'
 
 export const api = express.Router()
 api.use(express.json({ limit: '10mb' }))
@@ -46,6 +46,19 @@ api.post('/git/fetch', async (req, res) => {
   await (req.body?.force ? fetchRemote() : fetchOnFocus())
   res.json(getGitStatus())
 })
+
+async function gitAction(res: Response, action: () => Promise<void>) {
+  try {
+    await action()
+    res.json(getGitStatus())
+  } catch (e) {
+    res.status(e instanceof GitOpError ? 409 : 500).json({ error: (e as Error).message })
+  }
+}
+
+api.post('/git/commit', (req, res) => gitAction(res, () => commitAll(String(req.body?.message ?? ''))))
+api.post('/git/push', (_req, res) => gitAction(res, push))
+api.post('/git/pull', (_req, res) => gitAction(res, pull))
 
 // ---- Names ------------------------------------------------------------------
 

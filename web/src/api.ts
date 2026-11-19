@@ -41,6 +41,9 @@ export const api = {
   settings: () => request<PublicSettings>('GET', '/settings'),
   git: () => request<GitStatus>('GET', '/git'),
   gitFetch: (force = false) => request<GitStatus>('POST', '/git/fetch', { force }),
+  gitCommit: (message: string) => request<GitStatus>('POST', '/git/commit', { message }),
+  gitPush: () => request<GitStatus>('POST', '/git/push'),
+  gitPull: () => request<GitStatus>('POST', '/git/pull'),
   saveSettings: (patch: object) => request<PublicSettings>('PUT', '/settings', patch),
 }
 

@@ -660,3 +660,38 @@ textarea:focus {
 .git-hint {
   font-size: 12px;
 }
+.git-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.git-actions button.primary {
+  padding: 4px 14px;
+}
+.git-commit {
+  margin-top: 8px;
+}
+.git-commit input {
+  width: 100%;
+}
+.git-toast {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 30;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: min(460px, 90vw);
+  padding: 8px 12px;
+  background: var(--bg-raised);
+  border: 1px solid var(--link);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  white-space: pre-wrap;
+  font-size: 13px;
+}
+.git-toast.error {
+  border-color: var(--danger);
+  color: var(--danger);
+}
