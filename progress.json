@@ -370,11 +370,11 @@
       "name": "No Time for a Taxicab",
       "stars": [
         true,
-        false
+        true
       ],
       "answers": [
         "250",
-        null
+        "151"
       ],
       "dataSet": "input",
       "testSets": [
@@ -382,11 +382,6 @@
           "id": "test-1",
           "name": "Test"
         }
-      ],
-      "issue": "Part 2 bug: `answer = results.location` keeps a reference to an array that keeps changing, so part 2 returns the final distance (250, same as part 1) instead of the first location visited twice. On test sets part 2 crashes on a null answer.",
-      "parts": [
-        true,
-        false
       ]
     },
     "aoc/2016/02": {

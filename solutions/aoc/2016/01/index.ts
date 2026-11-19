@@ -6,99 +6,67 @@ class Solution {
   heading: number
   x: number
   y: number
+  locationHistory: string[]
 
   constructor(input: string) {
     this.instructions = input.split(', ')
     this.heading = 0
     this.x = 0
     this.y = 0
+    this.locationHistory = []
+  }
+
+  executePartOne() {
+    this.instructions.forEach(instruction => {
+      const direction = instruction[0] as 'R' | 'L'
+      const distance = parseInt(instruction.slice(1))
+      this.turn(direction)
+      this.move(distance)
+    })
+    return Math.abs(this.x) + Math.abs(this.y)
+  }
+
+  executePartTwo() {
+    this.locationHistory.push(`${this.x}|${this.y}`)
+    for (let i = 0; i < this.instructions.length; i++) {
+      const instruction = this.instructions[i]
+      const direction = instruction[0] as 'R' | 'L'
+      const distance = parseInt(instruction.slice(1))
+      this.turn(direction)
+      for (let d = 0; d < distance; d++) {
+        this.move(1)
+        const location = `${this.x}|${this.y}`
+        if (this.locationHistory.includes(location)) {
+          return Math.abs(this.x) + Math.abs(this.y)
+        }
+        this.locationHistory.push(location)
+      }
+    }
   }
 
   turn(direction: 'R' | 'L') {
     this.heading = (this.heading + (direction === 'R' ? 1 : 3)) % 4
   }
+
+  move(distance: number) {
+    if (this.heading === 0) {
+      this.y += distance
+    } else if (this.heading === 1) {
+      this.x += distance
+    } else if (this.heading === 2) {
+      this.y -= distance
+    } else if (this.heading === 3) {
+      this.x -= distance
+    }
+  }
 }
 
 export const partOne = (input: string) => {
   const solution = new Solution(input)
-  console.log(solution)
-  const data = input
-  return data
-    .split(', ')
-    .map(item => ({
-      turn: item[0],
-      dist: parseInt(item.substr(1, item.length - 1)),
-    }))
-    .reduce(
-      (results, instruction) => {
-        results.heading += instruction.turn === 'R' ? 1 : -1
-        if (results.heading === 4) {
-          results.heading = 0
-        }
-        if (results.heading === -1) {
-          results.heading = 3
-        }
-
-        if (results.heading === 0) {
-          results.location[1] += instruction.dist
-        }
-        if (results.heading === 1) {
-          results.location[0] += instruction.dist
-        }
-        if (results.heading === 2) {
-          results.location[1] -= instruction.dist
-        }
-        if (results.heading === 3) {
-          results.location[0] -= instruction.dist
-        }
-        return results
-      },
-      { heading: 0, location: [0, 0] },
-    )
-    .location.reduce((sum, num) => sum + Math.abs(num))
+  return solution.executePartOne()
 }
 
 export const partTwo = (input: string) => {
-  const data = input
-  return data
-    .split(', ')
-    .map(item => ({
-      turn: item[0],
-      dist: parseInt(item.substr(1, item.length - 1)),
-    }))
-    .reduce(
-      (results, instruction) => {
-        results.heading += instruction.turn === 'R' ? 1 : -1
-        if (results.heading === 4) {
-          results.heading = 0
-        }
-        if (results.heading === -1) {
-          results.heading = 3
-        }
-        if (results.heading === 0) {
-          results.location[1] += instruction.dist
-        }
-        if (results.heading === 1) {
-          results.location[0] += instruction.dist
-        }
-        if (results.heading === 2) {
-          results.location[1] -= instruction.dist
-        }
-        if (results.heading === 3) {
-          results.location[0] -= instruction.dist
-        }
-        if (!results.answer && results.history.includes(results.location.join('|'))) {
-          results.answer = results.location
-        }
-        results.history.push(results.location.join('|'))
-        return results
-      },
-      {
-        heading: 0,
-        location: [0, 0],
-        history: [] as string[],
-        answer: null as number[] | null,
-      },
-    )
-    .answer!.reduce((sum, num) => sum + Math.abs(num))
+  const solution = new Solution(input)
+  return solution.executePartTwo()
 }
