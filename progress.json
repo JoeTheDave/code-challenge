@@ -395,7 +395,15 @@
       ],
       "parts": [
         true,
-        true
+        false
+      ],
+      "answers": [
+        "65556",
+        null
+      ],
+      "stars": [
+        true,
+        false
       ]
     },
     "aoc/2016/03": {
