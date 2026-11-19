@@ -14,3 +14,12 @@
 
 ## Iteration plan
 1. Toast component + copy feedback; star/solved credit in `fetchAnswers`; link always shown.
+
+## Shipped — Iteration 1
+- Commit `cb5aea5` on `master`, pushed to GitHub. No deploy (local-only app); the running
+  `tsx watch` instance reloaded.
+- Scoped tests: `fetchAocAnswers` against stubbed AoC pages (two answers + "both parts
+  complete", one answer + half complete, HTML entity decoding). `tsc` clean apart from the
+  pre-existing WIP errors in `solutions/aoc/2023/23`. Star crediting itself wasn't exercised
+  end-to-end, to avoid writing progress.json under the running server.
+- No DB backup: the project has no database.
