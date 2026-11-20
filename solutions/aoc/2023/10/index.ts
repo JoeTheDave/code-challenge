@@ -198,6 +198,7 @@ export class Network {
     this.startNode.ne.status = true
     this.startNode.determineAlignment()
     this.leads = []
+    this.startNode.step = 0
   }
 
   stepPath = () => {
@@ -208,7 +209,6 @@ export class Network {
       nextStep = (this.leads[0].step as number) + 1
       this.leads = this.leads.map(lead => lead.connectionNodes.find(l => l.step === null) as NetworkNode)
     }
-    console.log(nextStep)
     this.leads.forEach(lead => {
       lead.step = nextStep
       lead.determineAlignment()

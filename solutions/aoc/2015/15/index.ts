@@ -40,29 +40,33 @@ const scoreIngredientList = (ingredients: Ingredients, quantities: IngredientQua
   return [score, properties['calories']]
 }
 
+// Every way to split `total` teaspoons across the given ingredients, for any number of ingredients
+const generateQuantities = (names: string[], total: number): IngredientQuantities[] => {
+  const [first, ...rest] = names
+  if (!rest.length) {
+    return [{ [first]: total }]
+  }
+  const combinations: IngredientQuantities[] = []
+  for (let amount = 0; amount <= total; amount++) {
+    generateQuantities(rest, total - amount).forEach(quantities => {
+      combinations.push({ [first]: amount, ...quantities })
+    })
+  }
+  return combinations
+}
+
 export const partOne = (input: string) => {
   const data = input.split('\n')
   const ingredients = processData(data)
   let maxScore = 0
   let bestIngredients: IngredientQuantities | null = null
-  for (let Frosting = 0; Frosting <= 100; Frosting++) {
-    for (let Candy = 0; Candy <= 100 - Frosting; Candy++) {
-      for (let Butterscotch = 0; Butterscotch <= 100 - (Frosting + Candy); Butterscotch++) {
-        const quantities: IngredientQuantities = {
-          Frosting,
-          Candy,
-          Butterscotch,
-          Sugar: 100 - (Frosting + Candy + Butterscotch),
-        }
-
-        const [score, calories] = scoreIngredientList(ingredients, quantities)
-        maxScore = Math.max(maxScore, score)
-        if (maxScore === score) {
-          bestIngredients = quantities
-        }
-      }
+  generateQuantities(Object.keys(ingredients), 100).forEach(quantities => {
+    const [score, calories] = scoreIngredientList(ingredients, quantities)
+    maxScore = Math.max(maxScore, score)
+    if (maxScore === score) {
+      bestIngredients = quantities
     }
-  }
+  })
   return maxScore
 }
 
@@ -71,25 +75,14 @@ export const partTwo = (input: string) => {
   const ingredients = processData(data)
   let maxScore = 0
   let bestIngredients: IngredientQuantities | null = null
-  for (let Frosting = 0; Frosting <= 100; Frosting++) {
-    for (let Candy = 0; Candy <= 100 - Frosting; Candy++) {
-      for (let Butterscotch = 0; Butterscotch <= 100 - (Frosting + Candy); Butterscotch++) {
-        const quantities: IngredientQuantities = {
-          Frosting,
-          Candy,
-          Butterscotch,
-          Sugar: 100 - (Frosting + Candy + Butterscotch),
-        }
-
-        const [score, calories] = scoreIngredientList(ingredients, quantities)
-        if (calories === 500) {
-          maxScore = Math.max(maxScore, score)
-          if (maxScore === score) {
-            bestIngredients = quantities
-          }
-        }
+  generateQuantities(Object.keys(ingredients), 100).forEach(quantities => {
+    const [score, calories] = scoreIngredientList(ingredients, quantities)
+    if (calories === 500) {
+      maxScore = Math.max(maxScore, score)
+      if (maxScore === score) {
+        bestIngredients = quantities
       }
     }
-  }
+  })
   return maxScore
 }

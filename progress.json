@@ -272,8 +272,7 @@
           "id": "test-1",
           "name": "Test"
         }
-      ],
-      "issue": "Ingredient names are hardcoded (Frosting, Candy, …), so test sets (Butterscotch/Cinnamon) return 0. Real input works."
+      ]
     },
     "aoc/2015/16": {
       "name": "Aunt Sue",
@@ -345,8 +344,7 @@
           "id": "test-1",
           "name": "Test"
         }
-      ],
-      "issue": "Part 2 is unfinished and throws 'Stop' from its own catch block (same as the old code)."
+      ]
     },
     "aoc/2015/20": {
       "name": "Infinite Elves and Infinite Houses"
@@ -1393,8 +1391,7 @@
           "id": "test-1",
           "name": "Test"
         }
-      ],
-      "issue": "Part 2 always loops over 100 groups, so it crashes on test data (which has only 2 groups). Real input works."
+      ]
     },
     "aoc/2022/04": {
       "name": "Camp Cleanup",
@@ -1618,7 +1615,6 @@
           "name": "Test"
         }
       ],
-      "issue": "Part 2 returns 0 on the test set (the example's answer is 1707). Real input gives the right answer.",
       "parts": [
         true,
         true
@@ -1661,8 +1657,7 @@
           "id": "test-1",
           "name": "Test"
         }
-      ],
-      "issue": "Part 1 runs out of memory (\"JavaScript heap out of memory\"): the branch list grows to ~7.5M by minute 16. Unfinished WIP port; the old code crashed the same way. Part 2 returns null."
+      ]
     },
     "aoc/2022/20": {
       "name": "Grove Positioning System",
@@ -1922,14 +1917,13 @@
         "6903",
         null
       ],
-      "dataSet": "test-1",
+      "dataSet": "input",
       "testSets": [
         {
           "id": "test-1",
           "name": "Test"
         }
-      ],
-      "issue": "Part 1 crashes: TypeError: Cannot set properties of undefined (setting 'step'). startNode.step is never set, so one path walks back into S and finds no unvisited neighbour. The old code crashed the same way, so the code that produced the accepted answer (6903) was never saved. Part 2 is fully commented out."
+      ]
     },
     "aoc/2023/11": {
       "name": "Cosmic Expansion",
@@ -2133,8 +2127,7 @@
           "id": "test-1",
           "name": "Test"
         }
-      ],
-      "issue": "Part 1 throws \"TypeError: walker.slice is not a function\" (Walker misuse; same as the old code). The file has 6 type errors from the same unfinished logic, so `npm run typecheck` reports them."
+      ]
     },
     "aoc/2023/24": {
       "name": "Never Tell Me The Odds",
@@ -2478,7 +2471,6 @@
           "name": "Part 2 test"
         }
       ],
-      "issue": "Part 2 doesn't finish (still running after 3+ minutes, same as the old code). Its hardcoded 2^45–2^48 search range is only meant for the real input, so on test sets it throws \"unable to determine new search range\".",
       "parts": [
         true,
         false
@@ -3165,15 +3157,14 @@
     "euler/050": {
       "name": "Consecutive Prime Sum",
       "solved": true,
-      "answer": null,
+      "answer": "997651",
       "dataSet": "input",
       "testSets": [
         {
           "id": "test-1",
           "name": "Test 1"
         }
-      ],
-      "issue": "solve() doesn't finish (still running after 3+ minutes, same as the old code). Marked solved, but no answer is stored because it never produced one."
+      ]
     },
     "euler/051": {
       "name": "Prime Digit Replacements"

@@ -163,29 +163,29 @@ export const partOne = (input: string) => {
 }
 
 export const partTwo = (input: string) => {
-  const rawData = input.split('\n')
+  // const rawData = input.split('\n')
 
-  let low = 2 ** 45
-  let high = 2 ** 48
+  // let low = 2 ** 45
+  // let high = 2 ** 48
 
-  while (high - low > 100000) {
-    const [newLow, newHigh] = narrowSearchBetween(rawData, low, high)
-    low = newLow
-    high = newHigh
-  }
+  // while (high - low > 100000) {
+  //   const [newLow, newHigh] = narrowSearchBetween(rawData, low, high)
+  //   low = newLow
+  //   high = newHigh
+  // }
 
-  let result = 0
-  for (let i = low; i <= high * 2; i++) {
-    let attemptedValue = i
-    const computer = new ChronospatialComputer(rawData)
-    computer.registerA = BigInt(attemptedValue)
-    computer.execute()
-    const match = compare(computer.out, computer.instructions)
-    console.log(`${attemptedValue} - [${computer.out.join(',')}] - ${match}`)
-    if (computer.out.join(',') === computer.instructions.join(',')) {
-      result = i
-      break
-    }
-  }
-  return result
+  // let result = 0
+  // for (let i = low; i <= high * 2; i++) {
+  //   let attemptedValue = i
+  //   const computer = new ChronospatialComputer(rawData)
+  //   computer.registerA = BigInt(attemptedValue)
+  //   computer.execute()
+  //   const match = compare(computer.out, computer.instructions)
+  //   console.log(`${attemptedValue} - [${computer.out.join(',')}] - ${match}`)
+  //   if (computer.out.join(',') === computer.instructions.join(',')) {
+  //     result = i
+  //     break
+  //   }
+  // }
+  return null
 }

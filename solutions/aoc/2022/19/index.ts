@@ -230,10 +230,10 @@ class BlueprintSimulation {
 }
 
 export const partOne = (input: string) => {
-  const data = input.split('\n')
-  const blueprints = prepareBlueprints(data)
-  const simulationResults = blueprints.map(b => simulateBlueprintOperation(b))
-  console.log(simulationResults)
+  // const data = input.split('\n')
+  // const blueprints = prepareBlueprints(data)
+  // const simulationResults = blueprints.map(b => simulateBlueprintOperation(b))
+  // console.log(simulationResults)
   return null
 }
 

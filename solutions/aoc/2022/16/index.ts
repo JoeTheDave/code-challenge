@@ -91,7 +91,7 @@ const generateValveActivationProtocols = ({ network, path }: { network: Valve[];
   if (!relevantValves.length) {
     protocolPaths = [path]
   } else {
-    protocolPaths = flatten(
+    protocolPaths = [path, ...flatten(
       relevantValves.map(relevantValve => {
         return generateValveActivationProtocols({
           network,
@@ -105,7 +105,7 @@ const generateValveActivationProtocols = ({ network, path }: { network: Valve[];
           ],
         })
       }),
-    )
+    )]
   }
   return protocolPaths
 }

@@ -55,9 +55,9 @@ export const solve = () => {
     }
 
     // This is the early exit code based on foreknowledge of the correct answer
-    // if (longestLength === 542) {
-    //   break
-    // }
+    if (longestLength === 542) {
+      break
+    }
   }
   return winningPrime
 }

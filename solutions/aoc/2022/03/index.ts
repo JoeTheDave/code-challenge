@@ -31,7 +31,7 @@ export const partOne = (input: string) => {
 export const partTwo = (input: string) => {
   const data = input.split('\n')
   let score = 0
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < data.length / 3; i++) {
     const sacks = data.slice(i * 3, i * 3 + 3)
 
     const match = sacks[0].split('').reduce((match, item) => {
