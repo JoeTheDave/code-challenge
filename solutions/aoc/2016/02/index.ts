@@ -8,8 +8,8 @@ const isDirection = (char: string): char is Direction => 'URDL'.includes(char)
 class Solution {
   instructions: Direction[][]
   keypad: Cell[]
-  cursor: number[]
-  code: number[]
+  cursor: Cell
+  code: string[]
 
   constructor(input: string, keypad: (string | null)[][]) {
     this.instructions = input.split('\n').map(line =>
@@ -18,28 +18,59 @@ class Solution {
         return char
       }),
     )
-    this.keypad = [
-      [1, 2, 3],
-      [4, 5, 6],
-      [7, 8, 9],
-    ]
-    this.cursor = [1, 1]
+    this.keypad = []
+    for (let y = 0; y < keypad.length; y++) {
+      for (let x = 0; x < keypad[y].length; x++) {
+        if (keypad[y][x] !== null) {
+          this.keypad.push(new Cell(keypad[y][x] as string))
+        }
+      }
+    }
+    for (let y = 0; y < keypad.length; y++) {
+      for (let x = 0; x < keypad[y].length; x++) {
+        if (keypad[y][x] !== null) {
+          const key = this.keypad.find(key => key.value === keypad[y][x]) as Cell
+          if (y > 0 && keypad[y - 1][x] !== null) {
+            key.U = this.keypad.find(key => key.value === keypad[y - 1][x]) || null
+          }
+          if (y < keypad.length - 1 && keypad[y + 1][x] !== null) {
+            key.D = this.keypad.find(key => key.value === keypad[y + 1][x]) || null
+          }
+          if (x > 0 && keypad[y][x - 1] !== null) {
+            key.L = this.keypad.find(key => key.value === keypad[y][x - 1]) || null
+          }
+          if (x < keypad[y].length - 1 && keypad[y][x + 1] !== null) {
+            key.R = this.keypad.find(key => key.value === keypad[y][x + 1]) || null
+          }
+        }
+      }
+    }
+
+    this.cursor = this.keypad.find(key => key.value === '5') as Cell
     this.code = []
   }
 
   step(direction: Direction) {
     switch (direction) {
       case 'U':
-        this.cursor[1] = Math.max(this.cursor[1] - 1, 0)
+        if (this.cursor.U) {
+          this.cursor = this.cursor.U
+        }
         break
       case 'D':
-        this.cursor[1] = Math.min(this.cursor[1] + 1, 2)
+        if (this.cursor.D) {
+          this.cursor = this.cursor.D
+        }
         break
       case 'L':
-        this.cursor[0] = Math.max(this.cursor[0] - 1, 0)
+        if (this.cursor.L) {
+          this.cursor = this.cursor.L
+        }
         break
       case 'R':
-        this.cursor[0] = Math.min(this.cursor[0] + 1, 2)
+        if (this.cursor.R) {
+          this.cursor = this.cursor.R
+        }
         break
     }
   }
@@ -49,7 +80,7 @@ class Solution {
       line.forEach(direction => {
         this.step(direction)
       })
-      this.code.push(this.keypad[this.cursor[1]][this.cursor[0]])
+      this.code.push(this.cursor.value)
     })
     console.log(this.code)
     return this.code.join('')
@@ -83,5 +114,13 @@ export const partOne = (input: string) => {
 }
 
 export const partTwo = (input: string) => {
-  return null
+  const keypad = [
+    [null, null, '1', null, null],
+    [null, '2', '3', '4', null],
+    ['5', '6', '7', '8', '9'],
+    [null, 'A', 'B', 'C', null],
+    [null, null, 'D', null, null],
+  ]
+  const solution = new Solution(input, keypad)
+  return solution.execute()
 }

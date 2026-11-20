@@ -1,7 +1,7 @@
 {
   "meta": {
     "eulerCount": 1019,
-    "eulerNamesFetchedAt": "2026-11-18T23:38:56.904Z"
+    "eulerNamesFetchedAt": "2026-11-20T00:38:25.088Z"
   },
   "problems": {
     "aoc/2015/01": {
@@ -382,6 +382,10 @@
           "id": "test-1",
           "name": "Test"
         }
+      ],
+      "parts": [
+        true,
+        true
       ]
     },
     "aoc/2016/02": {
@@ -395,19 +399,38 @@
       ],
       "parts": [
         true,
-        false
+        true
       ],
       "answers": [
         "65556",
-        null
+        "CB779"
       ],
       "stars": [
         true,
-        false
+        true
       ]
     },
     "aoc/2016/03": {
-      "name": "Squares With Three Sides"
+      "name": "Squares With Three Sides",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ],
+      "parts": [
+        true,
+        true
+      ],
+      "answers": [
+        "1050",
+        "1921"
+      ],
+      "stars": [
+        true,
+        true
+      ]
     },
     "aoc/2016/04": {
       "name": "Security Through Obscurity"
