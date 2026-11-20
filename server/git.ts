@@ -1,6 +1,7 @@
 import { execFile } from 'node:child_process'
 import { isDeepStrictEqual } from 'node:util'
 import { rootDir } from './paths.ts'
+import { reload as reloadProgress } from './progress.ts'
 
 export type GitCommit = { hash: string; subject: string }
 export type GitFile = { code: string; path: string }
@@ -233,6 +234,8 @@ export const pull = () =>
     if (status.files.length) throw new GitOpError('Commit your changes before pulling.')
     try {
       await git(['pull', '--rebase', '--quiet'], OP_TIMEOUT)
+      // The pull may have rewritten progress.json; the server holds it in memory.
+      reloadProgress()
       set({ lastFetchAt: Date.now(), fetchError: null })
     } catch (e) {
       const aborted = await git(['rebase', '--abort']).then(

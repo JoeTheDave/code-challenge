@@ -4,7 +4,7 @@ import express from 'express'
 import { createServer as createViteServer } from 'vite'
 import { WebSocketServer, type WebSocket } from 'ws'
 import { api } from './api.ts'
-import { flush, onProgressChange } from './progress.ts'
+import { flushIfPending, onProgressChange } from './progress.ts'
 import { isStarted, parseId } from './problems.ts'
 import { getRun, onRunEvent, run } from './runner.ts'
 import { startWatcher, subscribe, unsubscribe } from './watcher.ts'
@@ -99,7 +99,8 @@ server.listen(port, host, () => {
 
 for (const signal of ['SIGINT', 'SIGTERM'] as const) {
   process.on(signal, () => {
-    flush()
+    // Not an unconditional flush: after a pull, memory can be older than the file on disk.
+    flushIfPending()
     process.exit(0)
   })
 }

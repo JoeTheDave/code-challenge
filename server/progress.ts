@@ -38,6 +38,17 @@ function load(): Progress {
   return { meta: data.meta ?? {}, problems: data.problems ?? {} }
 }
 
+/**
+ * Re-reads progress.json from disk, discarding the in-memory copy. Call after something else
+ * rewrites the file (a git pull); otherwise the next flush would overwrite it with stale state.
+ */
+export function reload() {
+  if (writeTimer) clearTimeout(writeTimer)
+  writeTimer = null
+  progress = load()
+  listeners.forEach(fn => fn())
+}
+
 export const getProgress = () => progress
 export const getEntry = (id: string): Entry => progress.problems[id] ?? {}
 
@@ -57,6 +68,11 @@ function changed() {
   listeners.forEach(fn => fn())
   if (writeTimer) clearTimeout(writeTimer)
   writeTimer = setTimeout(flush, 200)
+}
+
+/** Writes only if a change is waiting; never rewrites a file that is already up to date on disk. */
+export const flushIfPending = () => {
+  if (writeTimer) flush()
 }
 
 export function flush() {
