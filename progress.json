@@ -433,10 +433,36 @@
       ]
     },
     "aoc/2016/04": {
-      "name": "Security Through Obscurity"
+      "name": "Security Through Obscurity",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ],
+      "parts": [
+        true,
+        true
+      ],
+      "answers": [
+        "361724",
+        "482"
+      ],
+      "stars": [
+        true,
+        true
+      ]
     },
     "aoc/2016/05": {
-      "name": "How About a Nice Game of Chess?"
+      "name": "How About a Nice Game of Chess?",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "aoc/2016/06": {
       "name": "Signals and Noise"
@@ -726,6 +752,156 @@
     },
     "aoc/2017/25": {
       "name": "The Halting Problem"
+    },
+    "aoc/2018/01": {
+      "name": "Chronal Calibration"
+    },
+    "aoc/2018/02": {
+      "name": "Inventory Management System"
+    },
+    "aoc/2018/03": {
+      "name": "No Matter How You Slice It"
+    },
+    "aoc/2018/04": {
+      "name": "Repose Record"
+    },
+    "aoc/2018/05": {
+      "name": "Alchemical Reduction"
+    },
+    "aoc/2018/06": {
+      "name": "Chronal Coordinates"
+    },
+    "aoc/2018/07": {
+      "name": "The Sum of Its Parts"
+    },
+    "aoc/2018/08": {
+      "name": "Memory Maneuver"
+    },
+    "aoc/2018/09": {
+      "name": "Marble Mania"
+    },
+    "aoc/2018/10": {
+      "name": "The Stars Align"
+    },
+    "aoc/2018/11": {
+      "name": "Chronal Charge"
+    },
+    "aoc/2018/12": {
+      "name": "Subterranean Sustainability"
+    },
+    "aoc/2018/13": {
+      "name": "Mine Cart Madness"
+    },
+    "aoc/2018/14": {
+      "name": "Chocolate Charts"
+    },
+    "aoc/2018/15": {
+      "name": "Beverage Bandits"
+    },
+    "aoc/2018/16": {
+      "name": "Chronal Classification"
+    },
+    "aoc/2018/17": {
+      "name": "Reservoir Research"
+    },
+    "aoc/2018/18": {
+      "name": "Settlers of The North Pole"
+    },
+    "aoc/2018/19": {
+      "name": "Go With The Flow"
+    },
+    "aoc/2018/20": {
+      "name": "A Regular Map"
+    },
+    "aoc/2018/21": {
+      "name": "Chronal Conversion"
+    },
+    "aoc/2018/22": {
+      "name": "Mode Maze"
+    },
+    "aoc/2018/23": {
+      "name": "Experimental Emergency Teleportation"
+    },
+    "aoc/2018/24": {
+      "name": "Immune System Simulator 20XX"
+    },
+    "aoc/2018/25": {
+      "name": "Four-Dimensional Adventure"
+    },
+    "aoc/2019/01": {
+      "name": "The Tyranny of the Rocket Equation"
+    },
+    "aoc/2019/02": {
+      "name": "1202 Program Alarm"
+    },
+    "aoc/2019/03": {
+      "name": "Crossed Wires"
+    },
+    "aoc/2019/04": {
+      "name": "Secure Container"
+    },
+    "aoc/2019/05": {
+      "name": "Sunny with a Chance of Asteroids"
+    },
+    "aoc/2019/06": {
+      "name": "Universal Orbit Map"
+    },
+    "aoc/2019/07": {
+      "name": "Amplification Circuit"
+    },
+    "aoc/2019/08": {
+      "name": "Space Image Format"
+    },
+    "aoc/2019/09": {
+      "name": "Sensor Boost"
+    },
+    "aoc/2019/10": {
+      "name": "Monitoring Station"
+    },
+    "aoc/2019/11": {
+      "name": "Space Police"
+    },
+    "aoc/2019/12": {
+      "name": "The N-Body Problem"
+    },
+    "aoc/2019/13": {
+      "name": "Care Package"
+    },
+    "aoc/2019/14": {
+      "name": "Space Stoichiometry"
+    },
+    "aoc/2019/15": {
+      "name": "Oxygen System"
+    },
+    "aoc/2019/16": {
+      "name": "Flawed Frequency Transmission"
+    },
+    "aoc/2019/17": {
+      "name": "Set and Forget"
+    },
+    "aoc/2019/18": {
+      "name": "Many-Worlds Interpretation"
+    },
+    "aoc/2019/19": {
+      "name": "Tractor Beam"
+    },
+    "aoc/2019/20": {
+      "name": "Donut Maze"
+    },
+    "aoc/2019/21": {
+      "name": "Springdroid Adventure"
+    },
+    "aoc/2019/22": {
+      "name": "Slam Shuffle"
+    },
+    "aoc/2019/23": {
+      "name": "Category Six"
+    },
+    "aoc/2019/24": {
+      "name": "Planet of Discord"
+    },
+    "aoc/2019/25": {
+      "name": "Cryostasis"
     },
     "aoc/2020/01": {
       "name": "Report Repair",
