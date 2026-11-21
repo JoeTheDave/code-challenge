@@ -1,7 +1,7 @@
 {
   "meta": {
     "eulerCount": 1019,
-    "eulerNamesFetchedAt": "2026-11-20T00:38:25.088Z"
+    "eulerNamesFetchedAt": "2026-11-21T01:28:10.186Z"
   },
   "problems": {
     "aoc/2015/01": {
@@ -827,10 +827,48 @@
       "name": "Four-Dimensional Adventure"
     },
     "aoc/2019/01": {
-      "name": "The Tyranny of the Rocket Equation"
+      "name": "The Tyranny of the Rocket Equation",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ],
+      "answers": [
+        "3303995",
+        "4953118"
+      ],
+      "stars": [
+        true,
+        true
+      ],
+      "parts": [
+        true,
+        true
+      ]
     },
     "aoc/2019/02": {
-      "name": "1202 Program Alarm"
+      "name": "1202 Program Alarm",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ],
+      "parts": [
+        true,
+        true
+      ],
+      "answers": [
+        "3267740",
+        "7870"
+      ],
+      "stars": [
+        true,
+        true
+      ]
     },
     "aoc/2019/03": {
       "name": "Crossed Wires"
@@ -1030,6 +1068,60 @@
           "name": "Test"
         }
       ]
+    },
+    "aoc/2020/08": {
+      "name": "Handheld Halting"
+    },
+    "aoc/2020/09": {
+      "name": "Encoding Error"
+    },
+    "aoc/2020/10": {
+      "name": "Adapter Array"
+    },
+    "aoc/2020/11": {
+      "name": "Seating System"
+    },
+    "aoc/2020/12": {
+      "name": "Rain Risk"
+    },
+    "aoc/2020/13": {
+      "name": "Shuttle Search"
+    },
+    "aoc/2020/14": {
+      "name": "Docking Data"
+    },
+    "aoc/2020/15": {
+      "name": "Rambunctious Recitation"
+    },
+    "aoc/2020/16": {
+      "name": "Ticket Translation"
+    },
+    "aoc/2020/17": {
+      "name": "Conway Cubes"
+    },
+    "aoc/2020/18": {
+      "name": "Operation Order"
+    },
+    "aoc/2020/19": {
+      "name": "Monster Messages"
+    },
+    "aoc/2020/20": {
+      "name": "Jurassic Jigsaw"
+    },
+    "aoc/2020/21": {
+      "name": "Allergen Assessment"
+    },
+    "aoc/2020/22": {
+      "name": "Crab Combat"
+    },
+    "aoc/2020/23": {
+      "name": "Crab Cups"
+    },
+    "aoc/2020/24": {
+      "name": "Lobby Layout"
+    },
+    "aoc/2020/25": {
+      "name": "Combo Breaker"
     },
     "aoc/2021/01": {
       "name": "Sonar Sweep",
