@@ -871,7 +871,14 @@
       ]
     },
     "aoc/2019/03": {
-      "name": "Crossed Wires"
+      "name": "Crossed Wires",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "aoc/2019/04": {
       "name": "Secure Container"
