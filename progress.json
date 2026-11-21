@@ -886,6 +886,14 @@
           "id": "test-3",
           "name": "Test 3"
         }
+      ],
+      "answers": [
+        "1519",
+        null
+      ],
+      "stars": [
+        true,
+        false
       ]
     },
     "aoc/2019/04": {
