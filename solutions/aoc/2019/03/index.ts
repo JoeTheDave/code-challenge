@@ -47,14 +47,20 @@ class CircuitConfiguration {
 
         if (w1x1 === w1x2 && w2y1 === w2y2) {
           // wire 1 is vertical and wire 2 is horizontal
-          if ([w1x1, w2x1, w2x2].sort()[1] === w1x1 && [w2y1, w1y1, w1y2].sort()[1] === w2y1) {
+          if (
+            [w1x1, w2x1, w2x2].sort((a, b) => a - b)[1] === w1x1 &&
+            [w2y1, w1y1, w1y2].sort((a, b) => a - b)[1] === w2y1
+          ) {
             intersections.push([w1x1, w2y1])
           }
         }
         if (w1y1 === w1y2 && w2x1 === w2x2) {
           // wire 1 is horizontal and wire 2 is vertical
-          if ([w1y1, w2y1, w2y2].sort()[1] === w1y1 && [w2x1, w1x1, w1x2].sort()[1] === w2x1) {
-            intersections.push([w1y1, w2x1])
+          if (
+            [w1y1, w2y1, w2y2].sort((a, b) => a - b)[1] === w1y1 &&
+            [w2x1, w1x1, w1x2].sort((a, b) => a - b)[1] === w2x1
+          ) {
+            intersections.push([w2x1, w1y1])
           }
         }
       }

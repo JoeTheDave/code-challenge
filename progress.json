@@ -872,7 +872,7 @@
     },
     "aoc/2019/03": {
       "name": "Crossed Wires",
-      "dataSet": "test-2",
+      "dataSet": "input",
       "testSets": [
         {
           "id": "test-1",
