@@ -272,8 +272,7 @@
           "id": "test-1",
           "name": "Test"
         }
-      ],
-      "issue": "Ingredient names are hardcoded (Frosting, Candy, …), so test sets (Butterscotch/Cinnamon) return 0. Real input works."
+      ]
     },
     "aoc/2015/16": {
       "name": "Aunt Sue",
@@ -345,8 +344,7 @@
           "id": "test-1",
           "name": "Test"
         }
-      ],
-      "issue": "Part 2 is unfinished and throws 'Stop' from its own catch block (same as the old code)."
+      ]
     },
     "aoc/2015/20": {
       "name": "Infinite Elves and Infinite Houses"
@@ -433,10 +431,36 @@
       ]
     },
     "aoc/2016/04": {
-      "name": "Security Through Obscurity"
+      "name": "Security Through Obscurity",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ],
+      "parts": [
+        true,
+        true
+      ],
+      "answers": [
+        "361724",
+        "482"
+      ],
+      "stars": [
+        true,
+        true
+      ]
     },
     "aoc/2016/05": {
-      "name": "How About a Nice Game of Chess?"
+      "name": "How About a Nice Game of Chess?",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ]
     },
     "aoc/2016/06": {
       "name": "Signals and Noise"
@@ -727,6 +751,217 @@
     "aoc/2017/25": {
       "name": "The Halting Problem"
     },
+    "aoc/2018/01": {
+      "name": "Chronal Calibration"
+    },
+    "aoc/2018/02": {
+      "name": "Inventory Management System"
+    },
+    "aoc/2018/03": {
+      "name": "No Matter How You Slice It"
+    },
+    "aoc/2018/04": {
+      "name": "Repose Record"
+    },
+    "aoc/2018/05": {
+      "name": "Alchemical Reduction"
+    },
+    "aoc/2018/06": {
+      "name": "Chronal Coordinates"
+    },
+    "aoc/2018/07": {
+      "name": "The Sum of Its Parts"
+    },
+    "aoc/2018/08": {
+      "name": "Memory Maneuver"
+    },
+    "aoc/2018/09": {
+      "name": "Marble Mania"
+    },
+    "aoc/2018/10": {
+      "name": "The Stars Align"
+    },
+    "aoc/2018/11": {
+      "name": "Chronal Charge"
+    },
+    "aoc/2018/12": {
+      "name": "Subterranean Sustainability"
+    },
+    "aoc/2018/13": {
+      "name": "Mine Cart Madness"
+    },
+    "aoc/2018/14": {
+      "name": "Chocolate Charts"
+    },
+    "aoc/2018/15": {
+      "name": "Beverage Bandits"
+    },
+    "aoc/2018/16": {
+      "name": "Chronal Classification"
+    },
+    "aoc/2018/17": {
+      "name": "Reservoir Research"
+    },
+    "aoc/2018/18": {
+      "name": "Settlers of The North Pole"
+    },
+    "aoc/2018/19": {
+      "name": "Go With The Flow"
+    },
+    "aoc/2018/20": {
+      "name": "A Regular Map"
+    },
+    "aoc/2018/21": {
+      "name": "Chronal Conversion"
+    },
+    "aoc/2018/22": {
+      "name": "Mode Maze"
+    },
+    "aoc/2018/23": {
+      "name": "Experimental Emergency Teleportation"
+    },
+    "aoc/2018/24": {
+      "name": "Immune System Simulator 20XX"
+    },
+    "aoc/2018/25": {
+      "name": "Four-Dimensional Adventure"
+    },
+    "aoc/2019/01": {
+      "name": "The Tyranny of the Rocket Equation",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ],
+      "answers": [
+        "3303995",
+        "4953118"
+      ],
+      "stars": [
+        true,
+        true
+      ],
+      "parts": [
+        true,
+        true
+      ]
+    },
+    "aoc/2019/02": {
+      "name": "1202 Program Alarm",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        }
+      ],
+      "parts": [
+        true,
+        true
+      ],
+      "answers": [
+        "3267740",
+        "7870"
+      ],
+      "stars": [
+        true,
+        true
+      ]
+    },
+    "aoc/2019/03": {
+      "name": "Crossed Wires",
+      "dataSet": "input",
+      "testSets": [
+        {
+          "id": "test-1",
+          "name": "Test 1"
+        },
+        {
+          "id": "test-2",
+          "name": "Test 2"
+        },
+        {
+          "id": "test-3",
+          "name": "Test 3"
+        }
+      ],
+      "answers": [
+        "1519",
+        null
+      ],
+      "stars": [
+        true,
+        false
+      ]
+    },
+    "aoc/2019/04": {
+      "name": "Secure Container"
+    },
+    "aoc/2019/05": {
+      "name": "Sunny with a Chance of Asteroids"
+    },
+    "aoc/2019/06": {
+      "name": "Universal Orbit Map"
+    },
+    "aoc/2019/07": {
+      "name": "Amplification Circuit"
+    },
+    "aoc/2019/08": {
+      "name": "Space Image Format"
+    },
+    "aoc/2019/09": {
+      "name": "Sensor Boost"
+    },
+    "aoc/2019/10": {
+      "name": "Monitoring Station"
+    },
+    "aoc/2019/11": {
+      "name": "Space Police"
+    },
+    "aoc/2019/12": {
+      "name": "The N-Body Problem"
+    },
+    "aoc/2019/13": {
+      "name": "Care Package"
+    },
+    "aoc/2019/14": {
+      "name": "Space Stoichiometry"
+    },
+    "aoc/2019/15": {
+      "name": "Oxygen System"
+    },
+    "aoc/2019/16": {
+      "name": "Flawed Frequency Transmission"
+    },
+    "aoc/2019/17": {
+      "name": "Set and Forget"
+    },
+    "aoc/2019/18": {
+      "name": "Many-Worlds Interpretation"
+    },
+    "aoc/2019/19": {
+      "name": "Tractor Beam"
+    },
+    "aoc/2019/20": {
+      "name": "Donut Maze"
+    },
+    "aoc/2019/21": {
+      "name": "Springdroid Adventure"
+    },
+    "aoc/2019/22": {
+      "name": "Slam Shuffle"
+    },
+    "aoc/2019/23": {
+      "name": "Category Six"
+    },
+    "aoc/2019/24": {
+      "name": "Planet of Discord"
+    },
+    "aoc/2019/25": {
+      "name": "Cryostasis"
+    },
     "aoc/2020/01": {
       "name": "Report Repair",
       "stars": [
@@ -856,6 +1091,60 @@
           "name": "Test"
         }
       ]
+    },
+    "aoc/2020/08": {
+      "name": "Handheld Halting"
+    },
+    "aoc/2020/09": {
+      "name": "Encoding Error"
+    },
+    "aoc/2020/10": {
+      "name": "Adapter Array"
+    },
+    "aoc/2020/11": {
+      "name": "Seating System"
+    },
+    "aoc/2020/12": {
+      "name": "Rain Risk"
+    },
+    "aoc/2020/13": {
+      "name": "Shuttle Search"
+    },
+    "aoc/2020/14": {
+      "name": "Docking Data"
+    },
+    "aoc/2020/15": {
+      "name": "Rambunctious Recitation"
+    },
+    "aoc/2020/16": {
+      "name": "Ticket Translation"
+    },
+    "aoc/2020/17": {
+      "name": "Conway Cubes"
+    },
+    "aoc/2020/18": {
+      "name": "Operation Order"
+    },
+    "aoc/2020/19": {
+      "name": "Monster Messages"
+    },
+    "aoc/2020/20": {
+      "name": "Jurassic Jigsaw"
+    },
+    "aoc/2020/21": {
+      "name": "Allergen Assessment"
+    },
+    "aoc/2020/22": {
+      "name": "Crab Combat"
+    },
+    "aoc/2020/23": {
+      "name": "Crab Cups"
+    },
+    "aoc/2020/24": {
+      "name": "Lobby Layout"
+    },
+    "aoc/2020/25": {
+      "name": "Combo Breaker"
     },
     "aoc/2021/01": {
       "name": "Sonar Sweep",
@@ -1217,8 +1506,7 @@
           "id": "test-1",
           "name": "Test"
         }
-      ],
-      "issue": "Part 2 always loops over 100 groups, so it crashes on test data (which has only 2 groups). Real input works."
+      ]
     },
     "aoc/2022/04": {
       "name": "Camp Cleanup",
@@ -1442,7 +1730,6 @@
           "name": "Test"
         }
       ],
-      "issue": "Part 2 returns 0 on the test set (the example's answer is 1707). Real input gives the right answer.",
       "parts": [
         true,
         true
@@ -1485,8 +1772,7 @@
           "id": "test-1",
           "name": "Test"
         }
-      ],
-      "issue": "Part 1 runs out of memory (\"JavaScript heap out of memory\"): the branch list grows to ~7.5M by minute 16. Unfinished WIP port; the old code crashed the same way. Part 2 returns null."
+      ]
     },
     "aoc/2022/20": {
       "name": "Grove Positioning System",
@@ -1746,14 +2032,13 @@
         "6903",
         null
       ],
-      "dataSet": "test-1",
+      "dataSet": "input",
       "testSets": [
         {
           "id": "test-1",
           "name": "Test"
         }
-      ],
-      "issue": "Part 1 crashes: TypeError: Cannot set properties of undefined (setting 'step'). startNode.step is never set, so one path walks back into S and finds no unvisited neighbour. The old code crashed the same way, so the code that produced the accepted answer (6903) was never saved. Part 2 is fully commented out."
+      ]
     },
     "aoc/2023/11": {
       "name": "Cosmic Expansion",
@@ -1957,8 +2242,7 @@
           "id": "test-1",
           "name": "Test"
         }
-      ],
-      "issue": "Part 1 throws \"TypeError: walker.slice is not a function\" (Walker misuse; same as the old code). The file has 6 type errors from the same unfinished logic, so `npm run typecheck` reports them."
+      ]
     },
     "aoc/2023/24": {
       "name": "Never Tell Me The Odds",
@@ -2302,7 +2586,6 @@
           "name": "Part 2 test"
         }
       ],
-      "issue": "Part 2 doesn't finish (still running after 3+ minutes, same as the old code). Its hardcoded 2^45–2^48 search range is only meant for the real input, so on test sets it throws \"unable to determine new search range\".",
       "parts": [
         true,
         false
@@ -2989,15 +3272,14 @@
     "euler/050": {
       "name": "Consecutive Prime Sum",
       "solved": true,
-      "answer": null,
+      "answer": "997651",
       "dataSet": "input",
       "testSets": [
         {
           "id": "test-1",
           "name": "Test 1"
         }
-      ],
-      "issue": "solve() doesn't finish (still running after 3+ minutes, same as the old code). Marked solved, but no answer is stored because it never produced one."
+      ]
     },
     "euler/051": {
       "name": "Prime Digit Replacements"
